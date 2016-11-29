@@ -1,36 +1,9 @@
-CREATE TABLE `user` (
-  `id` bigint(20) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '序列号。',
-  `username` varchar(255) NOT NULL DEFAULT '' COMMENT '用户名。',
-  `password` varchar(255) NOT NULL DEFAULT '' COMMENT '密码。',
-  `score` int(11) unsigned zerofill NOT NULL DEFAULT '00000000000' COMMENT '积分。',
-  `ingot` int(11) unsigned zerofill NOT NULL DEFAULT '00000000000' COMMENT '元宝。',
-  `status` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '用户状态。',
-  `used` int(10) unsigned zerofill NOT NULL DEFAULT '0000000000' COMMENT '用户总消费元宝数。',
-  `pay` double unsigned zerofill NOT NULL DEFAULT '0000000000000000000000' COMMENT '用户总充值。',
-  `income` int(10) unsigned zerofill NOT NULL DEFAULT '0000000000' COMMENT '用户的收入。',
-  `redeem_ratio` double NOT NULL DEFAULT '0.7' COMMENT '用户的兑换比例。',
-  `redeemed` int(10) unsigned zerofill NOT NULL DEFAULT '0000000000' COMMENT '用户已兑换的元宝。',
-  `question_num` int(10) unsigned zerofill NOT NULL DEFAULT '0000000000' COMMENT '用户的提问个数。',
-  `answer_num` int(10) unsigned zerofill NOT NULL DEFAULT '0000000000' COMMENT '用户的回答个数。',
-  `blog_num` int(10) unsigned zerofill NOT NULL DEFAULT '0000000000' COMMENT '用户博客个数。',
-  `job` tinyint(3) unsigned zerofill NOT NULL DEFAULT '000' COMMENT '用户的职业。',
-  `type` varchar(16) NOT NULL DEFAULT 'COMMON' COMMENT '用户类型（QQ、微博、微信等）。',
-  `reg_time` datetime DEFAULT NULL COMMENT '用户注册时间。',
-  `last_time` datetime DEFAULT NULL COMMENT '用户最后时间。',
-  `qq_id` varchar(255) DEFAULT '' COMMENT 'QQ开放平台开放序列号。',
-  `weibo_id` varchar(255) DEFAULT '' COMMENT '新浪开放平台序列号。',
-  `weixin_id` varchar(255) DEFAULT NULL COMMENT '微信平台开放序列号。',
-  `nick_name` varchar(255) DEFAULT '' COMMENT '昵称。',
-  `first_name` varchar(255) DEFAULT '' COMMENT '姓。',
-  `last_name` varchar(255) DEFAULT '' COMMENT '名。',
-  `identify` varchar(255) DEFAULT '' COMMENT '身份证号。',
-  `address` varchar(255) DEFAULT '' COMMENT '地址。',
-  `avatar` varchar(255) DEFAULT '' COMMENT '用户头像。',
-  `email` varchar(255) DEFAULT '' COMMENT '用户绑定的邮箱。',
-  `qq` varchar(128) DEFAULT NULL COMMENT '用户QQ号。',
-  `sex` varchar(25) DEFAULT NULL COMMENT '用户性别。',
-  `signature` varchar(255) DEFAULT NULL COMMENT '用户个性签名。',
-  `perms` varchar(512) DEFAULT NULL COMMENT '用户权限字符串。',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`) USING HASH
-) ENGINE=InnoDB AUTO_INCREMENT=1070 DEFAULT CHARSET=utf8;
+DROP TABLE IF EXISTS user;
+
+CREATE TABLE user
+(
+    id BIGINT(20),
+    username VARCHAR(255),
+    password VARCHAR(255)
+);
+CREATE UNIQUE INDEX username ON user (username);

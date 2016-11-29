@@ -22,11 +22,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="base" />
+        <module name="spring-boot-starter-fastjson" />
+        <module name="spring-boot-starter-http" />
+        <module name="spring-boot-starter-log" />
         <module name="spring-boot-starter-mybatis" />
+        <module name="util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="base" target="1.5" />
+      <module name="spring-boot-starter-fastjson" target="1.5" />
+      <module name="spring-boot-starter-http" target="1.5" />
+      <module name="spring-boot-starter-log" target="1.5" />
       <module name="spring-boot-starter-mybatis" target="1.5" />
+      <module name="util" target="1.5" />
       <module name="utils" target="1.5" />
     </bytecodeTargetLevel>
   </component>

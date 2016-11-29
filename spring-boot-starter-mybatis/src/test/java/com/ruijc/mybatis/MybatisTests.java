@@ -4,12 +4,20 @@ import com.ruijc.mybatis.mapper.IUserMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
+import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
+import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = MybatisTests.class)
+@EnableRedisRepositories
+@SpringBootApplication
 public class MybatisTests {
 
     @Autowired
@@ -17,7 +25,9 @@ public class MybatisTests {
 
     @Test
     public void testCache() {
-        Assert.assertTrue(10 == userMapper.countAll());
+        for (int i = 0; i < 10; ++i) {
+            Assert.assertTrue(4 == userMapper.selectCount(null));
+        }
     }
 
 }

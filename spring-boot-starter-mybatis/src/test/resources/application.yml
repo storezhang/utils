@@ -4,11 +4,11 @@ spring:
       connectionTestQuery: SELECT 1 FROM DUAL
       minimumIdle: 1
       maximumPoolSize: 5
-      poolName: yourPoolName
+      poolName: mybatis
     driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:test
-    username: root
-    password: 123456
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;MODE=MYSQL
+    username: sa
+    password:
     type: com.zaxxer.hikari.HikariDataSource
     schema: classpath:db/schema.sql
     data: classpath:db/data.sql
@@ -18,3 +18,21 @@ spring:
       path: /h2
       settings:
         web-allow-others: true
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6300
+    password: 1234
+    pool:
+      maxActive: 8
+      maxWait: 2
+      maxIdle: 3
+      min-idle: 1
+    timeout: 0
+
+mybatis:
+  cache:
+    type: redis
+    serializer:
+      type: fst

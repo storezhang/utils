@@ -7,6 +7,7 @@ package com.ruijc.mybatis.cache.redis;
 
 import com.ruijc.mybatis.cache.DummyReadWriteLock;
 import com.ruijc.mybatis.cache.SerializerUtils;
+import com.ruijc.util.EncryptUtils;
 import com.ruijc.util.serialize.ISerializer;
 import org.apache.ibatis.cache.Cache;
 import org.springframework.dao.DataAccessException;
@@ -40,7 +41,13 @@ public class RedisCache implements Cache {
     }
 
     public void putObject(final Object key, final Object value) {
-        redisTemplate.opsForHash().put(id.getBytes(), key.toString().getBytes(), serializer.serialize(value));
+        redisTemplate.execute(new RedisCallback<Void>() {
+            public Void doInRedis(RedisConnection connection) throws DataAccessException {
+                connection.hSet(id.toString().getBytes(), key.toString().getBytes(), serializer.serialize(value));
+
+                return null;
+            }
+        });
     }
 
     public Object getObject(final Object key) {
@@ -52,11 +59,23 @@ public class RedisCache implements Cache {
     }
 
     public Object removeObject(final Object key) {
-        return redisTemplate.opsForHash().delete(id.getBytes(), key);
+        return redisTemplate.execute(new RedisCallback<Void>() {
+            public Void doInRedis(RedisConnection connection) throws DataAccessException {
+                connection.hDel(id.getBytes(), key.toString().getBytes());
+
+                return null;
+            }
+        });
     }
 
     public void clear() {
-        redisTemplate.delete(id.getBytes());
+        redisTemplate.execute(new RedisCallback<Void>() {
+            public Void doInRedis(RedisConnection connection) throws DataAccessException {
+                connection.del(id.getBytes());
+
+                return null;
+            }
+        });
     }
 
     public int getSize() {

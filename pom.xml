@@ -8,8 +8,17 @@
     <artifactId>utils</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+    <name>utils</name>
+    <description>我和各种工具包。</description>
+    <url>https://www.ruijc.com</url>
+
     <modules>
+        <module>base</module>
+        <module>util</module>
         <module>spring-boot-starter-mybatis</module>
+        <module>spring-boot-starter-fastjson</module>
+        <module>spring-boot-starter-http</module>
+        <module>spring-boot-starter-log</module>
     </modules>
 
 
@@ -160,5 +169,4 @@
         <connection>git@github.com:storezhang/utils.git</connection>
         <developerConnection>https://github.com/storezhang/utils</developerConnection>
     </scm>
-
 </project>

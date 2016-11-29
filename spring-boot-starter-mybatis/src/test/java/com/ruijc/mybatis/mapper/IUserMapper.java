@@ -10,5 +10,4 @@ import org.apache.ibatis.annotations.Mapper;
 @CacheNamespace(implementation = RedisCache.class)
 public interface IUserMapper extends BaseMapper<User> {
 
-    int countAll();
 }

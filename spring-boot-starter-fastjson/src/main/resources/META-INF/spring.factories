@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.ruijc.fastjson.FastJsonAutoConfiguration,\
+com.ruijc.fastjson.advice.FastJsonResponseBodyAdvice
