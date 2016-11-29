@@ -9,6 +9,7 @@ public class FSTSerializerImpl<T> implements ISerializer<T> {
 
     public FSTSerializerImpl() {
         conf = FSTConfiguration.createDefaultConfiguration();
+        conf.setForceSerializable(true);
     }
 
     public <T> T deserialize(byte[] bytes) {

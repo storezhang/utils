@@ -1,6 +1,7 @@
 package com.ruijc.mybatis.cache.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
@@ -12,19 +13,28 @@ import javax.annotation.PostConstruct;
  * @author Storezhang
  */
 @Component
+@EnableConfigurationProperties(RedisProperties.class)
 public class RedisUtils {
 
-    private static RedisTemplate<byte[], byte[]> proxy;
+    private static RedisTemplate<byte[], byte[]> redisTemplateProxy;
+    private static RedisProperties redisPropertiesProxy;
 
     @Autowired
-    private RedisTemplate<byte[], byte[]> self;
+    private RedisTemplate<byte[], byte[]> redisTemplate;
+    @Autowired
+    private RedisProperties redisProperties;
 
     public static RedisTemplate<byte[], byte[]> getRedisTemplate() {
-        return proxy;
+        return redisTemplateProxy;
+    }
+
+    public static RedisProperties getRedisProperties() {
+        return redisPropertiesProxy;
     }
 
     @PostConstruct
     public void init() {
-        proxy = self;
+        redisTemplateProxy = redisTemplate;
+        redisPropertiesProxy = redisProperties;
     }
 }

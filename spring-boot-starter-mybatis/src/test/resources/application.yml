@@ -34,5 +34,7 @@ spring:
 mybatis:
   cache:
     type: redis
+    redis:
+      expire: 100
     serializer:
       type: fst

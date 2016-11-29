@@ -20,8 +20,7 @@ public class MapperProperties {
     private String style;
     private String enableMethodAnnotation;
 
-    @PostConstruct
-    public void init() {
+    public MapperProperties() {
         mappers = "tk.mybatis.mapper.common.Mapper";
         notEmpty = "true";
         identity = "MYSQL";

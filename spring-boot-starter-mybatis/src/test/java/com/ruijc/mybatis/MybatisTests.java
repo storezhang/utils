@@ -26,7 +26,7 @@ public class MybatisTests {
     @Test
     public void testCache() {
         for (int i = 0; i < 10; ++i) {
-            Assert.assertTrue(4 == userMapper.selectCount(null));
+            Assert.assertTrue(4 == userMapper.selectAll().size());
         }
     }
 

@@ -20,8 +20,7 @@ public class PageHelperProperties {
     private String returnPageInfo;
     private String closeConn;
 
-    @PostConstruct
-    public void init() {
+    public PageHelperProperties() {
         dialect = "mysql";
         offsetAsPageNum = "false";
         rowBoundsWithCount = "false";

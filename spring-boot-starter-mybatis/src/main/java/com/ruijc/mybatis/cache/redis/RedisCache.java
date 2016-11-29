@@ -7,7 +7,6 @@ package com.ruijc.mybatis.cache.redis;
 
 import com.ruijc.mybatis.cache.DummyReadWriteLock;
 import com.ruijc.mybatis.cache.SerializerUtils;
-import com.ruijc.util.EncryptUtils;
 import com.ruijc.util.serialize.ISerializer;
 import org.apache.ibatis.cache.Cache;
 import org.springframework.dao.DataAccessException;
@@ -43,7 +42,9 @@ public class RedisCache implements Cache {
     public void putObject(final Object key, final Object value) {
         redisTemplate.execute(new RedisCallback<Void>() {
             public Void doInRedis(RedisConnection connection) throws DataAccessException {
-                connection.hSet(id.toString().getBytes(), key.toString().getBytes(), serializer.serialize(value));
+                connection.hSet(id.getBytes(), key.toString().getBytes(), serializer.serialize(value));
+                System.err.println("=====>" + RedisUtils.getRedisProperties().getExpire());
+                connection.expire(id.getBytes(), RedisUtils.getRedisProperties().getExpire());
 
                 return null;
             }

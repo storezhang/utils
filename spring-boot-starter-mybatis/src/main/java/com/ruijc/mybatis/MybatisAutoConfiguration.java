@@ -2,6 +2,8 @@ package com.ruijc.mybatis;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
+import com.ruijc.mybatis.cache.redis.RedisCache;
+import com.ruijc.mybatis.cache.redis.RedisProperties;
 import com.ruijc.util.serialize.FSTSerializerImpl;
 import com.ruijc.util.serialize.FastjsonSerializerImpl;
 import com.ruijc.util.serialize.ISerializer;
