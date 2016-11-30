@@ -3,7 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-starter-data-memcache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-fastjson" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-http" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-log" charset="UTF-8" />

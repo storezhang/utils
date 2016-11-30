@@ -56,21 +56,21 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>${spring.boot.version}</version>
+            <version>${version.spring.boot}</version>
             <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>com.ruijc</groupId>
             <artifactId>util</artifactId>
-            <version>2.1.0</version>
+            <version>${version.util}</version>
         </dependency>
 
         <!-- 测试依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
+            <version>${version.spring.boot}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

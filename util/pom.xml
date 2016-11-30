@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>util</artifactId>
-    <version>2.1.0</version>
+    <version>${version.util}</version>
     <name>util</name>
     <description>包括各种工具类操作。</description>
 
@@ -18,7 +18,7 @@
         <dependency>
             <groupId>com.ruijc</groupId>
             <artifactId>base</artifactId>
-            <version>2.0.0</version>
+            <version>${version.base}</version>
         </dependency>
 
         <!-- Kryo -->

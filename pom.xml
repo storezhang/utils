@@ -19,6 +19,7 @@
         <module>spring-boot-starter-fastjson</module>
         <module>spring-boot-starter-http</module>
         <module>spring-boot-starter-log</module>
+        <module>spring-boot-starter-data-memcache</module>
     </modules>
 
 
@@ -26,7 +27,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.6</java.version>
-        <spring.boot.version>1.4.2.RELEASE</spring.boot.version>
+        <version.spring.boot>1.4.2.RELEASE</version.spring.boot>
+        <version.base>3.0.0</version.base>
+        <version.util>3.0.0</version.util>
         <sonatype.oss.dist.mgmt.snapshots.url>https://oss.sonatype.org/content/repositories/snapshots/</sonatype.oss.dist.mgmt.snapshots.url>
     </properties>
 

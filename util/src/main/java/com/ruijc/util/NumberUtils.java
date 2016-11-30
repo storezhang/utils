@@ -44,11 +44,13 @@ public class NumberUtils {
      */
     public static double getDouble(String data) {
         double ret;
+
         try {
             ret = Double.parseDouble(data);
         } catch (NumberFormatException e) {
             ret = 0;
         }
+
         return ret;
     }
 
@@ -86,5 +88,19 @@ public class NumberUtils {
         }
 
         return ints;
+    }
+
+    public static int[] getIntArray(String data) {
+        return getIntArray(data, ",");
+    }
+
+    public static int[] getIntArray(String data, String space) {
+        List<Integer> ints = getInts(data, space);
+        int[] ret = new int[ints.size()];
+        for (int i = 0; i < ints.size(); ++i) {
+            ret[i] = ints.get(i);
+        }
+
+        return ret;
     }
 }

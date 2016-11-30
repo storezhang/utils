@@ -32,6 +32,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="1.5" />
+      <module name="spring-boot-starter-data-memcache" target="1.5" />
       <module name="spring-boot-starter-fastjson" target="1.5" />
       <module name="spring-boot-starter-http" target="1.5" />
       <module name="spring-boot-starter-log" target="1.5" />
