@@ -37,7 +37,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Http客户端
@@ -108,6 +111,13 @@ public class HttpClient {
         }
 
         return self;
+    }
+
+    public static void main(String[] args) {
+        HttpClient client = HttpClient.instance();
+        client.downloadFile("http://www.zhuanpaopao.com/welcome/verifyCode", "code.jpg");
+        String code = client.post("http://data.tehir.cn/url/Api/VCRInterface.ashx?apikey=646B7F4EB194A042E76E2615924FF84A&flag=zhuanpaopao", null, null, "", "img", new File("code.jpg"));
+        System.err.println("--->" + code);
     }
 
     public void addProxy(String url, int port) {
@@ -447,7 +457,7 @@ public class HttpClient {
         try {
             response = client.execute(get);
             int state = response.getStatusLine().getStatusCode();
-            if(state == HttpStatus.SC_OK){
+            if (state == HttpStatus.SC_OK) {
                 HttpEntity entity = response.getEntity();
                 InputStream input = entity.getContent();
                 FileOutputStream bout = new FileOutputStream(savePath);
@@ -456,14 +466,14 @@ public class HttpClient {
                 int read;
 
                 while ((read = input.read(buffer)) > 0) {
-                    bout.write(buffer,0,read);
+                    bout.write(buffer, 0, read);
                     System.out.println(read);
                 }
                 input.close();
                 bout.close();
 
                 success = true;
-            }else{
+            } else {
                 success = false;
             }
         } catch (ClientProtocolException e) {
@@ -473,12 +483,5 @@ public class HttpClient {
         }
 
         return success;
-    }
-
-    public static void main(String[] args) {
-        HttpClient client = HttpClient.instance();
-        client.downloadFile("http://www.zhuanpaopao.com/welcome/verifyCode", "code.jpg");
-        String code = client.post("http://data.tehir.cn/url/Api/VCRInterface.ashx?apikey=646B7F4EB194A042E76E2615924FF84A&flag=zhuanpaopao", null, null, "", "img", new File("code.jpg"));
-        System.err.println("--->" + code);
     }
 }

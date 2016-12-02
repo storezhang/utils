@@ -14,11 +14,6 @@
     <name>spring-boot-starter-mybatis</name>
     <description>Springboot自动化配置Mybatis框架并支持通用Mapper和分页插件。</description>
 
-    <scm>
-        <url>https://github.com/storezhang/util-root.git</url>
-        <connection>git@github.com:storezhang/util-root.git</connection>
-        <developerConnection>https://github.com/storezhang/util-root</developerConnection>
-    </scm>
     <developers>
         <developer>
             <name>storezhang</name>

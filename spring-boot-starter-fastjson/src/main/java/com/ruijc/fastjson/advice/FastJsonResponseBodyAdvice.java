@@ -7,8 +7,6 @@ import com.ruijc.fastjson.annotation.SerializeField;
 import com.ruijc.fastjson.bean.FastJsonFilterObject;
 import com.ruijc.fastjson.exception.IncludeAndExcludeConflictException;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.MediaType;

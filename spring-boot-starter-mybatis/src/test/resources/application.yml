@@ -35,6 +35,6 @@ mybatis:
   cache:
     type: redis
     redis:
-      expire: 100
+      expire: 10 * 10
     serializer:
       type: fst

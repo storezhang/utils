@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ruijc.http;
+package com.ruijc.util;
 
 import com.alibaba.fastjson.JSON;
-import com.ruijc.util.EncryptUtils;
-import com.ruijc.util.MapUtils;
-import com.ruijc.util.StringUtils;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -35,10 +33,17 @@ public class HttpUtils {
 
     public static final String HTTP_PROTCOL = "http://";
 
-    public static boolean checkSign(ServletRequest req, String signKey) {
+    /**
+     * 检查签名是不是正确
+     *
+     * @param req 请求
+     * @param key 签名Key
+     * @return 签名是否正确
+     */
+    public static boolean checkSign(ServletRequest req, String key) {
         boolean ret;
 
-        String sign = req.getParameter(signKey);
+        String sign = req.getParameter(key);
         if (StringUtils.isBlank(sign)) {
             ret = false;
             return ret;
@@ -51,7 +56,7 @@ public class HttpUtils {
             String name = paramNames.nextElement();
             params.put(name, req.getParameter(name));
         }
-        params.put(signKey, "");
+        params.put(key, "");
         String mySign = EncryptUtils.md5(MapUtils.linkString(params));
 
         ret = sign.equals(mySign);
@@ -269,5 +274,36 @@ public class HttpUtils {
         String xml = stringBuffer.toString();
 
         return xml;
+    }
+
+    /**
+     * 判断请求是不是Ajax请求
+     *
+     * @param sr 请求
+     * @return 是否是Ajax请求
+     */
+    public static boolean isAjax(ServletRequest sr) {
+        boolean isAjax = false;
+
+        String contentType = sr.getContentType();
+        if (!StringUtils.isBlank(contentType) && contentType.contains("application/json")) {
+            isAjax = true;
+        }
+        if (!isAjax && sr instanceof HttpServletRequest) {
+            String method = ((HttpServletRequest) sr).getHeader("method");
+            if (!StringUtils.isBlank(method) && method.contains("ajax")) {
+                isAjax = true;
+            }
+        }
+
+        return isAjax;
+    }
+
+    public static HttpServletRequest toHttp(ServletRequest request) {
+        return (HttpServletRequest) request;
+    }
+
+    public static HttpServletResponse toHttp(ServletResponse response) {
+        return (HttpServletResponse) response;
     }
 }

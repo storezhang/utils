@@ -32,6 +32,11 @@ public class FileLogger extends BaseLogger {
         }
     }
 
+    public static void main(String[] args) {
+        FileLogger logger = new FileLogger("./log//");
+        logger.log("test", "test", "", "success", true, "msg", "Test file input!");
+    }
+
     @Override
     public void log(String store, String topic, String source, Object... args) {
         StringBuilder content = new StringBuilder();
@@ -61,10 +66,5 @@ public class FileLogger extends BaseLogger {
             ps.println(String.format("%s|%s|%s------>%s", logDateFormat.format(curDate), topic, source, content));
             ps.flush();
         }
-    }
-
-    public static void main(String[] args) {
-        FileLogger logger = new FileLogger("./log//");
-        logger.log("test", "test", "", "success", true, "msg", "Test file input!");
     }
 }

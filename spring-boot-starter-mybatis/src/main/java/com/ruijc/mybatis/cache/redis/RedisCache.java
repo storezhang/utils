@@ -43,7 +43,6 @@ public class RedisCache implements Cache {
         redisTemplate.execute(new RedisCallback<Void>() {
             public Void doInRedis(RedisConnection connection) throws DataAccessException {
                 connection.hSet(id.getBytes(), key.toString().getBytes(), serializer.serialize(value));
-                System.err.println("=====>" + RedisUtils.getRedisProperties().getExpire());
                 connection.expire(id.getBytes(), RedisUtils.getRedisProperties().getExpire());
 
                 return null;

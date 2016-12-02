@@ -1,7 +1,6 @@
 package com.ruijc.fastjson.converter;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.ruijc.fastjson.bean.FastJsonFilterObject;
 import com.ruijc.fastjson.filter.SimpleSerializerFilter;
 import com.ruijc.util.StringUtils;

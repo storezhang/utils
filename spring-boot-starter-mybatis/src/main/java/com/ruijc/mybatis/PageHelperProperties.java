@@ -4,8 +4,6 @@ import com.github.pagehelper.PageHelper;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import javax.annotation.PostConstruct;
-
 @ConditionalOnClass(PageHelper.class)
 @ConfigurationProperties("mybatis.pageHelper")
 public class PageHelperProperties {
