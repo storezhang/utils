@@ -14,14 +14,6 @@
     <name>spring-boot-starter-mybatis</name>
     <description>Springboot自动化配置Mybatis框架并支持通用Mapper和分页插件。</description>
 
-    <developers>
-        <developer>
-            <name>storezhang</name>
-            <email>storezhang@gmail.com</email>
-            <url>http://www.ruijc.com</url>
-        </developer>
-    </developers>
-
     <dependencies>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
