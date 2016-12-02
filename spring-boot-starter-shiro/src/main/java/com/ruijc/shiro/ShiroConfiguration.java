@@ -33,6 +33,7 @@ public class ShiroConfiguration {
     public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {
         DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();
         defaultAdvisorAutoProxyCreator.setProxyTargetClass(true);
+
         return defaultAdvisorAutoProxyCreator;
     }
 
