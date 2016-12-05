@@ -5,62 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_4_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/spring-boot-starter-sample.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/MyAuthFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/PasswordRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/SpringbootStarterSampleApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/bean/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/controller/UserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/logic/UserL.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/mapper/IUserMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/mapper/IUserMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/db/data.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/db/schema.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/logback.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/ShiroTests.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/0dc7c6c0-7fcb-44bb-9446-8098270cc9f3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/FastJsonAutoConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/FastJsonAutoConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/MybatisAutoConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/MybatisAutoConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisCache.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisUtils.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/AuthFilter.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/AuthFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/JdbcPermissionDefinitionsLoader.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/JdbcPermissionDefinitionsLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/RetryLimitMatcher.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/RetryLimitMatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAuthFilterProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAuthFilterProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAutoConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAutoConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroCookieProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroCookieProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroFilterCustomizer.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroFilterCustomizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroJdbcRealmProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroJdbcRealmProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroSessionProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroSessionProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroWebMvcConfigurerAdapter.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroWebMvcConfigurerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/EnableShiroWebSupport.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/EnableShiroWebSupport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUser.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUserArgumentResolver.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUserArgumentResolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/MyAuthFilter.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/MyAuthFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/PasswordRealm.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/PasswordRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/ShiroApplication.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/ShiroApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/bean/User.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/bean/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/controller/UserController.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/logic/UserL.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/logic/UserL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.xml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1084,7 +1030,7 @@
       <workItem from="1480670491987" duration="8756000" />
       <workItem from="1480901772025" duration="1099000" />
       <workItem from="1480903919131" duration="584000" />
-      <workItem from="1480904515453" duration="1029000" />
+      <workItem from="1480904515453" duration="1130000" />
     </task>
     <task id="LOCAL-00001" summary="1、初始化提交；">
       <created>1480391637562</created>
@@ -1135,7 +1081,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480663729261</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1、完成Mybatis测试；&#10;2、完成Fastjson集成测试；&#10;3、完成Shiro集成测试；&#10;4、书写样例代码；">
+      <created>1480906687323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1480906687323</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1171,7 +1124,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102532000" />
+    <option name="totallyTimeSpent" value="102633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1223,7 +1176,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1、初始化提交；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、初始化提交；" />
+    <MESSAGE value="1、完成Mybatis测试；&#10;2、完成Fastjson集成测试；&#10;3、完成Shiro集成测试；&#10;4、书写样例代码；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、完成Mybatis测试；&#10;2、完成Fastjson集成测试；&#10;3、完成Shiro集成测试；&#10;4、书写样例代码；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1381,6 +1335,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-71">
           <caret line="33" column="98" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1580,6 +1535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

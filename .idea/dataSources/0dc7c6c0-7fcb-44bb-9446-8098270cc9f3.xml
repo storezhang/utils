@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="icoolxue">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="cdcol"/>
+    <schema id="3" name="gogs"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="king2admin"/>
+    <schema id="6" name="king_gs_ios_local_cs_1"/>
+    <schema id="7" name="king_log_ios_local_1"/>
+    <schema id="8" name="king_tx_account"/>
+    <schema id="9" name="mysql"/>
+    <schema id="10" name="overseer"/>
+    <schema id="11" name="performance_schema"/>
+    <schema id="12" name="phpmyadmin"/>
+    <schema id="13" name="test"/>
+    <schema id="14" name="ucenter"/>
+    <schema id="15" name="wd2_gs_mixed_cncs_001"/>
+    <schema id="16" name="webauth"/>
+    <table id="17" parent="1" name="activity"/>
+    <table id="18" parent="1" name="album"/>
+    <table id="19" parent="1" name="answer"/>
+    <table id="20" parent="1" name="blog"/>
+    <table id="21" parent="1" name="blog_category"/>
+    <table id="22" parent="1" name="bulletin"/>
+    <table id="23" parent="1" name="count"/>
+    <table id="24" parent="1" name="favorite"/>
+    <table id="25" parent="1" name="feedback"/>
+    <table id="26" parent="1" name="feedback_item"/>
+    <table id="27" parent="1" name="ingot_log"/>
+    <table id="28" parent="1" name="link"/>
+    <table id="29" parent="1" name="message"/>
+    <table id="30" parent="1" name="order"/>
+    <table id="31" parent="1" name="question"/>
+    <table id="32" parent="1" name="search"/>
+    <table id="33" parent="1" name="subscribe"/>
+    <table id="34" parent="1" name="text"/>
+    <table id="35" parent="1" name="user"/>
+    <table id="36" parent="1" name="user_active"/>
+    <table id="37" parent="1" name="video"/>
+    <table id="38" parent="1" name="video_log"/>
+    <column id="39" parent="17" name="id">
+      <comment>活动序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="40" parent="17" name="name">
+      <comment>活动名称。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="41" parent="17" name="title">
+      <comment>活动标题。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="42" parent="17" name="content">
+      <comment>活动详情。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(8192)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="43" parent="17" name="css">
+      <comment>活动额外CSS。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="44" parent="17" name="js">
+      <comment>活动额外Javascript代码。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="45" parent="17" name="active">
+      <comment>活动是否开启。</comment>
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000&apos;</default-expression>
+    </column>
+    <column id="46" parent="17" name="views">
+      <comment>浏览次数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="47" parent="17" name="start_time">
+      <comment>开始时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="48" parent="17" name="end_time">
+      <comment>结束时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="49" parent="17" name="create_time">
+      <comment>活动创建时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="50" parent="17" name="cover">
+      <comment>活动封面图片地址。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="51" parent="17" name="url">
+      <comment>活动跳转地址。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="52" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="53" parent="18" name="id">
+      <comment>专辑序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="54" parent="18" name="name">
+      <comment>专辑名字。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="55" parent="18" name="count">
+      <comment>专辑视频个数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="56" parent="18" name="play_times">
+      <comment>专辑视频被播放的次数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="57" parent="18" name="user_id">
+      <comment>专辑所属者。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="58" parent="18" name="tags">
+      <comment>专辑关键词。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="59" parent="18" name="description">
+      <comment>专辑描述。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="60" parent="18" name="income">
+      <comment>本专辑的收入。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="61" parent="18" name="completed">
+      <comment>该专辑是否已经上传完毕。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <column id="62" parent="18" name="privacy">
+      <comment>是否隐藏专辑备注。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <column id="63" parent="18" name="author">
+      <comment>该专辑的作者。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="64" parent="18" name="cover">
+      <comment>专辑自定义封面。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="65" parent="18" name="create_time">
+      <comment>创建时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="66" parent="18" name="category">
+      <comment>专辑所属类别。</comment>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="67" parent="18" name="affix">
+      <comment>附加导航（更精细的导航字符串）。</comment>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="68" parent="18" name="play_cost">
+      <comment>专辑播放消耗。</comment>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="69" parent="18" name="recommend">
+      <comment>专辑是否被推荐。</comment>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <column id="70" parent="18" name="notes">
+      <comment>专辑备注信息。</comment>
+      <data-type>varchar(8192)|0</data-type>
+    </column>
+    <index id="71" parent="18" name="user_id">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="72" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="73" parent="19" name="id">
+      <comment>自增序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="74" parent="19" name="content">
+      <comment>回答的内容。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(8192)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="75" parent="19" name="question_id">
+      <comment>该回答属于的问题。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="76" parent="19" name="user_id">
+      <comment>该回答是哪个用户回答的。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="77" parent="19" name="answer_id">
+      <comment>该回答引用的回答。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="78" parent="19" name="good">
+      <comment>该回答被顶的次数。</comment>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="79" parent="19" name="bad">
+      <comment>该问题被踩的次数。</comment>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="80" parent="19" name="time">
+      <comment>回答时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="81" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="82" parent="20" name="id">
+      <comment>博客序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="83" parent="20" name="title">
+      <comment>博客标题。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="84" parent="20" name="content">
+      <comment>博客内容。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(8192)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="85" parent="20" name="affix">
+      <comment>博客系统分类。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="86" parent="20" name="user_id">
+      <comment>该博客所属于的用户。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="87" parent="20" name="tags">
+      <comment>博客标签。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="88" parent="20" name="category_id">
+      <comment>博客的类别。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="89" parent="20" name="good">
+      <comment>被赞的个数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="90" parent="20" name="bad">
+      <comment>被踩的个数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="91" parent="20" name="post_time">
+      <comment>发表时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="92" parent="20" name="last_time">
+      <comment>最后修改时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="93" parent="20" name="times">
+      <comment>浏览次数。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="94" parent="20" name="recommend">
+      <comment>专辑是否被推荐。</comment>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <key id="95" parent="20" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="96" parent="21" name="id">
+      <comment>博客类别序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="97" parent="21" name="name">
+      <comment>博客类别名称。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="98" parent="21" name="user_id">
+      <comment>该类别属于的用户。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="99" parent="21" name="create_time">
+      <comment>该类别创建的时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="100" parent="21" name="last_time">
+      <comment>该类别最后修改时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="101" parent="21" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="102" parent="22" name="id">
+      <comment>公告序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="103" parent="22" name="title">
+      <comment>公告标题。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="104" parent="22" name="content">
+      <comment>公告内容。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(2048)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="105" parent="22" name="active">
+      <comment>公告是否开启。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="106" parent="22" name="type">
+      <comment>公告类型。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <column id="107" parent="22" name="url">
+      <comment>公告链接到的URL地址。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="108" parent="22" name="img_url">
+      <comment>公告图片地址。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="109" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="110" parent="23" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="111" parent="23" name="key">
+      <comment>键值。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="112" parent="23" name="total">
+      <comment>统计次数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="113" parent="23" name="sum">
+      <comment>计数和。</comment>
+      <mandatory>1</mandatory>
+      <data-type>decimal(12,2) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000.00&apos;</default-expression>
+    </column>
+    <column id="114" parent="23" name="type">
+      <comment>类型。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="115" parent="23" name="first_time">
+      <comment>首次时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="116" parent="23" name="last_time">
+      <comment>最后更新时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="117" parent="23" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="118" parent="24" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="119" parent="24" name="title">
+      <comment>收藏夹标题。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="120" parent="24" name="url">
+      <comment>收藏夹地址。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="121" parent="24" name="user_id">
+      <comment>收藏夹用户。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="122" parent="24" name="time">
+      <comment>收藏时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="123" parent="24" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="124" parent="25" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="125" parent="25" name="content">
+      <comment>反馈内容。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(8192)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="126" parent="25" name="status">
+      <comment>反馈状态。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(16)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="127" parent="25" name="user_id">
+      <comment>反馈的用户序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="128" parent="25" name="new_admin_reply">
+      <comment>是否有管理员回复。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <column id="129" parent="25" name="new_user_reply">
+      <comment>是否有新的用户回复。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;001&apos;</default-expression>
+    </column>
+    <column id="130" parent="25" name="post_time">
+      <comment>问题反馈提交的时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="131" parent="25" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="132" parent="26" name="id">
+      <comment>反馈条目序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="133" parent="26" name="content">
+      <comment>反馈条目内容。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="134" parent="26" name="user_id">
+      <comment>反馈用户。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="135" parent="26" name="feedback_id">
+      <comment>所属反馈。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="136" parent="26" name="post_time">
+      <comment>反馈时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="137" parent="26" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="138" parent="27" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="139" parent="27" name="ref_id">
+      <comment>视频序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="140" parent="27" name="user_id">
+      <comment>播放视频的用户序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="141" parent="27" name="ingot">
+      <comment>所消耗的元宝数量。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="142" parent="27" name="time">
+      <comment>播放时间。</comment>
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="143" parent="27" name="type">
+      <comment>消费类型。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="144" parent="27" name="ext">
+      <comment>元宝日志附加信息。</comment>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <key id="145" parent="27" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="146" parent="28" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="147" parent="28" name="title">
+      <comment>链接标题。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(80)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="148" parent="28" name="url">
+      <comment>链接地址。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="149" parent="28" name="img_url">
+      <comment>链接图片地址。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="150" parent="28" name="start_time">
+      <comment>链接开始时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="151" parent="28" name="end_time">
+      <comment>链接失效时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="152" parent="28" name="order">
+      <comment>显示顺序，倒序排列。</comment>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+    </column>
+    <key id="153" parent="28" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="154" parent="29" name="id">
+      <comment>消息序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="155" parent="29" name="text_id">
+      <comment>所属于的文本序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="156" parent="29" name="status">
+      <comment>消息状态。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+      <default-expression>&apos;UNREAD&apos;</default-expression>
+    </column>
+    <column id="157" parent="29" name="from_user_id">
+      <comment>发送用户序列号。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+    </column>
+    <column id="158" parent="29" name="to_user_id">
+      <comment>接收用户序列号。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+    </column>
+    <key id="159" parent="29" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="160" parent="30" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="161" parent="30" name="user_id">
+      <comment>用户。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="162" parent="30" name="trade_no">
+      <comment>订单号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="163" parent="30" name="money">
+      <comment>交易金额。</comment>
+      <mandatory>1</mandatory>
+      <data-type>double unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="164" parent="30" name="pay_time">
+      <comment>交易时间。</comment>
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="165" parent="30" name="status">
+      <comment>订单状态。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>&apos;NotCompleted&apos;</default-expression>
+    </column>
+    <column id="166" parent="30" name="type">
+      <comment>充值类型。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>&apos;Alipay&apos;</default-expression>
+    </column>
+    <column id="167" parent="30" name="affix">
+      <comment>附加信息。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <key id="168" parent="30" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="169" parent="31" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="170" parent="31" name="title">
+      <comment>问题标题。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="171" parent="31" name="content">
+      <comment>问题内容。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(8192)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="172" parent="31" name="affix">
+      <comment>精细分类。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(31)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="173" parent="31" name="tags">
+      <comment>问答的标签。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="174" parent="31" name="status">
+      <comment>问题状态。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="175" parent="31" name="total">
+      <comment>问题的回答数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="176" parent="31" name="user_id">
+      <comment>提问的用户。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="177" parent="31" name="video_id">
+      <comment>问题所属于的视频。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+    </column>
+    <column id="178" parent="31" name="best_answer_id">
+      <comment>该问题的最佳答案。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="179" parent="31" name="create_time">
+      <comment>创建时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="180" parent="31" name="last_time">
+      <comment>最后修改时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="181" parent="31" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="182" parent="32" name="key">
+      <comment>搜索关键字。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="183" parent="32" name="count">
+      <comment>搜索次数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <index id="184" parent="32" name="key">
+      <columns>key</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="185" parent="32" name="key">
+      <columns>key</columns>
+      <underlying-index>key</underlying-index>
+    </key>
+    <column id="186" parent="33" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="187" parent="33" name="tag">
+      <comment>订阅的标签。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="188" parent="33" name="email">
+      <comment>订阅的邮箱</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="189" parent="33" name="user_id">
+      <comment>订阅的用户序列号。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+    </column>
+    <column id="190" parent="33" name="time">
+      <comment>订阅时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="191" parent="33" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="192" parent="34" name="id">
+      <comment>文本序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="193" parent="34" name="content">
+      <comment>文本内容。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(8096)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="194" parent="34" name="post_time">
+      <comment>发送时间。</comment>
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>&apos;2015-01-01 00:00:00&apos;</default-expression>
+    </column>
+    <column id="195" parent="34" name="type">
+      <comment>文本类型。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+      <default-expression>&apos;SYSTEM&apos;</default-expression>
+    </column>
+    <key id="196" parent="34" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="197" parent="35" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="198" parent="35" name="username">
+      <comment>用户名。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="199" parent="35" name="password">
+      <comment>密码。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="200" parent="35" name="score">
+      <comment>积分。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000&apos;</default-expression>
+    </column>
+    <column id="201" parent="35" name="ingot">
+      <comment>元宝。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000&apos;</default-expression>
+    </column>
+    <column id="202" parent="35" name="status">
+      <comment>用户状态。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="203" parent="35" name="used">
+      <comment>用户总消费元宝数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="204" parent="35" name="pay">
+      <comment>用户总充值。</comment>
+      <mandatory>1</mandatory>
+      <data-type>double unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000000000000000&apos;</default-expression>
+    </column>
+    <column id="205" parent="35" name="income">
+      <comment>用户的收入。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="206" parent="35" name="redeem_ratio">
+      <comment>用户的兑换比例。</comment>
+      <mandatory>1</mandatory>
+      <data-type>double|0</data-type>
+      <default-expression>&apos;0.7&apos;</default-expression>
+    </column>
+    <column id="207" parent="35" name="redeemed">
+      <comment>用户已兑换的元宝。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="208" parent="35" name="question_num">
+      <comment>用户的提问个数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="209" parent="35" name="answer_num">
+      <comment>用户的回答个数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="210" parent="35" name="blog_num">
+      <comment>用户博客个数。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="211" parent="35" name="job">
+      <comment>用户的职业。</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <column id="212" parent="35" name="type">
+      <comment>用户类型（QQ、微博、微信等）。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(16)|0</data-type>
+      <default-expression>&apos;COMMON&apos;</default-expression>
+    </column>
+    <column id="213" parent="35" name="reg_time">
+      <comment>用户注册时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="214" parent="35" name="last_time">
+      <comment>用户最后时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="215" parent="35" name="qq_id">
+      <comment>QQ开放平台开放序列号。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="216" parent="35" name="weibo_id">
+      <comment>新浪开放平台序列号。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="217" parent="35" name="weixin_id">
+      <comment>微信平台开放序列号。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="218" parent="35" name="nick_name">
+      <comment>昵称。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="219" parent="35" name="first_name">
+      <comment>姓。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="220" parent="35" name="last_name">
+      <comment>名。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="221" parent="35" name="identify">
+      <comment>身份证号。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="222" parent="35" name="address">
+      <comment>地址。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="223" parent="35" name="avatar">
+      <comment>用户头像。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="224" parent="35" name="email">
+      <comment>用户绑定的邮箱。</comment>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="225" parent="35" name="qq">
+      <comment>用户QQ号。</comment>
+      <data-type>varchar(128)|0</data-type>
+    </column>
+    <column id="226" parent="35" name="sex">
+      <comment>用户性别。</comment>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="227" parent="35" name="signature">
+      <comment>用户个性签名。</comment>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="228" parent="35" name="perms">
+      <comment>用户权限字符串。</comment>
+      <data-type>varchar(512)|0</data-type>
+    </column>
+    <index id="229" parent="35" name="username">
+      <columns>username</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="230" parent="35" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="231" parent="35" name="username">
+      <columns>username</columns>
+      <underlying-index>username</underlying-index>
+    </key>
+    <column id="232" parent="36" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="233" parent="36" name="user_id">
+      <comment>用户。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="234" parent="36" name="key">
+      <comment>激活码。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <key id="235" parent="36" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="236" parent="37" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="237" parent="37" name="name">
+      <comment>名字。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="238" parent="37" name="author">
+      <comment>作者。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="239" parent="37" name="vid">
+      <comment>在56上的视频序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="240" parent="37" name="category">
+      <comment>类别。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="241" parent="37" name="type">
+      <comment>视频类型（存放目录：如56还是七牛或者是阿里OSS等）。</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+      <default-expression>&apos;LETV_CLOUD&apos;</default-expression>
+    </column>
+    <column id="242" parent="37" name="income">
+      <comment>本视频的收入。</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="243" parent="37" name="order">
+      <comment>排序字段。</comment>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="244" parent="37" name="play_cost">
+      <comment>播放消耗。</comment>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="245" parent="37" name="download_cost">
+      <comment>下载消耗。</comment>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;5&apos;</default-expression>
+    </column>
+    <column id="246" parent="37" name="cover">
+      <comment>封面。</comment>
+      <data-type>varchar(1024)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="247" parent="37" name="user_id">
+      <comment>所属用户。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="248" parent="37" name="description">
+      <comment>描述。</comment>
+      <data-type>varchar(3096)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="249" parent="37" name="tags">
+      <comment>标签。</comment>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="250" parent="37" name="rating">
+      <comment>用户评价。</comment>
+      <data-type>double unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000000000000000&apos;</default-expression>
+    </column>
+    <column id="251" parent="37" name="rating_num">
+      <comment>有多少人评价。</comment>
+      <data-type>int(10) unsigned zerofill|0</data-type>
+      <default-expression>&apos;0000000000&apos;</default-expression>
+    </column>
+    <column id="252" parent="37" name="create_time">
+      <comment>创建时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="253" parent="37" name="last_time">
+      <comment>最后修改时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="254" parent="37" name="total_time">
+      <comment>视频总时长。</comment>
+      <data-type>bigint(20) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="255" parent="37" name="play_times">
+      <comment>播放次数。</comment>
+      <data-type>int(11) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000&apos;</default-expression>
+    </column>
+    <column id="256" parent="37" name="audit">
+      <comment>该视频是否被审核。</comment>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="257" parent="37" name="recommend">
+      <comment>视频是否被推荐。</comment>
+      <data-type>tinyint(3) unsigned zerofill|0</data-type>
+      <default-expression>&apos;000&apos;</default-expression>
+    </column>
+    <column id="258" parent="37" name="album_id">
+      <comment>专辑序列号。</comment>
+      <data-type>bigint(20) unsigned|0</data-type>
+    </column>
+    <column id="259" parent="37" name="affix">
+      <comment>附加导航（更精细的导航字符串）。</comment>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="260" parent="37" name="notes">
+      <comment>视频备注信息。</comment>
+      <data-type>varchar(8192)|0</data-type>
+    </column>
+    <key id="261" parent="37" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="262" parent="38" name="id">
+      <comment>序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="263" parent="38" name="user_id">
+      <comment>用户序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="264" parent="38" name="video_id">
+      <comment>视频序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="265" parent="38" name="album_id">
+      <comment>专辑序列号。</comment>
+      <mandatory>1</mandatory>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <column id="266" parent="38" name="play_time">
+      <comment>播放时间。</comment>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="267" parent="38" name="time">
+      <comment>已播放时间。</comment>
+      <data-type>bigint(20) unsigned zerofill|0</data-type>
+      <default-expression>&apos;00000000000000000000&apos;</default-expression>
+    </column>
+    <key id="268" parent="38" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
