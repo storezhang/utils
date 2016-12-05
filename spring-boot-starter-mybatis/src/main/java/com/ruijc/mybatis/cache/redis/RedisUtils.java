@@ -2,8 +2,11 @@ package com.ruijc.mybatis.cache.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
@@ -25,16 +28,16 @@ public class RedisUtils {
     private RedisProperties redisProperties;
 
     public static RedisTemplate<byte[], byte[]> getRedisTemplate() {
-        return redisTemplateProxy;
+        return RedisUtils.redisTemplateProxy;
     }
 
     public static RedisProperties getRedisProperties() {
-        return redisPropertiesProxy;
+        return RedisUtils.redisPropertiesProxy;
     }
 
     @PostConstruct
     public void init() {
-        redisTemplateProxy = redisTemplate;
-        redisPropertiesProxy = redisProperties;
+        RedisUtils.redisTemplateProxy = redisTemplate;
+        RedisUtils.redisPropertiesProxy = redisProperties;
     }
 }

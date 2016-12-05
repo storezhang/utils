@@ -9,6 +9,7 @@ import com.ruijc.mybatis.cache.DummyReadWriteLock;
 import com.ruijc.mybatis.cache.SerializerUtils;
 import com.ruijc.util.serialize.ISerializer;
 import org.apache.ibatis.cache.Cache;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
@@ -25,14 +26,10 @@ public class RedisCache implements Cache {
 
     private final ReadWriteLock readWriteLock;
     private final String id;
-    private RedisTemplate<byte[], byte[]> redisTemplate;
-    private ISerializer<Object> serializer;
 
     public RedisCache(final String id) {
         this.id = id;
         readWriteLock = new DummyReadWriteLock();
-        redisTemplate = RedisUtils.getRedisTemplate();
-        serializer = SerializerUtils.getSerializer();
     }
 
     public String getId() {
@@ -40,9 +37,9 @@ public class RedisCache implements Cache {
     }
 
     public void putObject(final Object key, final Object value) {
-        redisTemplate.execute(new RedisCallback<Void>() {
+        RedisUtils.getRedisTemplate().execute(new RedisCallback<Void>() {
             public Void doInRedis(RedisConnection connection) throws DataAccessException {
-                connection.hSet(id.getBytes(), key.toString().getBytes(), serializer.serialize(value));
+                connection.hSet(id.getBytes(), key.toString().getBytes(), SerializerUtils.getSerializer().serialize(value));
                 connection.expire(id.getBytes(), RedisUtils.getRedisProperties().getExpire());
 
                 return null;
@@ -51,15 +48,15 @@ public class RedisCache implements Cache {
     }
 
     public Object getObject(final Object key) {
-        return redisTemplate.execute(new RedisCallback<Object>() {
+        return RedisUtils.getRedisTemplate().execute(new RedisCallback<Object>() {
             public Object doInRedis(RedisConnection connection) throws DataAccessException {
-                return serializer.deserialize(connection.hGet(id.getBytes(), key.toString().getBytes()));
+                return SerializerUtils.getSerializer().deserialize(connection.hGet(id.getBytes(), key.toString().getBytes()));
             }
         });
     }
 
     public Object removeObject(final Object key) {
-        return redisTemplate.execute(new RedisCallback<Void>() {
+        return RedisUtils.getRedisTemplate().execute(new RedisCallback<Void>() {
             public Void doInRedis(RedisConnection connection) throws DataAccessException {
                 connection.hDel(id.getBytes(), key.toString().getBytes());
 
@@ -69,7 +66,7 @@ public class RedisCache implements Cache {
     }
 
     public void clear() {
-        redisTemplate.execute(new RedisCallback<Void>() {
+        RedisUtils.getRedisTemplate().execute(new RedisCallback<Void>() {
             public Void doInRedis(RedisConnection connection) throws DataAccessException {
                 connection.del(id.getBytes());
 
@@ -79,7 +76,7 @@ public class RedisCache implements Cache {
     }
 
     public int getSize() {
-        return redisTemplate.opsForHash().size(id.getBytes()).intValue();
+        return RedisUtils.getRedisTemplate().opsForHash().size(id.getBytes()).intValue();
     }
 
     public ReadWriteLock getReadWriteLock() {

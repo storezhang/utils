@@ -1,7 +1,8 @@
-package com.ruijc.shiro;
+package com.ruijc.sample.spring.boot;
 
-import com.ruijc.shiro.logic.UserL;
-import com.ruijc.shiro.bean.User;
+import com.ruijc.sample.spring.boot.bean.User;
+import com.ruijc.sample.spring.boot.logic.UserL;
+import com.ruijc.shiro.EncryptToken;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;

@@ -1,8 +1,8 @@
-package com.ruijc.shiro.controller;
+package com.ruijc.sample.spring.boot.controller;
 
 import com.ruijc.fastjson.annotation.JSONP;
-import com.ruijc.shiro.bean.User;
-import com.ruijc.shiro.mapper.IUserMapper;
+import com.ruijc.sample.spring.boot.bean.User;
+import com.ruijc.sample.spring.boot.mapper.IUserMapper;
 import com.ruijc.shiro.EncryptToken;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -18,12 +18,6 @@ public class UserController {
 
     @Autowired
     private IUserMapper userMapper;
-
-    @GetMapping("/test")
-    @JSONP("user")
-    public User test() {
-        return userMapper.getByUsername("storezhang@gmail.com");
-    }
 
     @PostMapping("/login")
     public User login(String username, String password) {

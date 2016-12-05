@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    hikari:
+      connectionTestQuery: SELECT 1 FROM DUAL
+      minimumIdle: 1
+      maximumPoolSize: 5
+      poolName: mybatis
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;MODE=MYSQL
+    username: sa
+    password:
+    type: com.zaxxer.hikari.HikariDataSource
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+  h2:
+    console:
+      enabled: true
+      path: /h2
+      settings:
+        web-allow-others: true
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6300
+    password: 1234
+    pool:
+      maxActive: 8
+      maxWait: 2
+      maxIdle: 3
+      min-idle: 1
+    timeout: 0
+
+mybatis:
+  cache:
+    type: redis
+    redis:
+      expire: 100
+    serializer:
+      type: fst
+
+shiro:
+  realmClass: com.ruijc.sample.spring.boot.PasswordRealm
+  authClass: com.ruijc.sample.spring.boot.MyAuthFilter
+  filterChainDefinitions:
+    /user/login/**: anon
+    /**/test/**: anon
+    /**: authm

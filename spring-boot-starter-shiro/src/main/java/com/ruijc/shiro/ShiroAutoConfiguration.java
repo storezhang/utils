@@ -125,7 +125,7 @@ public class ShiroAutoConfiguration {
     }
 
     @Bean(name = "cacheManager")
-    @ConditionalOnClass(EhCacheManager.class)
+    @ConditionalOnClass(name = {"org.apache.shiro.cache.ehcache.EhCacheManager"})
     @ConditionalOnMissingBean(name = "cacheManager")
     public CacheManager ehcacheManager() {
         EhCacheManager ehCacheManager = new EhCacheManager();
@@ -191,7 +191,7 @@ public class ShiroAutoConfiguration {
 
     @Bean(name = "sessionValidationScheduler")
     @DependsOn(value = {"sessionManager"})
-    @ConditionalOnClass(Scheduler.class)
+    @ConditionalOnClass(name = {"org.quartz.Scheduler"})
     @ConditionalOnMissingBean(SessionValidationScheduler.class)
     public SessionValidationScheduler quartzSessionValidationScheduler(DefaultWebSessionManager sessionManager) {
         QuartzSessionValidationScheduler quartzSessionValidationScheduler = new QuartzSessionValidationScheduler(sessionManager);

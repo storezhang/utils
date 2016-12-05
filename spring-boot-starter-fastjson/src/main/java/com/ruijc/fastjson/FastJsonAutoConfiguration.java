@@ -27,11 +27,11 @@ import java.util.List;
  * @author Storezhang
  */
 @Configuration
-@ConditionalOnClass({JSON.class})
+@ConditionalOnClass(name = "com.alibaba.fastjson.JSON")
 public class FastJsonAutoConfiguration {
 
     @Configuration
-    @ConditionalOnClass({com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter.class})
+    @ConditionalOnClass(name = {"com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter"})
     @ConditionalOnProperty(name = {"spring.http.converters.preferred-json-mapper"}, havingValue = "fastjson", matchIfMissing = true)
     @ConditionalOnWebApplication
     @EnableConfigurationProperties(FastJsonProperties.class)

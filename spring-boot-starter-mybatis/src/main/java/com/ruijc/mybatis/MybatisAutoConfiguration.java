@@ -2,6 +2,9 @@ package com.ruijc.mybatis;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
+import com.ruijc.mybatis.cache.SerializerUtils;
+import com.ruijc.mybatis.cache.redis.RedisCache;
+import com.ruijc.mybatis.cache.redis.RedisUtils;
 import com.ruijc.util.serialize.FSTSerializerImpl;
 import com.ruijc.util.serialize.FastjsonSerializerImpl;
 import com.ruijc.util.serialize.ISerializer;
@@ -12,6 +15,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -28,6 +32,7 @@ import java.util.Properties;
 @Configuration
 @AutoConfigureAfter(org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.class)
 @EnableConfigurationProperties({PageHelperProperties.class, MapperProperties.class})
+@ComponentScan(basePackageClasses = {RedisUtils.class, SerializerUtils.class})
 public class MybatisAutoConfiguration {
 
     @Autowired
@@ -36,7 +41,7 @@ public class MybatisAutoConfiguration {
     private MapperProperties mapperProperties;
 
     @Bean
-    @ConditionalOnClass(PageHelper.class)
+    @ConditionalOnClass(name = "com.github.pagehelper.PageHelper")
     public PageHelper pageHelper(DataSource dataSource) {
         PageHelper pageHelper = new PageHelper();
 
@@ -58,7 +63,7 @@ public class MybatisAutoConfiguration {
     }
 
     @Bean
-    @ConditionalOnClass(MapperScannerConfigurer.class)
+    @ConditionalOnClass(name = "tk.mybatis.spring.mapper.MapperScannerConfigurer")
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
 
@@ -82,28 +87,28 @@ public class MybatisAutoConfiguration {
     }
 
     @Bean
-    @ConditionalOnClass(JSON.class)
+    @ConditionalOnClass(name = "com.alibaba.fastjson.JSON")
     @ConditionalOnProperty(name = {"mybatis.cache.serializer.type"}, havingValue = "fastjson", matchIfMissing = true)
     public ISerializer<Object> fastjsonSerializer() {
         return new FastjsonSerializerImpl<Object>();
     }
 
     @Bean
-    @ConditionalOnClass(JSON.class)
+    @ConditionalOnClass(name = "com.esotericsoftware.kryo.Kryo")
     @ConditionalOnProperty(name = {"mybatis.cache.serializer.type"}, havingValue = "kryo", matchIfMissing = true)
     public ISerializer<Object> kryoSerializer() {
         return new KryoSerializerImpl<Object>();
     }
 
     @Bean
-    @ConditionalOnClass(JSON.class)
+    @ConditionalOnClass(name = "org.nustaq.serialization.FSTConfiguration")
     @ConditionalOnProperty(name = {"mybatis.cache.serializer.type"}, havingValue = "fst", matchIfMissing = true)
     public ISerializer<Object> fstSerializer() {
         return new FSTSerializerImpl<Object>();
     }
 
     @Bean
-    @ConditionalOnClass(RedisTemplate.class)
+    @ConditionalOnClass(name = "org.springframework.data.redis.core.RedisTemplate")
     @ConditionalOnProperty(name = {"mybatis.cache.type"}, havingValue = "redis", matchIfMissing = true)
     public RedisTemplate<byte[], byte[]> redisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<byte[], byte[]> template = new RedisTemplate<byte[], byte[]>();
