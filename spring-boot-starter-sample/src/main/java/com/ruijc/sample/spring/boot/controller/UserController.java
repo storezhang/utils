@@ -20,6 +20,7 @@ public class UserController {
     private IUserMapper userMapper;
 
     @PostMapping("/login")
+    @JSONP("user")
     public User login(String username, String password) {
         User user;
 
