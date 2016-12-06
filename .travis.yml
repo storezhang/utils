@@ -3,7 +3,6 @@ sudo: false
 
 jdk:
   - oraclejdk8
-  - openjdk8
 
 before_script:
   - mvn install -q -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
