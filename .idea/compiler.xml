@@ -27,6 +27,7 @@
         <module name="spring-boot-starter-http" />
         <module name="spring-boot-starter-log" />
         <module name="spring-boot-starter-mybatis" />
+        <module name="spring-boot-starter-sample" />
         <module name="spring-boot-starter-shiro" />
         <module name="spring-boot-starter-shiro-sample" />
         <module name="util" />
@@ -39,6 +40,7 @@
       <module name="spring-boot-starter-http" target="1.5" />
       <module name="spring-boot-starter-log" target="1.5" />
       <module name="spring-boot-starter-mybatis" target="1.5" />
+      <module name="spring-boot-starter-sample" target="1.5" />
       <module name="spring-boot-starter-shiro" target="1.5" />
       <module name="spring-boot-starter-shiro-sample" target="1.5" />
       <module name="util" target="1.5" />
