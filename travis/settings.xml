@@ -10,11 +10,6 @@
             <username>${env.SONATYPE_USER}</username>
             <password>${env.SONATYPE_PWD}</password>
         </server>
-        <server>
-            <id>sonatype-nexus-staging</id>
-            <username>${env.SONATYPE_USER}</username>
-            <password>${env.SONATYPE_PWD}</password>
-        </server>
     </servers>
     <mirrors/>
     <proxies/>

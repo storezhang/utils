@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Only invoke the deployment to Sonatype when it's not a PR and only for master
+# 部署到Maven中央仓库
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-  mvn clean deploy sonatype-oss-release --settings travis/settings.xml
-  echo -e "Successfully deployed SNAPSHOT artifacts to Sonatype under Travis job ${TRAVIS_JOB_NUMBER}"
+  mvn deploy --settings travis/settings.xml
+  echo -e "成功部署${TRAVIS_JOB_NUMBER}到Maven中央仓库！"
 fi
