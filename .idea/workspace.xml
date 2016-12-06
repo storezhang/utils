@@ -5,10 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/travis/deploy-to-sonatype.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/travis/settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_4_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/spring-boot-starter-sample.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/MyAuthFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/PasswordRealm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/SpringbootStarterSampleApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/bean/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/controller/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/logic/UserL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/mapper/IUserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/mapper/IUserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/db/data.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/db/schema.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/logback.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/ShiroTests.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/FastJsonAutoConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/FastJsonAutoConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/MybatisAutoConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/MybatisAutoConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisCache.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisUtils.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/cache/redis/RedisUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/AuthFilter.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/AuthFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/JdbcPermissionDefinitionsLoader.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/JdbcPermissionDefinitionsLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/RetryLimitMatcher.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/RetryLimitMatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAuthFilterProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAuthFilterProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAutoConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAutoConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroConfiguration.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroCookieProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroCookieProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroFilterCustomizer.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroFilterCustomizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroJdbcRealmProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroJdbcRealmProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroSessionProperties.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroSessionProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroWebMvcConfigurerAdapter.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroWebMvcConfigurerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/EnableShiroWebSupport.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/EnableShiroWebSupport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUser.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUserArgumentResolver.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/annotation/SessionUserArgumentResolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/MyAuthFilter.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/MyAuthFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/PasswordRealm.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/PasswordRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/ShiroApplication.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/ShiroApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/bean/User.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/bean/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/controller/UserController.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/logic/UserL.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/logic/UserL.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.java" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/mapper/IUserMapper.xml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,9 +106,47 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAuthFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/MyAuthFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/mapper/IUserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordRealm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/PasswordRealm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,11 +154,9 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="-77">
               <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,65 +164,23 @@
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
+            <state relative-caret-position="373">
               <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringbootStarterSampleApplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SpringbootStarterSampleApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/SpringbootStarterSampleApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DEPLOY.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DEPLOY.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="133">
-                <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="37" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deploy-to-sonatype.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/travis/deploy-to-sonatype.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/travis/settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="57">
+              <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,11 +188,9 @@
       <file leaf-file-name="ShiroAutoConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAutoConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
+            <state relative-caret-position="178">
               <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,7 +198,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="190">
               <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding />
             </state>
@@ -191,6 +235,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/FormSignInFilter.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroSignInProperties.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAuthFilterProperties.java" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-shiro/README.md" />
         <option value="$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroFilterCustomizer.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/bean/User.java" />
@@ -238,10 +286,6 @@
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/controller/UserController.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/SpringbootStarterSampleApplication.java" />
-        <option value="$PROJECT_DIR$/travis/after_success.sh" />
-        <option value="$PROJECT_DIR$/travis/settings.xml" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/travis/deploy-to-sonatype.sh" />
       </list>
     </option>
   </component>
@@ -264,14 +308,7 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="54" />
@@ -305,8 +342,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -335,17 +370,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="travis" />
+              <option name="myItemId" value="spring-boot-starter-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-starter-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-starter-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-starter-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="boot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-starter-shiro" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -615,17 +726,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="D:\Development\Syntevo\SmartGit\git\bin\bash.exe" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
@@ -984,9 +1084,7 @@
       <workItem from="1480670491987" duration="8756000" />
       <workItem from="1480901772025" duration="1099000" />
       <workItem from="1480903919131" duration="584000" />
-      <workItem from="1480904515453" duration="2644000" />
-      <workItem from="1480990882631" duration="1926000" />
-      <workItem from="1480995808048" duration="175000" />
+      <workItem from="1480904515453" duration="1029000" />
     </task>
     <task id="LOCAL-00001" summary="1、初始化提交；">
       <created>1480391637562</created>
@@ -1037,21 +1135,7 @@
       <option name="project" value="LOCAL" />
       <updated>1480663729261</updated>
     </task>
-    <task id="LOCAL-00008" summary="1、完成Mybatis测试；&#10;2、完成Fastjson集成测试；&#10;3、完成Shiro集成测试；&#10;4、书写样例代码；">
-      <created>1480906687323</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1480906687323</updated>
-    </task>
-    <task id="LOCAL-00009" summary="1、完成Mybatis测试；&#10;2、完成Fastjson集成测试；&#10;3、完成Shiro集成测试；&#10;4、书写样例代码；">
-      <created>1480906718972</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1480906718972</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1087,43 +1171,43 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106248000" />
+    <option name="totallyTimeSpent" value="102532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5022051" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2899669" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.49558985" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3985043" sideWeight="0.49779493" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36163175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59508544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3792735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3985043" sideWeight="0.49779493" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.49558985" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36163175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3792735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1139,8 +1223,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1、初始化提交；" />
-    <MESSAGE value="1、完成Mybatis测试；&#10;2、完成Fastjson集成测试；&#10;3、完成Shiro集成测试；&#10;4、书写样例代码；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、完成Mybatis测试；&#10;2、完成Fastjson集成测试；&#10;3、完成Shiro集成测试；&#10;4、书写样例代码；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、初始化提交；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1173,6 +1256,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/filter/SimpleSerializerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-shiro/src/test/java/com/ruijc/shiro/ShiroApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/spring-boot-starter-sample.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/RetryLimitMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-481">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-386">
@@ -1199,6 +1310,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="35" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-71">
           <caret line="33" column="98" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,6 +1451,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,6 +1565,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2356">
           <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,6 +1615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1509,6 +1623,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5">
           <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#2872#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1216#1608#0" expanded="false" />
+            <element signature="e#1607#1608#0" expanded="false" />
+            <element signature="e#1719#1992#0" expanded="false" />
+            <element signature="e#1991#1992#0" expanded="false" />
+            <element signature="e#2106#2353#0" expanded="false" />
+            <element signature="e#2352#2353#0" expanded="false" />
+            <element signature="e#2435#2654#0" expanded="false" />
+            <element signature="e#2653#2654#0" expanded="false" />
+            <element signature="e#2689#2690#0" expanded="false" />
+            <element signature="e#2785#2786#0" expanded="false" />
+            <element signature="e#2832#2833#0" expanded="false" />
+            <element signature="e#2868#2869#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1516,6 +1648,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1130#1131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1539,6 +1676,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1546,6 +1684,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#446#447#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1553,6 +1694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1560,6 +1702,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1567,12 +1710,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="190">
           <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding />
         </state>
@@ -1580,11 +1724,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-shiro/src/main/java/com/ruijc/shiro/ShiroAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
+        <state relative-caret-position="178">
           <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1592,15 +1734,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
+        <state relative-caret-position="373">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding />
         </state>
@@ -1608,57 +1748,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="-77">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/SpringbootStarterSampleApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DEPLOY.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="133">
-            <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="37" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/travis/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/travis/deploy-to-sonatype.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
-          <folding />
+        <state relative-caret-position="57">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1752,7 +1856,7 @@
     </states>
   </component>
   <component name="mavenExecuteGoalHistory">
-    <option value="D:\Workspaces\Jetbrains\utils" />
+    <option value="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro" />
     <option value="clean deploy -P sonatype-oss-release -Dgpg.passphrase=xtkthh13284@$" />
   </component>
 </project>
