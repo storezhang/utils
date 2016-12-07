@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pubring.gpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secring.gpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travis/settings.xml" afterPath="$PROJECT_DIR$/travis/settings.xml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,7 +93,7 @@
       <file leaf-file-name="settings.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/travis/settings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1387">
+            <state relative-caret-position="1330">
               <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
               <folding />
             </state>
@@ -430,10 +431,12 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-mybatis\src\test\resources" />
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-mybatis\src\test\java" />
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-mybatis\src\main\java" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\Jetbrains\utils" />
+      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro-sample\src\main" />
+      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro\src\main\java\com\ruijc\shiro" />
+      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro\src\test\java\com\ruijc\shiro" />
+      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ruijc.util" />
@@ -441,12 +444,10 @@
       <recent name="com.ruijc.mybatis.cache.redis" />
       <recent name="com.ruijc.util.serialize" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro-sample\src\main" />
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro\src\main\java\com\ruijc\shiro" />
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro\src\test\java\com\ruijc\shiro" />
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro\src\test" />
-      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-shiro" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-mybatis\src\test\resources" />
+      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-mybatis\src\test\java" />
+      <recent name="D:\Workspaces\Jetbrains\utils\spring-boot-starter-mybatis\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="Application.SpringbootStarterSampleApplication">
@@ -1059,7 +1060,7 @@
       <workItem from="1480901772025" duration="1099000" />
       <workItem from="1480903919131" duration="584000" />
       <workItem from="1480904515453" duration="1029000" />
-      <workItem from="1480996072726" duration="15849000" />
+      <workItem from="1480996072726" duration="16477000" />
     </task>
     <task id="LOCAL-00001" summary="1、初始化提交；">
       <created>1480391637562</created>
@@ -1355,7 +1356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481092707505</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="1、测试JSONP；">
+      <created>1481092916858</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1481092916858</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1391,7 +1399,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118381000" />
+    <option name="totallyTimeSpent" value="119009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1979,7 +1987,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/travis/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
+        <state relative-caret-position="1330">
           <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
           <folding />
         </state>
