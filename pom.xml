@@ -31,7 +31,6 @@
         <version.spring.boot>1.4.2.RELEASE</version.spring.boot>
         <version.base>3.0.0</version.base>
         <version.util>3.0.0</version.util>
-        <sonatype.oss.dist.mgmt.snapshots.url>https://oss.sonatype.org/content/repositories/snapshots/</sonatype.oss.dist.mgmt.snapshots.url>
     </properties>
 
     <repositories>
@@ -66,14 +65,15 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>${sonatype.oss.dist.mgmt.snapshots.url}</url>
+            <id>sonatype-snapshots</id>
+            <name>Sonatype Nexus snapshot repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>sonatype-release-staging</id>
+            <name>Sonatype Nexus release repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
 
