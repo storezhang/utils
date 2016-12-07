@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travis/deploy-to-sonatype.sh" afterPath="$PROJECT_DIR$/travis/deploy-to-sonatype.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="699" selection-start-line="18" selection-start-column="699" selection-end-line="18" selection-end-column="699" />
+            <state relative-caret-position="285">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy-to-sonatype.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="deploy-to-sonatype.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/travis/deploy-to-sonatype.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -134,8 +134,8 @@
       <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/travis/settings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="190">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -237,13 +237,13 @@
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/mapper/IUserMapper.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/SpringbootStarterSampleApplication.java" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/src/main/java/com/ruijc/sample/spring/boot/controller/UserController.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-sample/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/travis/settings.xml" />
         <option value="$PROJECT_DIR$/travis/deploy-to-sonatype.sh" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -1057,7 +1057,7 @@
       <workItem from="1480901772025" duration="1099000" />
       <workItem from="1480903919131" duration="584000" />
       <workItem from="1480904515453" duration="1029000" />
-      <workItem from="1480996072726" duration="5852000" />
+      <workItem from="1480996072726" duration="6168000" />
     </task>
     <task id="LOCAL-00001" summary="1、初始化提交；">
       <created>1480391637562</created>
@@ -1192,7 +1192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481076186882</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1、测试JSONP；">
+      <created>1481076339171</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1481076339171</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1228,7 +1235,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108384000" />
+    <option name="totallyTimeSpent" value="108700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1738,14 +1745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="699" selection-start-line="18" selection-start-column="699" selection-end-line="18" selection-end-column="699" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-sample/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
@@ -1806,18 +1805,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/travis/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/travis/deploy-to-sonatype.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travis/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
