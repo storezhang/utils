@@ -5,16 +5,16 @@ set -e
 # 创建一个随机的GPG短语
 export GPG_PASSPHRASE=$(echo "$RANDOM$(date)" | md5sum | cut -d\  -f1)
 
-# configuration to generate gpg keys
+# 配置生成GPG密钥
 cat >gen-key-script <<EOF
     %echo Generating a basic OpenPGP key
     Key-Type: RSA
-    Key-Length: 4096
+    Key-Length: 2048
     Subkey-Type: 1
-    Subkey-Length: 4096
-    Name-Real: Opensource Idealo
-    Name-Email: opensource-logback-redis@idealo.de
-    Expire-Date: 2y
+    Subkey-Length: 2048
+    Name-Real: storezhang
+    Name-Email: storezhang@gmail.com
+    Expire-Date: 0
     Passphrase: ${GPG_PASSPHRASE}
     %commit
     %echo done

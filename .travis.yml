@@ -11,6 +11,5 @@ script:
   mvn install -q -Dmaven.test.redirectTestOutputToFile=true
 
 after_success:
-  - chmod -R 777 ./travis/deploy-to-sonatype.sh ./travis/create_gpg.sh
-  - ./travis/create_gpg.sh
+  - chmod -R 777 ./travis/deploy-to-sonatype.sh
   - ./travis/deploy-to-sonatype.sh
