@@ -1,15 +1,21 @@
 language: java
-sudo: true
 
 jdk:
   - oraclejdk8
 
-before_script:
-  - mvn install -q -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
+script: mvn --settings .travis/settings.xml clean  verify
 
-script:
-  mvn install -q -Dmaven.test.redirectTestOutputToFile=true
+deploy:
+  -
+    provider: script
+    script: .travis/deploy-to-sonatype.sh
+    skip_cleanup: true
+    on:
+      repo: storezhang/utils
+      tags: true
+      jdk: oraclejdk8
 
-after_success:
-  - chmod -R 777 ./travis/deploy-to-sonatype.sh
-  - ./travis/deploy-to-sonatype.sh
+
+notifications:
+  email:
+    - admin@ruijc.com
