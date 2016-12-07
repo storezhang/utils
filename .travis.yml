@@ -1,5 +1,5 @@
 language: java
-sudo: false
+sudo: true
 
 jdk:
   - oraclejdk8
@@ -12,4 +12,5 @@ script:
 
 after_success:
   - chmod -R 777 ./travis/deploy-to-sonatype.sh ./travis/create_gpg.sh
+  - ./travis/create_gpg.sh
   - ./travis/deploy-to-sonatype.sh
