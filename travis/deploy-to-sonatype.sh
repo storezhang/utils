@@ -4,7 +4,7 @@
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
 
 
-    mvn clean deploy -Psonatype-oss-release -DskipTests=true -Dgpg.skip=true --settings travis/settings.xml
+    mvn clean deploy --settings travis/settings.xml
 
 
     echo -e "成功部署${TRAVIS_JOB_NUMBER}到Maven中央仓库！\n"
