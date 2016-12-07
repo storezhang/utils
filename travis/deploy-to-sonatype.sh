@@ -2,6 +2,15 @@
 
 # 部署到Maven中央仓库
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-  mvn clean deploy -P sonatype-oss-release -DskipTests=true -Dgpg.skip=true --settings travis/settings.xml
-  echo -e "成功部署${TRAVIS_JOB_NUMBER}到Maven中央仓库！"
+
+    # 清理GPG
+    if [ ! -z "$TRAVIS" -a -f "$HOME/.gnupg" ]; then
+        shred -v ~/.gnupg/*
+        rm -rf ~/.gnupg
+    fi
+    # 生成GPG
+    source .travis/create_gpg.sh
+
+    mvn clean deploy -P sonatype-oss-release -DskipTests=true -Dgpg.skip=true --settings travis/settings.xml -Dgpg.passphrase=${env.GPG_PASSPHRASE}
+    echo -e "成功部署${TRAVIS_JOB_NUMBER}到Maven中央仓库！"
 fi
