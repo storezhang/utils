@@ -11,7 +11,6 @@ deploy:
     script: .travis/deploy-to-sonatype.sh
     skip_cleanup: true
     on:
-      repo: storezhang/utils
       tags: true
       jdk: oraclejdk8
 
