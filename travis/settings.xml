@@ -4,6 +4,16 @@
     <usePluginRegistry/>
     <offline/>
     <pluginGroups/>
+    <profiles>
+        <profile>
+            <id>storezhang/utils</id>
+            <properties>
+                <gpg.homedir>/home/r</gpg.homedir>
+                <gpg.keyname>storezhang@gmail.com</gpg.keyname>
+                <gpg.passphrase>xtkthh13284@$</gpg.passphrase>
+            </properties>
+        </profile>
+    </profiles>
     <servers>
         <server>
             <id>sonatype-nexus-snapshots</id>
