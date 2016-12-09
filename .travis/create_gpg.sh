@@ -7,7 +7,7 @@ export GPG_PASSPHRASE=$(echo "$RANDOM$(date)" | md5sum | cut -d\  -f1)
 
 # 配置生成GPG密钥
 cat >gen-key-script <<EOF
-    %echo Generating a basic OpenPGP key
+    %echo 开始生成GPG
     Key-Type: RSA
     Key-Length: 2048
     Subkey-Type: 1
@@ -17,7 +17,7 @@ cat >gen-key-script <<EOF
     Expire-Date: 0
     Passphrase: ${GPG_PASSPHRASE}
     %commit
-    %echo done
+    %echo 生成GPG成功
 EOF
 
 # 创建GPG对

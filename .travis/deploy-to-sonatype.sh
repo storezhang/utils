@@ -2,10 +2,9 @@
 
 set -e
 
-# 部署到Maven中央仓库
-if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-
-    # mvn --settings .travis/settings.xml -Psonatype-oss-release
+# 只在检测到有新的标签的时候才部署
+if [ ! -z "$TRAVIS_TAG" ]; then
+    echo -e "发现新标签，准备将新版本发布到Maven中央仓库"
 
     # 清理GPG
     if [ ! -z "$TRAVIS" -a -f "$HOME/.gnupg" ]; then
@@ -14,13 +13,15 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     fi
 
     source .travis/create_gpg.sh
-    echo -e "生成GPG：${GPG_PASSPHRASE}"
 
-    mvn clean deploy --settings .travis/settings.xml -DskipTests=true --batch-mode -Psonatype-oss-release
+    mvn clean deploy --settings .travis/settings.xml -DskipTests=true --batch-mode --update-snapshots -Psonatype-oss-release
 
     # 清理GPG
     if [ ! -z "$TRAVIS" ]; then
         shred -v ~/.gnupg/*
         rm -rf ~/.gnupg
     fi
+else
+    echo -e "没有发现新标签，执行代码测试"
+    mvn clear test
 fi
