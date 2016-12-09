@@ -23,5 +23,5 @@ if [ ! -z "$TRAVIS_TAG" ]; then
     fi
 else
     echo -e "没有发现新标签，执行代码测试"
-    mvn clear test
+    mvn clean test
 fi
