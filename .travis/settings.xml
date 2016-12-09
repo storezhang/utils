@@ -5,6 +5,16 @@
     <offline/>
     <pluginGroups/>
 
+    <profiles>
+        <profile>
+            <id>sonatype-oss-release</id>
+            <properties>
+                <gpg.executable>gpg</gpg.executable>
+                <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
+            </properties>
+        </profile>
+    </profiles>
+
     <servers>
         <server>
             <id>sonatype-nexus-snapshots</id>
