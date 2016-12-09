@@ -120,9 +120,6 @@
     <profiles>
         <profile>
             <id>sonatype-oss-release</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <build>
                 <plugins>
                     <plugin>

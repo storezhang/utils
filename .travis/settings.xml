@@ -7,13 +7,16 @@
 
     <profiles>
         <profile>
-            <id>sonatype-oss-release</id>
+            <id>gpg-config</id>
             <properties>
                 <gpg.executable>gpg</gpg.executable>
                 <gpg.passphrase>${env.GPG_PASSPHRASE}</gpg.passphrase>
             </properties>
         </profile>
     </profiles>
+    <activeProfiles>
+        <activeProfile>gpg-config</activeProfile>
+    </activeProfiles>
 
     <servers>
         <server>
@@ -29,5 +32,4 @@
     </servers>
     <mirrors/>
     <proxies/>
-    <activeProfiles/>
 </settings>
