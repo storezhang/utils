@@ -23,10 +23,9 @@ EOF
 # 创建GPG对
 gpg --batch --gen-key gen-key-script
 
-
 # 导出GPG对
 export GPG_KEYNAME = $(gpg -K | grep ^sec | cut -d/  -f2 | cut -d\  -f1 | head -n1)
-echo -e "生成的GPG是：键（${GPG_KEYNAME}：${GPG_PASSPHRASE}）"
+echo -e "生成的GPG是：（${GPG_KEYNAME}=${GPG_PASSPHRASE}）"
 
 # 清除本地配置
 shred gen-key-script

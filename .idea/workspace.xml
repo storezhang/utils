@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/RedisMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis/create_gpg.sh" afterPath="$PROJECT_DIR$/.travis/create_gpg.sh" />
     </list>
@@ -71,8 +70,8 @@
       <file leaf-file-name="deploy-to-sonatype.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis/deploy-to-sonatype.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="82" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="82" />
+            <state relative-caret-position="437">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -110,22 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DEPLOY.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DEPLOY.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="57">
-                <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="64" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,8 +122,8 @@
       <file leaf-file-name="create_gpg.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis/create_gpg.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="513">
+              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -1187,14 +1170,7 @@
       <workItem from="1480904515453" duration="1029000" />
       <workItem from="1480996072726" duration="19564000" />
       <workItem from="1481105442737" duration="35000" />
-      <workItem from="1481252058912" duration="10065000" />
-    </task>
-    <task id="LOCAL-00011" summary="1、修改JDK等级；">
-      <created>1480996483829</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1480996483829</updated>
+      <workItem from="1481252058912" duration="10637000" />
     </task>
     <task id="LOCAL-00012" summary="1、修改部署脚本；">
       <created>1481025903367</created>
@@ -1532,7 +1508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481265420120</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="1、测试发布到Maven中央仓库；">
+      <created>1481266615856</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1481266615856</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1568,7 +1551,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132196000" />
+    <option name="totallyTimeSpent" value="132768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -2061,14 +2044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis/deploy-to-sonatype.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -2141,10 +2116,18 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.travis/deploy-to-sonatype.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.travis/create_gpg.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state relative-caret-position="513">
+          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
           <folding />
         </state>
       </provider>
