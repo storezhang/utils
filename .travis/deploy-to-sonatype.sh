@@ -14,7 +14,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
 
     source .travis/create_gpg.sh
 
-    mvn clean deploy --settings .travis/settings.xml -DskipTests=true --batch-mode --update-snapshots -Psonatype-oss-release
+    mvn clean deploy --settings .travis/settings.xml -DskipTests=true --batch-mode -Psonatype-oss-release
 
     # 清理GPG
     if [ ! -z "$TRAVIS" ]; then
