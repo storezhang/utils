@@ -8,4 +8,4 @@ script: mvn clean --settings .travis/settings.xml clean verify
 after_success:
   - chmod -R 777 .travis/deploy-to-sonatype.sh
   - .travis/deploy-to-sonatype.sh
-  - mvn clean cobertura:cobertura coveralls:report
+  - mvn clean cobertura:cobertura coveralls:report --settings .travis/settings.xml
