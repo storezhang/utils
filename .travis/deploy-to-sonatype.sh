@@ -2,10 +2,8 @@
 
 set -e
 
-# 只在检测到有新的标签的时候才部署
-if [ ! -z "$TRAVIS_TAG" ]
-then
-    echo "发现了新的标签：$TRAVIS_TAG"
+# 部署到Maven中央仓库
+if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
     mvn --settings .travis/settings.xml org.codehaus.mojo:versions-maven-plugin:2.3:set -DnewVersion=$TRAVIS_TAG -Prelease
 
     # 清理GPG
@@ -23,6 +21,4 @@ then
         shred -v ~/.gnupg/*
         rm -rf ~/.gnupg
     fi
-else
-    echo "没有发现新Tag，继续保持Maven中央库的版"
 fi
