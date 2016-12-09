@@ -4,7 +4,8 @@ set -e
 
 # 部署到Maven中央仓库
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-    mvn --settings .travis/settings.xml -Psonatype-oss-release
+
+    # mvn --settings .travis/settings.xml -Psonatype-oss-release
 
     # 清理GPG
     if [ ! -z "$TRAVIS" -a -f "$HOME/.gnupg" ]; then
@@ -13,6 +14,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     fi
 
     source .travis/create_gpg.sh
+    echo -e "生成GPG：${env.GPG_PASSPHRASE}"
 
     mvn clean deploy --settings .travis/settings.xml -DskipTests=true --batch-mode -Psonatype-oss-release
 

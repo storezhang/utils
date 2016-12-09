@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/.travis/deploy-to-sonatype.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -94,8 +94,8 @@
       <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis/settings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="285">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -262,6 +262,16 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Profiles" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -1068,14 +1078,7 @@
       <workItem from="1480904515453" duration="1029000" />
       <workItem from="1480996072726" duration="19564000" />
       <workItem from="1481105442737" duration="35000" />
-      <workItem from="1481252058912" duration="5033000" />
-    </task>
-    <task id="LOCAL-00003" summary="1、初始化提交；">
-      <created>1480411920153</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1480411920153</updated>
+      <workItem from="1481252058912" duration="5220000" />
     </task>
     <task id="LOCAL-00004" summary="1、初始化提交；">
       <created>1480483644971</created>
@@ -1413,7 +1416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481260063180</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="1、测试JSONP；">
+      <created>1481260855100</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1481260855100</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1449,7 +1459,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127164000" />
+    <option name="totallyTimeSpent" value="127351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -2016,8 +2026,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="285">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -2025,7 +2035,7 @@
     <entry file="file://$PROJECT_DIR$/.travis/deploy-to-sonatype.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding />
         </state>
       </provider>
