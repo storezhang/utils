@@ -3,7 +3,9 @@
     <interactiveMode/>
     <usePluginRegistry/>
     <offline/>
-    <pluginGroups/>
+    <pluginGroups>
+        <pluginGroup>org.eluder.coveralls</pluginGroup>
+    </pluginGroups>
 
     <profiles>
         <profile>
