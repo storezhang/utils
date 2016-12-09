@@ -1,7 +1,8 @@
 # utils
 
 [![Build Status](https://travis-ci.org/storezhang/utils.svg?branch=master)](https://travis-ci.org/storezhang/)
-[![codecov](https://codecov.io/gh/storezhang/utils/branch/master/graph/badge.svg)](https://codecov.io/gh/storezhang/utils)
+[![Coverage Status](https://coveralls.io/repos/github/storezhang/utils/badge.svg)](https://coveralls.io/github/storezhang/utils)
 [![License](http://img.shields.io/:license-apache-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-我的各种工具包。
+----------
+各种工具包。
