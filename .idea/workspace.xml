@@ -85,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/.travis/deploy-to-sonatype.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -1078,14 +1078,7 @@
       <workItem from="1480904515453" duration="1029000" />
       <workItem from="1480996072726" duration="19564000" />
       <workItem from="1481105442737" duration="35000" />
-      <workItem from="1481252058912" duration="5220000" />
-    </task>
-    <task id="LOCAL-00004" summary="1、初始化提交；">
-      <created>1480483644971</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1480483644971</updated>
+      <workItem from="1481252058912" duration="5362000" />
     </task>
     <task id="LOCAL-00005" summary="1、初始化提交；">
       <created>1480661763757</created>
@@ -1423,7 +1416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481260855100</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="1、测试发布到Maven中央仓库；">
+      <created>1481261055427</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1481261055427</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1459,7 +1459,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127351000" />
+    <option name="totallyTimeSpent" value="127493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1515,7 +1515,8 @@
     <MESSAGE value="1、修改部署脚本；" />
     <MESSAGE value="1、增加构建状态；" />
     <MESSAGE value="1、测试JSONP；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、测试JSONP；" />
+    <MESSAGE value="1、测试发布到Maven中央仓库；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、测试发布到Maven中央仓库；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2035,7 +2036,7 @@
     <entry file="file://$PROJECT_DIR$/.travis/deploy-to-sonatype.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding />
         </state>
       </provider>

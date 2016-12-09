@@ -14,7 +14,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
     fi
 
     source .travis/create_gpg.sh
-    echo -e "生成GPG：${env.GPG_PASSPHRASE}"
+    echo -e "生成GPG：${GPG_PASSPHRASE}"
 
     mvn clean deploy --settings .travis/settings.xml -DskipTests=true --batch-mode -Psonatype-oss-release
 
