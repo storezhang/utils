@@ -3,8 +3,9 @@ language: java
 jdk:
   - oraclejdk8
 
-script: mvn --settings .travis/settings.xml clean verify
+script: mvn cobertura:cobertura --settings .travis/settings.xml clean verify
 
 after_success:
   - chmod -R 777 .travis/deploy-to-sonatype.sh
   - .travis/deploy-to-sonatype.sh
+  - bash <(curl -s https://codecov.io/bash)
