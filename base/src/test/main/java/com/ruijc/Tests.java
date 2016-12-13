@@ -11,8 +11,19 @@ public class Tests {
 
     @Test
     public void testToString() {
-        IdObject id = new IdObject();
-        id.setId(1);
-        Assert.assertEquals("{\"id\":1,\"key\":\"IdObject-1\"}", id.toString());
+        IdObject one = new IdObject();
+        one.setId(1);
+        Assert.assertEquals("{\"id\":1,\"key\":\"IdObject-1\"}", one.toString());
+    }
+
+    @Test
+    public void testEqual() {
+        IdObject one = new IdObject();
+        one.setId(1);
+
+        IdObject two = new IdObject();
+        two.setId(1);
+
+        Assert.assertEquals(one, two);
     }
 }
