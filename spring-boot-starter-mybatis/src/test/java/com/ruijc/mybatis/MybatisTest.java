@@ -2,6 +2,7 @@ package com.ruijc.mybatis;
 
 import com.ruijc.mybatis.mapper.IUserMapper;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,10 @@ import org.springframework.data.redis.repository.configuration.EnableRedisReposi
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = MybatisTests.class)
+@SpringBootTest(classes = MybatisTest.class)
 @EnableRedisRepositories
 @SpringBootApplication
-public class MybatisTests {
+public class MybatisTest {
 
     @Autowired
     private IUserMapper userMapper;

@@ -11,4 +11,5 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 @CacheNamespace(implementation = RedisCache.class)
 public @interface RedisMapper {
+    // 带Redis缓存功能支持的Mapper
 }
