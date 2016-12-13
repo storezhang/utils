@@ -7,7 +7,7 @@ import org.junit.Test;
  * 测试用例
  * @author Storezhang
  */
-public class Tests {
+public class IdObjectTest {
 
     @Test
     public void testToString() {
