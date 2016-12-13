@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java" />
     </list>
     <ignored path="utils.iws" />
@@ -48,7 +47,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -61,7 +60,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="129">
               <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
               <folding />
             </state>
@@ -78,14 +77,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MybatisTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MybatisTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="57">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,9 +178,9 @@
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/ruijc/BaseTest.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/BaseTest.java" />
-        <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java" />
       </list>
     </option>
   </component>
@@ -1040,14 +1037,7 @@
       <workItem from="1481272017101" duration="3395000" />
       <workItem from="1481276458094" duration="9143000" />
       <workItem from="1481595109172" duration="4544000" />
-      <workItem from="1481600845633" duration="2588000" />
-    </task>
-    <task id="LOCAL-00024" summary="1、测试JSONP；">
-      <created>1481078694076</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1481078694076</updated>
+      <workItem from="1481600845633" duration="3231000" />
     </task>
     <task id="LOCAL-00025" summary="1、测试JSONP；">
       <created>1481079129980</created>
@@ -1385,7 +1375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481601169468</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="1、测试RedisMapper；">
+      <created>1481605540507</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1481605540507</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1421,7 +1418,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155114000" />
+    <option name="totallyTimeSpent" value="155757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1969,28 +1966,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="129">
           <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+        <state relative-caret-position="57">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
