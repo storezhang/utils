@@ -5,6 +5,9 @@ jdk:
 
 script: mvn clean --settings .travis/settings.xml clean verify
 
+before_script:
+  - sudo redis-server /etc/redis/redis.conf --port 6300 --requirepass '1234'
+
 after_success:
   - chmod -R 777 .travis/deploy-to-sonatype.sh
   - .travis/deploy-to-sonatype.sh
