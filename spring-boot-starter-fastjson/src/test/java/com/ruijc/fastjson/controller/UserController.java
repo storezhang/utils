@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/test")
-public class TestController {
+@RequestMapping("/user")
+public class UserController {
 
     private User data;
 
-    public TestController() {
+    public UserController() {
         data = new User();
         data.setId(1L);
     }
@@ -28,12 +28,6 @@ public class TestController {
 
     @GetMapping("/rest")
     public User testRest() {
-        return data;
-    }
-
-    @GetMapping("/includes")
-    @SerializeField(clazz = Map.class, includes = {"id"})
-    public User testIncludes() {
         return data;
     }
 }

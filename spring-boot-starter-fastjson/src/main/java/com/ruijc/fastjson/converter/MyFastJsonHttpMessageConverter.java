@@ -44,13 +44,17 @@ public class MyFastJsonHttpMessageConverter extends com.alibaba.fastjson.support
             if (!StringUtils.isBlank(callback)) {
                 text = callback + "(" + text + ")";
             }
-            byte[] bytes = text.getBytes(getFastJsonConfig().getCharset());
+            byte[] bytes = getResult(text).getBytes(getFastJsonConfig().getCharset());
             out.write(bytes);
         } else {
             OutputStream out = outputMessage.getBody();
             String text = JSON.toJSONString(obj, getFastJsonConfig().getSerializerFeatures());
-            byte[] bytes = text.getBytes(getFastJsonConfig().getCharset());
+            byte[] bytes = getResult(text).getBytes(getFastJsonConfig().getCharset());
             out.write(bytes);
         }
+    }
+
+    protected String getResult(String old) {
+        return old;
     }
 }

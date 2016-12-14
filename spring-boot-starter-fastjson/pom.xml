@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-boot-starter-fastjson</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
     <name>spring-boot-starter-fastjson</name>
     <description>Springboot自动化配置Fastjson框架并支持JSONP操作。</description>
 
