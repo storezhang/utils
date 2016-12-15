@@ -47,6 +47,12 @@
                     <check/>
                     <format>xml</format>
                     <aggregate>true</aggregate>
+                    <instrumentation>
+                        <ignores>
+                            <ignore>com.ruijc.Response</ignore>
+                            <ignore>com.ruijc.Page</ignore>
+                        </ignores>
+                    </instrumentation>
                 </configuration>
             </plugin>
         </plugins>
