@@ -102,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/base/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
-              <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+              <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -1055,14 +1055,7 @@
       <workItem from="1481595109172" duration="4544000" />
       <workItem from="1481600845633" duration="10901000" />
       <workItem from="1481697836805" duration="78000" />
-      <workItem from="1481705105996" duration="18254000" />
-    </task>
-    <task id="LOCAL-00038" summary="1、测试JSONP；">
-      <created>1481090657263</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1481090657263</updated>
+      <workItem from="1481705105996" duration="18631000" />
     </task>
     <task id="LOCAL-00039" summary="1、测试JSONP；">
       <created>1481090756882</created>
@@ -1400,7 +1393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481783408761</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="1、去掉不需要的测试项；">
+      <created>1481784325417</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1481784325417</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1436,7 +1436,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181759000" />
+    <option name="totallyTimeSpent" value="182136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1499,7 +1499,8 @@
     <MESSAGE value="1、去掉不需要的代码；&#10;2、全面测试Fastjson；" />
     <MESSAGE value="1、修改持续集成配置；" />
     <MESSAGE value="1、测试Shiro；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、测试Shiro；" />
+    <MESSAGE value="1、去掉不需要的测试项；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、去掉不需要的测试项；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1977,7 +1978,7 @@
     <entry file="file://$PROJECT_DIR$/base/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
           <folding />
         </state>
       </provider>

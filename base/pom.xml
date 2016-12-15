@@ -48,10 +48,10 @@
                     <format>xml</format>
                     <aggregate>true</aggregate>
                     <instrumentation>
-                        <ignores>
-                            <ignore>com.ruijc.Response</ignore>
-                            <ignore>com.ruijc.Page</ignore>
-                        </ignores>
+                        <excludes>
+                            <exclude>com/ruijc/Page.class</exclude>
+                            <exclude>com/ruijc/Response.class</exclude>
+                        </excludes>
                     </instrumentation>
                 </configuration>
             </plugin>
