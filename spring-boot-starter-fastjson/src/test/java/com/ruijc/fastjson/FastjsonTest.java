@@ -42,7 +42,7 @@ public class FastjsonTest {
     public void testRest() throws Exception {
         mvc.perform(get("/test/rest"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("{\"id\":1,\"key\":User-1}")));
+                .andExpect(content().string(equalTo("{\"id\":1,\"key\":\"User-1\"}")));
     }
 
     @Test
