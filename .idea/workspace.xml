@@ -7,6 +7,9 @@
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/util.iml" afterPath="$PROJECT_DIR$/util/util.iml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,8 +104,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+            <state relative-caret-position="246">
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -1055,14 +1058,7 @@
       <workItem from="1481595109172" duration="4544000" />
       <workItem from="1481600845633" duration="10901000" />
       <workItem from="1481697836805" duration="78000" />
-      <workItem from="1481705105996" duration="18631000" />
-    </task>
-    <task id="LOCAL-00039" summary="1、测试JSONP；">
-      <created>1481090756882</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1481090756882</updated>
+      <workItem from="1481705105996" duration="19029000" />
     </task>
     <task id="LOCAL-00040" summary="1、测试JSONP；">
       <created>1481090876268</created>
@@ -1400,7 +1396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481784325417</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="1、去掉不需要的测试项；">
+      <created>1481784692154</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1481784692154</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1436,7 +1439,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182136000" />
+    <option name="totallyTimeSpent" value="182534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1977,8 +1980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+        <state relative-caret-position="246">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
           <folding />
         </state>
       </provider>

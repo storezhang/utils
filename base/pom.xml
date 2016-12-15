@@ -51,6 +51,7 @@
                         <excludes>
                             <exclude>com/ruijc/Page.class</exclude>
                             <exclude>com/ruijc/Response.class</exclude>
+                            <exclude>com/ruijc/Href.class</exclude>
                         </excludes>
                     </instrumentation>
                 </configuration>
