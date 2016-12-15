@@ -1,8 +1,8 @@
 package com.ruijc.fastjson;
 
-import com.ruijc.fastjson.converter.MyFastJsonHttpMessageConverter;
+import com.ruijc.fastjson.converter.FastJsonHttpMessageConverter;
 
-public class TestFastjsonHttpMessageConverter extends MyFastJsonHttpMessageConverter {
+public class TestFastjsonHttpMessageConverter extends FastJsonHttpMessageConverter {
 
     @Override
     protected String getResult(String old) {

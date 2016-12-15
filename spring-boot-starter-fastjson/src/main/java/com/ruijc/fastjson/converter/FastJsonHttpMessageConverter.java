@@ -12,17 +12,19 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Map;
 
 /**
  * 转换器
  *
  * @author Storezhang
  */
-public class MyFastJsonHttpMessageConverter extends com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter {
+public class FastJsonHttpMessageConverter extends com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter {
 
     private static Charset UTF_8 = Charset.forName("UTF-8");
 
-    public MyFastJsonHttpMessageConverter() {
+    public FastJsonHttpMessageConverter() {
         setSupportedMediaTypes(
                 Arrays.asList(
                         new MediaType("application", "json", UTF_8),
@@ -34,24 +36,29 @@ public class MyFastJsonHttpMessageConverter extends com.alibaba.fastjson.support
     }
 
     @Override
-    protected void writeInternal(Object obj, HttpOutputMessage outputMessage) throws IOException, HttpMessageNotWritableException {
+    protected final void writeInternal(Object obj, HttpOutputMessage outputMessage) throws IOException, HttpMessageNotWritableException {
+        OutputStream out = outputMessage.getBody();
         if (obj instanceof FastJsonFilterObject) {
-            FastJsonFilterObject jsonFilterObject = (FastJsonFilterObject) obj;
-            OutputStream out = outputMessage.getBody();
-            SimpleSerializerFilter simpleSerializerFilter = new SimpleSerializerFilter(jsonFilterObject.getIncludes(), jsonFilterObject.getExcludes());
-            String text = JSON.toJSONString(jsonFilterObject.getData(), simpleSerializerFilter, getFastJsonConfig().getSerializerFeatures());
-            String callback = jsonFilterObject.getCallback();
-            if (!StringUtils.isBlank(callback)) {
-                text = callback + "(" + text + ")";
-            }
+            FastJsonFilterObject filterObject = (FastJsonFilterObject) obj;
+            String text = toJSONString(filterObject);
             byte[] bytes = getResult(text).getBytes(getFastJsonConfig().getCharset());
             out.write(bytes);
         } else {
-            OutputStream out = outputMessage.getBody();
             String text = JSON.toJSONString(obj, getFastJsonConfig().getSerializerFeatures());
             byte[] bytes = getResult(text).getBytes(getFastJsonConfig().getCharset());
             out.write(bytes);
         }
+    }
+
+    protected String toJSONString(FastJsonFilterObject filterObject) {
+        SimpleSerializerFilter filter = new SimpleSerializerFilter(filterObject.getIncludes(), filterObject.getExcludes());
+        String text = JSON.toJSONString(filterObject.getData(), filter, getFastJsonConfig().getSerializerFeatures());
+        String callback = filterObject.getCallback();
+        if (!StringUtils.isBlank(callback)) {
+            text = callback + "(" + text + ")";
+        }
+
+        return text;
     }
 
     protected String getResult(String old) {

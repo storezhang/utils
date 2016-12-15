@@ -12,12 +12,12 @@ import java.util.Map;
 public class FastJsonFilterObject {
 
     private Object data;
-    private Map<Class, HashSet<String>> includes = new HashMap<Class, HashSet<String>>();
-    private Map<Class, HashSet<String>> excludes = new HashMap<Class, HashSet<String>>();
+    private Map<Class, HashSet<String>> includes;
+    private Map<Class, HashSet<String>> excludes;
     private String callback;
 
     public FastJsonFilterObject() {
-        this(null, null, null);
+        this(null, new HashMap<Class, HashSet<String>>(), new HashMap<Class, HashSet<String>>());
     }
 
     public FastJsonFilterObject(Object data, Map<Class, HashSet<String>> includes, Map<Class, HashSet<String>> excludes) {

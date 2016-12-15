@@ -1,6 +1,6 @@
 package com.ruijc.fastjson;
 
-import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
+import com.ruijc.fastjson.converter.FastJsonHttpMessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

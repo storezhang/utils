@@ -33,15 +33,29 @@ public class FastjsonTest {
 
     @Test
     public void testJsonp() throws Exception {
-        mvc.perform(get("/user/jsonp"))
+        mvc.perform(get("/test/jsonp"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("user({\"id\":1})")));
+                .andExpect(content().string(equalTo("user({\"id\":1,\"key\":\"User-1\"})")));
     }
 
     @Test
     public void testRest() throws Exception {
-        mvc.perform(get("/user/rest"))
+        mvc.perform(get("/test/rest"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(equalTo("{\"id\":1,\"key\":\"User-1\"}")));
+    }
+
+    @Test
+    public void testSerializeField() throws Exception {
+        mvc.perform(get("/test/field/serialize"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("{\"id\":1}")));
+    }
+
+    @Test
+    public void testMoreSerializeField() throws Exception {
+        mvc.perform(get("/test/field/serialize/more"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(equalTo("{\"blog\":{\"id\":1},\"user\":{}}")));
     }
 }

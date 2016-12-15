@@ -37,7 +37,7 @@
       <module name="apt" target="1.5" />
       <module name="base" target="1.5" />
       <module name="spring-boot-starter-data-memcache" target="1.5" />
-      <module name="spring-boot-starter-fastjson" target="1.5" />
+      <module name="spring-boot-starter-fastjson" target="1.8" />
       <module name="spring-boot-starter-http" target="1.5" />
       <module name="spring-boot-starter-log" target="1.5" />
       <module name="spring-boot-starter-mybatis" target="1.5" />

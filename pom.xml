@@ -7,9 +7,9 @@
     <groupId>com.ruijc</groupId>
     <artifactId>utils</artifactId>
     <packaging>pom</packaging>
-    <version>1.2.0</version>
+    <version>${version.utils}</version>
     <name>utils</name>
-    <description>我和各种工具包。</description>
+    <description>我的各种工具包。</description>
     <url>https://www.ruijc.com</url>
 
     <modules>
@@ -25,12 +25,15 @@
 
 
     <properties>
+        <version.utils>3.0.0</version.utils>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.6</java.version>
+
         <version.spring.boot>1.4.2.RELEASE</version.spring.boot>
         <version.base>3.0.0</version.base>
-        <version.util>3.0.0</version.util>
+        <version.util>3.1.0</version.util>
     </properties>
 
     <repositories>

@@ -1,11 +1,8 @@
 package com.ruijc.fastjson;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.alibaba.fastjson.serializer.ValueFilter;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
-import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import com.ruijc.fastjson.converter.MyFastJsonHttpMessageConverter;
+import com.ruijc.fastjson.converter.FastJsonHttpMessageConverter;
 import com.ruijc.util.CollectionUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +14,6 @@ import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.DependsOn;
 import org.springframework.http.converter.HttpMessageConverter;
 
 import java.util.ArrayList;
@@ -69,7 +65,7 @@ public class FastJsonAutoConfiguration {
         @Bean
         @ConditionalOnMissingBean(FastJsonHttpMessageConverter.class)
         public FastJsonHttpMessageConverter converter() {
-            return new MyFastJsonHttpMessageConverter();
+            return new FastJsonHttpMessageConverter();
         }
     }
 }

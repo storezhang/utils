@@ -7,6 +7,7 @@ package com.ruijc.util;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 集合工具类
@@ -81,6 +82,10 @@ public class CollectionUtils {
     }
 
     public static <T> boolean isBlank(List<T> data) {
+        return null == data || data.isEmpty();
+    }
+
+    public static <K, V> boolean isBlank(Map<K, V> data) {
         return null == data || data.isEmpty();
     }
 }

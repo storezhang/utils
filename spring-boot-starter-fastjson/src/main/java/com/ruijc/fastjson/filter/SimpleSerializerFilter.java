@@ -2,6 +2,7 @@ package com.ruijc.fastjson.filter;
 
 import com.alibaba.fastjson.serializer.JSONSerializer;
 import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
+import com.ruijc.util.CollectionUtils;
 
 import java.util.HashSet;
 import java.util.Map;
@@ -23,7 +24,7 @@ public class SimpleSerializerFilter extends SimplePropertyPreFilter {
 
     @Override
     public boolean apply(JSONSerializer serializer, Object source, String name) {
-        if (!isEmpty(includes)) {
+        if (!CollectionUtils.isBlank(includes)) {
             for (Map.Entry<Class, HashSet<String>> include : includes.entrySet()) {
                 Class objClass = include.getKey();
                 Set<String> includeProp = include.getValue();
@@ -34,7 +35,7 @@ public class SimpleSerializerFilter extends SimplePropertyPreFilter {
                 }
             }
         }
-        if (!isEmpty(excludes)) {
+        if (!CollectionUtils.isBlank(excludes)) {
             for (Map.Entry<Class, HashSet<String>> exclude : excludes.entrySet()) {
                 Class objClass = exclude.getKey();
                 Set<String> includeProp = exclude.getValue();
@@ -45,10 +46,7 @@ public class SimpleSerializerFilter extends SimplePropertyPreFilter {
                 }
             }
         }
-        return true;
-    }
 
-    public boolean isEmpty(Map map) {
-        return map == null || map.size() < 1;
+        return true;
     }
 }

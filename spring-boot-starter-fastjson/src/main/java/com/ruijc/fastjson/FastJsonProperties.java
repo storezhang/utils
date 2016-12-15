@@ -1,8 +1,7 @@
 package com.ruijc.fastjson;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import com.ruijc.fastjson.converter.MyFastJsonHttpMessageConverter;
+import com.ruijc.fastjson.converter.FastJsonHttpMessageConverter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
@@ -11,10 +10,10 @@ import java.util.List;
 public class FastJsonProperties {
 
     private List<SerializerFeature> features;
-    private Class<? extends FastJsonHttpMessageConverter> converter;
+    private Class<? extends com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter> converter;
 
     public FastJsonProperties() {
-        converter = MyFastJsonHttpMessageConverter.class;
+        converter = FastJsonHttpMessageConverter.class;
     }
 
     public List<SerializerFeature> getFeatures() {
@@ -25,11 +24,11 @@ public class FastJsonProperties {
         this.features = features;
     }
 
-    public Class<? extends FastJsonHttpMessageConverter> getConverter() {
+    public Class<? extends com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter> getConverter() {
         return converter;
     }
 
-    public void setConverter(Class<? extends FastJsonHttpMessageConverter> converter) {
+    public void setConverter(Class<? extends com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter> converter) {
         this.converter = converter;
     }
 }

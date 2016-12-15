@@ -2,10 +2,8 @@ package com.ruijc.fastjson.advice;
 
 import com.ruijc.fastjson.annotation.JSONP;
 import com.ruijc.fastjson.annotation.MoreSerializeField;
-import com.ruijc.fastjson.annotation.MultiSerializeField;
 import com.ruijc.fastjson.annotation.SerializeField;
 import com.ruijc.fastjson.bean.FastJsonFilterObject;
-import com.ruijc.fastjson.exception.IncludeAndExcludeConflictException;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.Order;
@@ -41,7 +39,6 @@ public class FastJsonResponseBodyAdvice implements ResponseBodyAdvice {
 
         if (!methodParameter.getMethod().isAnnotationPresent(JSONP.class)
                 && !methodParameter.getMethod().isAnnotationPresent(SerializeField.class)
-                && !methodParameter.getMethod().isAnnotationPresent(MultiSerializeField.class)
                 && !methodParameter.getMethod().isAnnotationPresent(MoreSerializeField.class)) {
             return o;
         }
@@ -53,10 +50,6 @@ public class FastJsonResponseBodyAdvice implements ResponseBodyAdvice {
         if (methodParameter.getMethod().isAnnotationPresent(SerializeField.class)) {
             Object obj = methodParameter.getMethod().getAnnotation(SerializeField.class);
             handleAnnotation(SerializeField.class, obj, jsonFilterObject);
-        }
-        if (methodParameter.getMethod().isAnnotationPresent(MultiSerializeField.class)) {
-            Object obj = methodParameter.getMethod().getAnnotation(MultiSerializeField.class);
-            handleAnnotation(MultiSerializeField.class, obj, jsonFilterObject);
         }
         if (methodParameter.getMethod().isAnnotationPresent(MoreSerializeField.class)) {
             MoreSerializeField moreSerializeField = methodParameter.getMethod().getAnnotation(MoreSerializeField.class);
@@ -87,17 +80,11 @@ public class FastJsonResponseBodyAdvice implements ResponseBodyAdvice {
             excludes = serializeField.excludes();
             objClass = serializeField.clazz();
         }
-        if (clazz.equals(MultiSerializeField.class)) {
-            MultiSerializeField multiSerializeField = (MultiSerializeField) obj;
-            includes = multiSerializeField.includes();
-            excludes = multiSerializeField.excludes();
-            objClass = multiSerializeField.clazz();
-        }
-        if (includes.length > 0 && excludes.length > 0) {
-            throw new IncludeAndExcludeConflictException("Can not use both include field and exclude field in an annotation!");
-        } else if (includes.length > 0) {
+
+        if (includes.length > 0) {
             jsonFilterObject.getIncludes().put(objClass, new HashSet<String>(Arrays.asList(includes)));
-        } else if (excludes.length > 0) {
+        }
+        if (excludes.length > 0) {
             jsonFilterObject.getExcludes().put(objClass, new HashSet<String>(Arrays.asList(excludes)));
         }
     }

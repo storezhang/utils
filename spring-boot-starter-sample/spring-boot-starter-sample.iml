@@ -74,7 +74,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.19.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.objenesis:objenesis:2.4" level="project" />
-    <orderEntry type="module" module-name="spring-boot-starter-fastjson" />
+    <orderEntry type="library" name="Maven: com.ruijc:spring-boot-starter-fastjson:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:1.4.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:1.7.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:1.1.5.RELEASE" level="project" />

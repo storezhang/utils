@@ -5,7 +5,7 @@
     <parent>
         <artifactId>utils</artifactId>
         <groupId>com.ruijc</groupId>
-        <version>1.0.0</version>
+        <version>${version.utils}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

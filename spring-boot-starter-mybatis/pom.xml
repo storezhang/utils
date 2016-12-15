@@ -6,7 +6,7 @@
     <parent>
         <artifactId>utils</artifactId>
         <groupId>com.ruijc</groupId>
-        <version>1.0.0</version>
+        <version>${version.utils}</version>
     </parent>
 
     <artifactId>spring-boot-starter-mybatis</artifactId>
