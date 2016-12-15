@@ -22,6 +22,5 @@ if [ ! -z "$TRAVIS_TAG" ]; then
         rm -rf ~/.gnupg
     fi
 else
-    echo -e "没有发现新标签，执行代码测试"
-    mvn clean test
+    echo -e "没有发现新标签，退出执行"
 fi
