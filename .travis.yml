@@ -3,15 +3,15 @@ language: java
 jdk:
   - oraclejdk8
 
-script: mvn clean --settings .travis/settings.xml verify
+script: mvn clean cobertura:cobertura verify --settings .travis/settings.xml
 
 before_script:
   - sudo redis-server /etc/redis/redis.conf --port 6300 --requirepass '1234'
 
 after_success:
+  - mvn coveralls:report --settings .travis/settings.xml
   - chmod -R 777 .travis/deploy-to-sonatype.sh
   - .travis/deploy-to-sonatype.sh
-  - mvn clean cobertura:cobertura coveralls:report --settings .travis/settings.xml
 
 notifications:
   email:
