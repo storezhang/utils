@@ -83,7 +83,7 @@
         <dependency>
             <groupId>com.ruijc</groupId>
             <artifactId>spring-boot-starter-fastjson</artifactId>
-            <version>2.0.0</version>
+            <version>${version.fastjson}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -135,4 +135,27 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+                <configuration>
+                    <repoToken>1TNcNzL7a90b7zRZVSmexh02KomPxiJ6m</repoToken>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <check/>
+                    <format>xml</format>
+                    <aggregate>true</aggregate>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

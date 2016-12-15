@@ -1,6 +1,7 @@
 package com.ruijc.shiro.controller;
 
 import com.ruijc.fastjson.annotation.JSONP;
+import com.ruijc.fastjson.annotation.SerializeField;
 import com.ruijc.shiro.bean.User;
 import com.ruijc.shiro.mapper.IUserMapper;
 import com.ruijc.shiro.EncryptToken;
@@ -19,13 +20,8 @@ public class UserController {
     @Autowired
     private IUserMapper userMapper;
 
-    @GetMapping("/test")
-    @JSONP("user")
-    public User test() {
-        return userMapper.getByUsername("storezhang@gmail.com");
-    }
-
     @PostMapping("/login")
+    @SerializeField(clazz = User.class, excludes = {"id", "key", "password"})
     public User login(String username, String password) {
         User user;
 
