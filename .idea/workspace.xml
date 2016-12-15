@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-fastjson/src/test/java/com/ruijc/fastjson/FastjsonTest.java" afterPath="$PROJECT_DIR$/spring-boot-starter-fastjson/src/test/java/com/ruijc/fastjson/FastjsonTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +64,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="JSON Fragment (FastjsonTest.java:1733).json" pinned="false" current-in-tab="true">
+          <file leaf-file-name="JSON Fragment (FastjsonTest.java:1733).json" pinned="false" current-in-tab="false">
             <entry file="mock:///JSON Fragment (FastjsonTest.java:1733).json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.travis.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="342">
+                  <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -117,7 +127,6 @@
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/ruijc/BaseTest.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/BaseTest.java" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java" />
         <option value="$PROJECT_DIR$/apt/src/main/java/com/ruijc/apt/PrintMe.java" />
         <option value="$PROJECT_DIR$/apt/src/main/java/com/ruijc/apt/PrintMeProcessor.java" />
@@ -160,6 +169,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="/JSON Fragment (FastjsonTest.java:1733).json" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -981,14 +991,7 @@
       <workItem from="1481595109172" duration="4544000" />
       <workItem from="1481600845633" duration="10901000" />
       <workItem from="1481697836805" duration="78000" />
-      <workItem from="1481705105996" duration="11288000" />
-    </task>
-    <task id="LOCAL-00031" summary="1、测试JSONP；">
-      <created>1481081672567</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1481081672567</updated>
+      <workItem from="1481705105996" duration="11416000" />
     </task>
     <task id="LOCAL-00032" summary="1、测试JSONP；">
       <created>1481081840925</created>
@@ -1326,7 +1329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481774317008</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="1、去掉不需要的代码；&#10;2、全面测试Fastjson；">
+      <created>1481774492331</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1481774492331</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1362,7 +1372,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174793000" />
+    <option name="totallyTimeSpent" value="174921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1462,13 +1472,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/RedisMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.1/mybatis-3.4.1.jar!/org/apache/ibatis/annotations/Mapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1923,6 +1926,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding />
         </state>
       </provider>
