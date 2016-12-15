@@ -1,1 +1,0 @@
-INSERT INTO `user` VALUES ('00000000000000000027', 'storezhang@gmail.com', '$shiro1$MD5$1$$JdVa0oOqQAr0ZMdtcTwHrQ==');

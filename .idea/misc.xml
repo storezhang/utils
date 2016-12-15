@@ -13,6 +13,7 @@
       <set>
         <option value="$PROJECT_DIR$/spring-boot-parent/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-data-memcache/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-starter-sample/pom.xml" />
       </set>
     </option>
   </component>

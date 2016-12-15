@@ -1,8 +1,10 @@
 package com.ruijc.shiro.controller;
 
+import com.ruijc.Response;
 import com.ruijc.fastjson.annotation.JSONP;
 import com.ruijc.fastjson.annotation.SerializeField;
 import com.ruijc.shiro.bean.User;
+import com.ruijc.shiro.logic.UserL;
 import com.ruijc.shiro.mapper.IUserMapper;
 import com.ruijc.shiro.EncryptToken;
 import org.apache.shiro.SecurityUtils;
@@ -18,12 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
-    private IUserMapper userMapper;
+    private UserL userL;
 
     @PostMapping("/login")
     @SerializeField(clazz = User.class, excludes = {"id", "key", "password"})
-    public User login(String username, String password) {
-        User user;
+    public Response login(String username, String password) {
+        Response res = new Response();
 
         Subject subject = SecurityUtils.getSubject();
         EncryptToken token = new EncryptToken(username, password, true);
@@ -31,12 +33,33 @@ public class UserController {
         try {
             subject.login(token);
         } catch (Exception e) {
-            user = null;
-            return user;
+            res.setCode(Response.FAILD);
+            return res;
         }
 
-        user = userMapper.getByUsername(username);
+        return res;
+    }
 
-        return user;
+    @PostMapping("/register")
+    public Response register(User user) {
+        Response res = new Response();
+        if (!userL.add(user)) {
+            res.setCode(Response.FAILD);
+            return res;
+        }
+
+        return res;
+    }
+
+    @GetMapping("/logout")
+    public Response logout() {
+        Response res = new Response();
+        try {
+            SecurityUtils.getSubject().logout();
+        } catch (Exception e) {
+            res.setCode(Response.FAILD);
+        }
+
+        return res;
     }
 }

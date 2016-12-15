@@ -17,6 +17,7 @@ import org.springframework.web.context.WebApplicationContext;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
 import static org.mockito.Mockito.mock;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -42,9 +43,32 @@ public class ShiroTest {
     public void testLogin() throws Exception {
         mvc.perform(
                 post("/user/login")
-                .param("username", "storezhang@gmail.com")
-                .param("password", "12345678")
+                        .param("username", "storezhang@gmail.com")
+                        .param("password", "12345678")
         ).andExpect(status().isOk())
-         .andExpect(content().string(equalTo("{\"username\":\"storezhang@gmail.com\"}")));
+                .andExpect(content().string(equalTo("{\"code\":200}")));
+
+        mvc.perform(get("/user/logout")).andExpect(status().isOk())
+                .andExpect(content().string(equalTo("{\"code\":200}")));
+    }
+
+    @Test
+    public void testRegister() throws Exception {
+        mvc.perform(
+                post("/user/register")
+                        .param("username", "10290688@gmail.com")
+                        .param("password", "12345678")
+        ).andExpect(status().isOk())
+                .andExpect(content().string(equalTo("{\"code\":200}")));
+
+        mvc.perform(
+                post("/user/login")
+                        .param("username", "10290688@gmail.com")
+                        .param("password", "12345678")
+        ).andExpect(status().isOk())
+                .andExpect(content().string(equalTo("{\"code\":200}")));
+
+        mvc.perform(get("/user/logout")).andExpect(status().isOk())
+                .andExpect(content().string(equalTo("{\"code\":200}")));
     }
 }

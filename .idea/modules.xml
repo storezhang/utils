@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" filepath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" filepath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-sample/spring-boot-starter-sample.iml" filepath="$PROJECT_DIR$/spring-boot-starter-sample/spring-boot-starter-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" filepath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils.iml" filepath="$PROJECT_DIR$/utils.iml" />
