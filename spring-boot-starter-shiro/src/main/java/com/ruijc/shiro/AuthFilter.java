@@ -6,8 +6,6 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
-import org.apache.shiro.web.servlet.ShiroHttpServletRequest;
-import org.apache.shiro.web.util.WebUtils;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -100,8 +98,8 @@ public class AuthFilter extends FormAuthenticationFilter {
     /**
      * Ajax环境下跳转到登录界面
      *
-     * @param req 请求对象
-     * @param rsp 响应对象
+     * @param req  请求对象
+     * @param rsp  响应对象
      * @param data 登录前传过来的参数
      */
     protected void onAjaxRedirectToLogin(HttpServletRequest req, HttpServletResponse rsp, String data) throws IOException {
@@ -111,8 +109,8 @@ public class AuthFilter extends FormAuthenticationFilter {
     /**
      * 普通环境下跳转到登录界面
      *
-     * @param req 请求对象
-     * @param rsp 响应对象
+     * @param req  请求对象
+     * @param rsp  响应对象
      * @param data 登录前传过来的参数
      */
     protected void onRedirectToLogin(HttpServletRequest req, HttpServletResponse rsp, String data) throws IOException {

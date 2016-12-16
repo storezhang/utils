@@ -1,7 +1,7 @@
 package com.ruijc.shiro;
 
-import com.ruijc.shiro.logic.UserL;
 import com.ruijc.shiro.bean.User;
+import com.ruijc.shiro.logic.UserL;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;

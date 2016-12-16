@@ -5,6 +5,7 @@ import org.junit.Test;
 
 /**
  * 测试用例
+ *
  * @author Storezhang
  */
 public class IdObjectTest {

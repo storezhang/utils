@@ -39,7 +39,7 @@
       <module name="spring-boot-starter-fastjson" target="1.8" />
       <module name="spring-boot-starter-http" target="1.5" />
       <module name="spring-boot-starter-log" target="1.5" />
-      <module name="spring-boot-starter-mybatis" target="1.5" />
+      <module name="spring-boot-starter-mybatis" target="1.6" />
       <module name="spring-boot-starter-sample" target="1.5" />
       <module name="spring-boot-starter-shiro" target="1.5" />
       <module name="spring-boot-starter-shiro-sample" target="1.5" />

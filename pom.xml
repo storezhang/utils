@@ -7,7 +7,7 @@
     <groupId>com.ruijc</groupId>
     <artifactId>utils</artifactId>
     <packaging>pom</packaging>
-    <version>${version.utils}</version>
+    <version>3.1.0</version>
     <name>utils</name>
     <description>我的各种工具包。</description>
     <url>https://www.ruijc.com</url>
@@ -24,8 +24,6 @@
 
 
     <properties>
-        <version.utils>3.0.0</version.utils>
-
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.6</java.version>

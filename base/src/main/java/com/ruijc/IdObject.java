@@ -18,12 +18,12 @@ public class IdObject extends BaseObject {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = (long) id;
-    }
-
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public void setId(Integer id) {
+        this.id = (long) id;
     }
 
     public String getKey() {

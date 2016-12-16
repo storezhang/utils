@@ -6,13 +6,18 @@
     <parent>
         <artifactId>utils</artifactId>
         <groupId>com.ruijc</groupId>
-        <version>${version.utils}</version>
+        <version>1.2.0</version>
     </parent>
 
     <artifactId>spring-boot-starter-mybatis</artifactId>
     <version>2.0.0</version>
     <name>spring-boot-starter-mybatis</name>
     <description>Springboot自动化配置Mybatis框架并支持通用Mapper和分页插件。</description>
+
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -51,6 +56,20 @@
             <groupId>com.ruijc</groupId>
             <artifactId>util</artifactId>
             <version>${version.util}</version>
+        </dependency>
+
+        <!-- Google自动处理APT -->
+        <dependency>
+            <groupId>com.google.auto.service</groupId>
+            <artifactId>auto-service</artifactId>
+            <version>1.0-rc2</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup</groupId>
+            <artifactId>javapoet</artifactId>
+            <version>1.8.0</version>
+            <optional>true</optional>
         </dependency>
 
         <!-- 测试依赖 -->

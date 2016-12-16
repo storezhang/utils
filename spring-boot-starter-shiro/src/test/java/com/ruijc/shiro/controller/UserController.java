@@ -1,12 +1,10 @@
 package com.ruijc.shiro.controller;
 
 import com.ruijc.Response;
-import com.ruijc.fastjson.annotation.JSONP;
 import com.ruijc.fastjson.annotation.SerializeField;
+import com.ruijc.shiro.EncryptToken;
 import com.ruijc.shiro.bean.User;
 import com.ruijc.shiro.logic.UserL;
-import com.ruijc.shiro.mapper.IUserMapper;
-import com.ruijc.shiro.EncryptToken;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;

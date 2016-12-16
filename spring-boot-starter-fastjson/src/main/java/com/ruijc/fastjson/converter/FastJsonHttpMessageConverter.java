@@ -12,8 +12,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Map;
 
 /**
  * 转换器

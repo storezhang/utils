@@ -1,5 +1,6 @@
 package com.ruijc.mybatis;
 
+import com.ruijc.mybatis.mapper.ILoggingUserMapper;
 import com.ruijc.mybatis.mapper.IUserMapper;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,12 +19,20 @@ public class MybatisTest {
 
     @Autowired
     private IUserMapper userMapper;
+    @Autowired
+    private ILoggingUserMapper loggingUserMapper;
 
     @Test
-    public void testCache() {
+    public void testRedisCache() {
         for (int i = 0; i < 10; ++i) {
             Assert.assertTrue(4 == userMapper.selectAll().size());
         }
     }
 
+    @Test
+    public void testLoggingRedisCache() {
+        for (int i = 0; i < 10; ++i) {
+            Assert.assertTrue(4 == loggingUserMapper.selectAll().size());
+        }
+    }
 }

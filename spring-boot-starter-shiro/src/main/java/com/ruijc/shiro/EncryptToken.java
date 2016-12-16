@@ -4,6 +4,7 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 
 /**
  * 增强版UsernamePassword授权令牌
+ *
  * @author Storezhang
  */
 public class EncryptToken extends UsernamePasswordToken {

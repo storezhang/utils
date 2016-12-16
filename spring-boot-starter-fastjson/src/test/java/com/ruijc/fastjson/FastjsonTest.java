@@ -22,9 +22,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootApplication
 public class FastjsonTest {
 
-    private MockMvc mvc;
     @Autowired
     protected WebApplicationContext wac;
+    private MockMvc mvc;
 
     @Before
     public void setup() {

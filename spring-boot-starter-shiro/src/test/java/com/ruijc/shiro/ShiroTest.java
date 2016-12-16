@@ -28,9 +28,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @EnableRedisRepositories
 public class ShiroTest {
 
-    private MockMvc mvc;
     @Autowired
     protected WebApplicationContext wac;
+    private MockMvc mvc;
 
     @Before
     public void setup() {
