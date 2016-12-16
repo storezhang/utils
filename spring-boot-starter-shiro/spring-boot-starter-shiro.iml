@@ -67,7 +67,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.json:json:20090211" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:4.3.4.RELEASE" level="project" />
     <orderEntry type="module" module-name="spring-boot-starter-fastjson" scope="TEST" />
-    <orderEntry type="module" module-name="spring-boot-starter-mybatis" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.ruijc:spring-boot-starter-mybatis:2.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:1.2.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.4.2.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.6" level="project" />
