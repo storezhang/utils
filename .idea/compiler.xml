@@ -26,6 +26,7 @@
         <module name="spring-boot-starter-fastjson" />
         <module name="spring-boot-starter-http" />
         <module name="spring-boot-starter-log" />
+        <module name="spring-boot-starter-mybatis" />
         <module name="spring-boot-starter-shiro" />
         <module name="spring-boot-starter-shiro-sample" />
         <module name="util" />
