@@ -117,6 +117,21 @@
                     <check/>
                     <format>xml</format>
                     <aggregate>true</aggregate>
+                    <instrumentation>
+                        <excludes>
+                            <exclude>com/ruijc/mybatis/cache/redis/RedisMapper.class</exclude>
+                            <exclude>com/ruijc/mybatis/cache/redis/LoggingRedisMapper.class</exclude>
+                        </excludes>
+                    </instrumentation>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <compilerArgument>-proc:none</compilerArgument>
                 </configuration>
             </plugin>
         </plugins>
