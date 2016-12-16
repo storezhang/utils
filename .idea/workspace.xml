@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ruijc_base_3_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ruijc_util_3_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-fastjson/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-fastjson/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-fastjson/spring-boot-starter-fastjson.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-fastjson/spring-boot-starter-fastjson.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-http/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-http/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-log/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-log/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/pom.xml" afterPath="$PROJECT_DIR$/util/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/util.iml" afterPath="$PROJECT_DIR$/util/util.iml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,8 +51,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="190">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -1106,14 +1091,7 @@
       <workItem from="1481792584853" duration="1547000" />
       <workItem from="1481794137437" duration="4953000" />
       <workItem from="1481852145969" duration="3891000" />
-      <workItem from="1481856098714" duration="21018000" />
-    </task>
-    <task id="LOCAL-00044" summary="1、测试JSONP；">
-      <created>1481093652618</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1481093652618</updated>
+      <workItem from="1481856098714" duration="21167000" />
     </task>
     <task id="LOCAL-00045" summary="1、测试JSONP；">
       <created>1481094476348</created>
@@ -1451,7 +1429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481879964079</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="1、去掉Maven关于打包时APT的配置；">
+      <created>1481880691174</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1481880691174</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1487,7 +1472,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219195000" />
+    <option name="totallyTimeSpent" value="219344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1972,14 +1957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -2028,10 +2005,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/util/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="190">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
