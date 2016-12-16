@@ -102,31 +102,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.eluder.coveralls</groupId>
-                <artifactId>coveralls-maven-plugin</artifactId>
-                <version>4.3.0</version>
-                <configuration>
-                    <repoToken>1TNcNzL7a90b7zRZVSmexh02KomPxiJ6m</repoToken>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.7</version>
-                <configuration>
-                    <check/>
-                    <format>xml</format>
-                    <aggregate>true</aggregate>
-                    <instrumentation>
-                        <excludes>
-                            <exclude>com/ruijc/mybatis/cache/redis/RedisMapper.class</exclude>
-                            <exclude>com/ruijc/mybatis/cache/redis/LoggingRedisMapper.class</exclude>
-                        </excludes>
-                    </instrumentation>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.5.1</version>

@@ -100,6 +100,39 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+                <configuration>
+                    <repoToken>1TNcNzL7a90b7zRZVSmexh02KomPxiJ6m</repoToken>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <check/>
+                    <format>xml</format>
+                    <aggregate>true</aggregate>
+                    <instrumentation>
+                        <excludes>
+                            <exclude>com/ruijc/Page.class</exclude>
+                            <exclude>com/ruijc/Response.class</exclude>
+                            <exclude>com/ruijc/Href.class</exclude>
+                            <exclude>com/ruijc/mybatis/cache/redis/RedisMapper.class</exclude>
+                            <exclude>com/ruijc/mybatis/cache/redis/LoggingRedisMapper.class</exclude>
+                            <exclude>com/ruijc/mybatis/cache/redis/BaseProcessor.class</exclude>
+                            <exclude>com/ruijc/mybatis/cache/redis/RedisMapperProcessor.class</exclude>
+                            <exclude>com/ruijc/mybatis/cache/redis/LoggingRedisMapperProcessor.class</exclude>
+                            <exclude>com/ruijc/mybatis/cache/redis/RedisMapperProperties.class</exclude>
+                            <exclude>com/ruijc/util/*.class</exclude>
+                        </excludes>
+                    </instrumentation>
+                </configuration>
+            </plugin>
         </plugins>
 
         <pluginManagement>
