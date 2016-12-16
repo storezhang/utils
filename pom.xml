@@ -7,7 +7,7 @@
     <groupId>com.ruijc</groupId>
     <artifactId>utils</artifactId>
     <packaging>pom</packaging>
-    <version>3.2.1</version>
+    <version>3.2.2</version>
     <name>utils</name>
     <description>我的各种工具包。</description>
     <url>https://www.ruijc.com</url>

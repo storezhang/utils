@@ -6,7 +6,6 @@
         <artifactId>utils</artifactId>
         <groupId>com.ruijc</groupId>
         <version>3.2.1</version>
-        <relativePath>..</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
