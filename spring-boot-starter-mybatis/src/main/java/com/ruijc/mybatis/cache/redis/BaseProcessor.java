@@ -34,18 +34,20 @@ package com.ruijc.mybatis.cache.redis;
 import com.squareup.javapoet.*;
 import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.annotations.Mapper;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.*;
 import javax.lang.model.type.TypeMirror;
 import javax.tools.Diagnostic;
-import javax.tools.FileObject;
-import javax.tools.StandardLocation;
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Writer;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.*;
 import java.util.Set;
 
 /**
@@ -91,7 +93,6 @@ public abstract class BaseProcessor extends AbstractProcessor {
             RedisMapperProperties properties = getMapperProperties(clazzElement);
             TypeSpec.Builder clazzBuilder = makeClass(clazzElement, properties);
             // makeMethod(clazzElement, clazzBuilder);
-            makeXML(clazzElement, clazzBuilder);
 
             write(clazzElement, clazzBuilder);
         }
@@ -107,7 +108,8 @@ public abstract class BaseProcessor extends AbstractProcessor {
             messager.printMessage(
                     Diagnostic.Kind.ERROR,
                     String.format("Make interface has error with @%s or @%s", RedisMapper.class.getSimpleName(), LoggingRedisMapper.class.getSimpleName()),
-                    clazzElement);
+                    clazzElement
+            );
         }
     }
 
@@ -121,20 +123,24 @@ public abstract class BaseProcessor extends AbstractProcessor {
 
         clazzBuilder.addAnnotation(Mapper.class);
 
-        AnnotationSpec cacheAnnotation = AnnotationSpec.builder(CacheNamespace.class)
-                .addMember("flushInterval", "$L", properties.getFlushInterval())
-                .addMember("implementation", "$L.class", properties.getImplementation())
-                .addMember("eviction", "$L.class", properties.getEviction())
-                .addMember("size", "$L", properties.getSize())
-                .addMember("readWrite", "$L", properties.isReadWrite())
-                .addMember("blocking", "$L", properties.isBlocking())
-                .build();
-        clazzBuilder.addAnnotation(cacheAnnotation);
+        if (!checkXMLFileExist(clazzElement)) {
+            AnnotationSpec cacheAnnotation = AnnotationSpec.builder(CacheNamespace.class)
+                    .addMember("flushInterval", "$L", properties.getFlushInterval())
+                    .addMember("implementation", "$L.class", properties.getImplementation())
+                    .addMember("eviction", "$L.class", properties.getEviction())
+                    .addMember("size", "$L", properties.getSize())
+                    .addMember("readWrite", "$L", properties.isReadWrite())
+                    .addMember("blocking", "$L", properties.isBlocking())
+                    .build();
+            clazzBuilder.addAnnotation(cacheAnnotation);
 
-        for (TypeMirror interfaceClass : clazzElement.getInterfaces()) {
-            clazzBuilder.addSuperinterface(TypeName.get(interfaceClass));
+            for (TypeMirror interfaceClass : clazzElement.getInterfaces()) {
+                clazzBuilder.addSuperinterface(TypeName.get(interfaceClass));
+            }
+            clazzBuilder.addSuperinterface(TypeName.get(clazzElement.asType()));
+        } else {
+            updateXML(clazzElement, properties);
         }
-        clazzBuilder.addSuperinterface(TypeName.get(clazzElement.asType()));
 
         return clazzBuilder;
     }
@@ -166,45 +172,64 @@ public abstract class BaseProcessor extends AbstractProcessor {
         }
     }
 
-    protected void makeXML(TypeElement clazzElement, TypeSpec.Builder clazzBuilder) {
-        String xmlFilePath = "/" + clazzElement.getQualifiedName().toString().replace(".", "/") + ".xml";
+    protected boolean checkXMLFileExist(TypeElement clazzElement) {
+        boolean exist = false;
+
+        String xmlFilePath = getXMLFilePath(clazzElement);
+        InputStream xmlStream = getClass().getResourceAsStream(xmlFilePath);
+        if (null != xmlStream) {
+            exist = true;
+        }
+
+        return exist;
+    }
+
+    protected String getXMLFilePath(TypeElement clazzElement) {
+        return "/" + clazzElement.getQualifiedName().toString().replaceAll(".", "/") + ".xml";
+    }
+
+    protected void updateXML(TypeElement clazzElement, RedisMapperProperties properties) {
+        String xmlFilePath = getXMLFilePath(clazzElement);
         InputStream xmlStream = getClass().getResourceAsStream(xmlFilePath);
         if (null == xmlStream) {
             return;
         }
 
-        StringBuilder xmlContentBuilder = new StringBuilder();
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        Document doc;
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(xmlStream, "UTF-8"));
-            for (int c = br.read(); c != -1; c = br.read()) {
-                xmlContentBuilder.append((char) c);
-            }
+            DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+            doc = docBuilder.parse(xmlFilePath);
         } catch (Exception e) {
             return;
         }
 
-        if (null == xmlContentBuilder) {
+        Node mapper = doc.getFirstChild();
+        Node cache = doc.getElementsByTagName("cache").item(0);
+        if (null != cache) {
             return;
         }
 
-        String newXmlContent = xmlContentBuilder.toString().replaceAll(
-                "mapper namespace=\"" + clazzElement.getQualifiedName().toString() + "\"",
-                "mapper namespace=\"" + clazzElement.getQualifiedName().toString() + STAFF + "\""
-        );
+        org.w3c.dom.Element newCache = doc.createElement("cache");
+        newCache.setAttribute("type", properties.getImplementation().toString());
+        newCache.setAttribute("eviction", properties.getEviction().toString());
+        newCache.setAttribute("flushInterval", properties.getFlushInterval() + "");
+        newCache.setAttribute("size", properties.getSize() + "");
+        newCache.setAttribute("readOnly", properties.isReadWrite() + "");
+        newCache.setAttribute("blocking", properties.isBlocking() + "");
+        mapper.appendChild(newCache);
 
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        DOMSource source = new DOMSource(doc);
+        StreamResult result = new StreamResult(xmlFilePath);
         try {
-            FileObject javaObject = filer.createResource(
-                    StandardLocation.SOURCE_OUTPUT,
-                    getPackageName(clazzElement),
-                    clazzElement.getSimpleName().toString() + STAFF + ".xml"
+            transformerFactory.newTransformer().transform(source, result);
+        } catch (Exception e) {
+            messager.printMessage(
+                    Diagnostic.Kind.ERROR,
+                    String.format("Make xml file has some error with @%s or @%s", RedisMapper.class.getSimpleName(), LoggingRedisMapper.class.getSimpleName()),
+                    clazzElement
             );
-            Writer w = javaObject.openWriter();
-
-            w.append(newXmlContent);
-            w.flush();
-            w.close();
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 }
