@@ -6,7 +6,7 @@
     <parent>
         <artifactId>utils</artifactId>
         <groupId>com.ruijc</groupId>
-        <version>3.3.4</version>
+        <version>3.3.5</version>
     </parent>
 
     <artifactId>spring-boot-starter-mybatis</artifactId>
@@ -100,6 +100,16 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/test/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

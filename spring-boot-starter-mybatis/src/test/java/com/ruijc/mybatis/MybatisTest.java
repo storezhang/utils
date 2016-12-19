@@ -25,7 +25,7 @@ public class MybatisTest {
     @Test
     public void testRedisCache() {
         for (int i = 0; i < 10; ++i) {
-            Assert.assertTrue(4 == userMapper.selectAll().size());
+            Assert.assertTrue(4 == userMapper.countAll());
         }
     }
 

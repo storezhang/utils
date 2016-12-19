@@ -40,6 +40,12 @@ import javax.lang.model.SourceVersion;
 import javax.lang.model.element.*;
 import javax.lang.model.type.TypeMirror;
 import javax.tools.Diagnostic;
+import javax.tools.FileObject;
+import javax.tools.StandardLocation;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Writer;
 import java.util.Set;
 
 /**
@@ -49,6 +55,8 @@ import java.util.Set;
  */
 
 public abstract class BaseProcessor extends AbstractProcessor {
+
+    public static final String STAFF = "Impl";
 
     protected Filer filer;
     protected Messager messager;
@@ -82,7 +90,8 @@ public abstract class BaseProcessor extends AbstractProcessor {
 
             RedisMapperProperties properties = getMapperProperties(clazzElement);
             TypeSpec.Builder clazzBuilder = makeClass(clazzElement, properties);
-            makeMethod(clazzElement, clazzBuilder);
+            // makeMethod(clazzElement, clazzBuilder);
+            makeXML(clazzElement, clazzBuilder);
 
             write(clazzElement, clazzBuilder);
         }
@@ -92,7 +101,6 @@ public abstract class BaseProcessor extends AbstractProcessor {
 
     protected void write(TypeElement clazzElement, TypeSpec.Builder clazzBuilder) {
         JavaFile javaFile = JavaFile.builder(getPackageName(clazzElement), clazzBuilder.build()).build();
-
         try {
             javaFile.writeTo(filer);
         } catch (Exception e) {
@@ -108,7 +116,7 @@ public abstract class BaseProcessor extends AbstractProcessor {
     }
 
     protected TypeSpec.Builder makeClass(TypeElement clazzElement, RedisMapperProperties properties) {
-        TypeSpec.Builder clazzBuilder = TypeSpec.interfaceBuilder(clazzElement.getSimpleName().toString() + "$$Impl")
+        TypeSpec.Builder clazzBuilder = TypeSpec.interfaceBuilder(clazzElement.getSimpleName().toString() + STAFF)
                 .addModifiers(Modifier.PUBLIC);
 
         clazzBuilder.addAnnotation(Mapper.class);
@@ -155,6 +163,48 @@ public abstract class BaseProcessor extends AbstractProcessor {
                 MethodSpec method = methodBuilder.build();
                 clazzBuilder.addMethod(method);
             }
+        }
+    }
+
+    protected void makeXML(TypeElement clazzElement, TypeSpec.Builder clazzBuilder) {
+        String xmlFilePath = "/" + clazzElement.getQualifiedName().toString().replace(".", "/") + ".xml";
+        InputStream xmlStream = getClass().getResourceAsStream(xmlFilePath);
+        if (null == xmlStream) {
+            return;
+        }
+
+        StringBuilder xmlContentBuilder = new StringBuilder();
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(xmlStream, "UTF-8"));
+            for (int c = br.read(); c != -1; c = br.read()) {
+                xmlContentBuilder.append((char) c);
+            }
+        } catch (Exception e) {
+            return;
+        }
+
+        if (null == xmlContentBuilder) {
+            return;
+        }
+
+        String newXmlContent = xmlContentBuilder.toString().replaceAll(
+                "mapper namespace=\"" + clazzElement.getQualifiedName().toString() + "\"",
+                "mapper namespace=\"" + clazzElement.getQualifiedName().toString() + STAFF + "\""
+        );
+
+        try {
+            FileObject javaObject = filer.createResource(
+                    StandardLocation.SOURCE_OUTPUT,
+                    getPackageName(clazzElement),
+                    clazzElement.getSimpleName().toString() + STAFF + ".xml"
+            );
+            Writer w = javaObject.openWriter();
+
+            w.append(newXmlContent);
+            w.flush();
+            w.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
