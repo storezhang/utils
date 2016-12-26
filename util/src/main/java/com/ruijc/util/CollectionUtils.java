@@ -140,7 +140,25 @@ public class CollectionUtils {
         return data[index];
     }
 
+    public static long get(long[] data, int index) {
+        int len = data.length;
+        if (index > len - 1) {
+            index = len - 1;
+        }
+
+        return data[index];
+    }
+
     public static double get(double[] data, int index) {
+        int len = data.length;
+        if (index > len - 1) {
+            index = len - 1;
+        }
+
+        return data[index];
+    }
+
+    public static float get(float[] data, int index) {
         int len = data.length;
         if (index > len - 1) {
             index = len - 1;
