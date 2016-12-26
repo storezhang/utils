@@ -4,9 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/NumberUtils.java" line="52" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
+    <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="1、增加数组取方法；">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/main/java/com/ruijc/util/CollectionUtils.java" afterPath="$PROJECT_DIR$/util/src/main/java/com/ruijc/util/CollectionUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java" afterPath="$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,22 +48,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CollectionUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CollectionUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/CollectionUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="160" column="33" selection-start-line="160" selection-start-column="33" selection-end-line="160" selection-end-column="33" />
+            <state relative-caret-position="233">
+              <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionUtilsTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CollectionUtilsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="31" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="741">
+              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,8 +173,8 @@
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/mapper/IUserMapper.java" />
         <option value="$PROJECT_DIR$/util/pom.xml" />
-        <option value="$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java" />
         <option value="$PROJECT_DIR$/util/src/main/java/com/ruijc/util/CollectionUtils.java" />
+        <option value="$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java" />
       </list>
     </option>
   </component>
@@ -1129,14 +1131,7 @@
       <workItem from="1481852145969" duration="3891000" />
       <workItem from="1481856098714" duration="45752000" />
       <workItem from="1482739771186" duration="589000" />
-      <workItem from="1482745788013" duration="53000" />
-    </task>
-    <task id="LOCAL-00053" summary="1、测试发布到Maven中央仓库；">
-      <created>1481261055427</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1481261055427</updated>
+      <workItem from="1482745788013" duration="97000" />
     </task>
     <task id="LOCAL-00054" summary="1、测试发布到Maven中央仓库；">
       <created>1481261185658</created>
@@ -1474,7 +1469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482725230227</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="1、增加数组取方法；">
+      <created>1482745850017</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1482745850017</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1510,7 +1512,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244571000" />
+    <option name="totallyTimeSpent" value="244615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1949,19 +1951,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/CollectionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="31" selection-end-column="36" />
+        <state relative-caret-position="233">
+          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/CollectionUtils.java">
+    <entry file="file://$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="160" column="33" selection-start-line="160" selection-start-column="33" selection-end-line="160" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="741">
+          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
