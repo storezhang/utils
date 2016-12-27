@@ -31,9 +31,10 @@ package com.ruijc.util;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.*;
 import java.util.Enumeration;
 
 /**
@@ -83,7 +84,40 @@ public class NetworkUtils {
         return realIp;
     }
 
+    private static String netIp() {
+        String ip;
+
+        InputStream stream = null;
+        try {
+            URL url = new URL("http://1212.ip138.com/ic.asp");
+            URLConnection urlconnnection = url.openConnection();
+            stream = urlconnnection.getInputStream();
+            InputStreamReader inputStreamReader = new InputStreamReader(stream, "UTF-8");
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            StringBuffer webContent = new StringBuffer();
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                webContent.append(line);
+            }
+            int ipStart = webContent.indexOf("[") + 1;
+            int ipEnd = webContent.indexOf("]");
+            ip = webContent.substring(ipStart, ipEnd);
+        } catch (Exception e) {
+            ip = "";
+        } finally {
+            if (null != stream) {
+                try {
+                    stream.close();
+                } catch (Exception e) {
+                    ip = "";
+                }
+            }
+        }
+
+        return ip;
+    }
+
     public static void main(String[] args) {
-        System.err.println("--->" + realIp());
+        System.err.println("--->" + realIp() + ": " + netIp());
     }
 }
