@@ -39,8 +39,9 @@ import java.util.Enumeration;
 
 /**
  * 网络工具类
+ *
  * @author Storezhang
- * Create: 2016-12-28
+ *         Create: 2016-12-28
  */
 
 public class NetworkUtils {
@@ -90,8 +91,8 @@ public class NetworkUtils {
         InputStream stream = null;
         try {
             URL url = new URL("http://1212.ip138.com/ic.asp");
-            URLConnection urlconnnection = url.openConnection();
-            stream = urlconnnection.getInputStream();
+            URLConnection conn = url.openConnection();
+            stream = conn.getInputStream();
             InputStreamReader inputStreamReader = new InputStreamReader(stream, "UTF-8");
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
             StringBuffer webContent = new StringBuffer();

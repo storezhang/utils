@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/NumberUtils.java" line="52" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
+    <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="1、增加获得公网IP的方法；">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/src/main/java/com/ruijc/util/NetworkUtils.java" afterPath="$PROJECT_DIR$/util/src/main/java/com/ruijc/util/NetworkUtils.java" />
     </list>
@@ -85,12 +85,12 @@
       <file leaf-file-name="NetworkUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/NetworkUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1093">
-              <caret line="103" column="47" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
+            <state relative-caret-position="67">
+              <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3918#3919#0" expanded="true" />
-                <element signature="e#3988#3989#0" expanded="true" />
+                <element signature="e#3909#3910#0" expanded="true" />
+                <element signature="e#3979#3980#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1057,14 +1057,7 @@
       <workItem from="1482739771186" duration="589000" />
       <workItem from="1482745788013" duration="851000" />
       <workItem from="1482875933941" duration="1717000" />
-      <workItem from="1482882292249" duration="184000" />
-    </task>
-    <task id="LOCAL-00056" summary="1、测试发布到Maven中央仓库；">
-      <created>1481262437489</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1481262437489</updated>
+      <workItem from="1482882292249" duration="230000" />
     </task>
     <task id="LOCAL-00057" summary="1、测试发布到Maven中央仓库；">
       <created>1481263418743</created>
@@ -1402,7 +1395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482877056063</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="1、增加获得公网IP的方法；">
+      <created>1482882490363</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1482882490364</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1438,7 +1438,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247270000" />
+    <option name="totallyTimeSpent" value="247316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1509,7 +1509,8 @@
     <MESSAGE value="1、修复Mybatis缓存配置；" />
     <MESSAGE value="1、增加数组取方法；" />
     <MESSAGE value="1、增加网络工具类；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、增加网络工具类；" />
+    <MESSAGE value="1、增加获得公网IP的方法；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、增加获得公网IP的方法；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1902,12 +1903,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/NetworkUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="103" column="47" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
+        <state relative-caret-position="67">
+          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3918#3919#0" expanded="true" />
-            <element signature="e#3988#3989#0" expanded="true" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#3979#3980#0" expanded="true" />
           </folding>
         </state>
       </provider>
