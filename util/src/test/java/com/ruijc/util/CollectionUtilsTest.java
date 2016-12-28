@@ -36,6 +36,7 @@ import org.junit.Test;
 
 /**
  * 集合测试
+ *
  * @author Storezhang
  */
 
@@ -43,7 +44,7 @@ public class CollectionUtilsTest {
 
     @Test
     public void testGetArrayData() {
-        int[] ints = new int[] {1, 2, 3, 4};
+        int[] ints = new int[]{1, 2, 3, 4};
         Assert.assertTrue(4 == CollectionUtils.get(ints, 7));
         Assert.assertTrue(1 == CollectionUtils.get(ints, 0));
         Assert.assertFalse(4 == CollectionUtils.get(ints, 1));

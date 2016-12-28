@@ -117,9 +117,10 @@ public class CollectionUtils {
 
     /**
      * 从数组中获得元素
-     * @param data 数组
+     *
+     * @param data  数组
      * @param index 下标
-     * @param <T> 类型
+     * @param <T>   类型
      * @return 元素
      */
     public static <T> T get(T[] data, int index) {

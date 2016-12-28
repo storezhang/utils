@@ -46,10 +46,10 @@ public class ShiroTest {
                         .param("username", "storezhang@gmail.com")
                         .param("password", "12345678")
         ).andExpect(status().isOk())
-                .andExpect(content().string(equalTo("{\"code\":200}")));
+                .andExpect(content().string(equalTo("{\"code\":200,\"success\":true}")));
 
         mvc.perform(get("/user/logout")).andExpect(status().isOk())
-                .andExpect(content().string(equalTo("{\"code\":200}")));
+                .andExpect(content().string(equalTo("{\"code\":200,\"success\":true}")));
     }
 
     @Test
@@ -59,16 +59,16 @@ public class ShiroTest {
                         .param("username", "10290688@gmail.com")
                         .param("password", "12345678")
         ).andExpect(status().isOk())
-                .andExpect(content().string(equalTo("{\"code\":200}")));
+                .andExpect(content().string(equalTo("{\"code\":200,\"success\":true}")));
 
         mvc.perform(
                 post("/user/login")
                         .param("username", "10290688@gmail.com")
                         .param("password", "12345678")
         ).andExpect(status().isOk())
-                .andExpect(content().string(equalTo("{\"code\":200}")));
+                .andExpect(content().string(equalTo("{\"code\":200,\"success\":true}")));
 
         mvc.perform(get("/user/logout")).andExpect(status().isOk())
-                .andExpect(content().string(equalTo("{\"code\":200}")));
+                .andExpect(content().string(equalTo("{\"code\":200,\"success\":true}")));
     }
 }
