@@ -44,6 +44,10 @@ public class Operation<T> {
     private boolean success;
     private T data;
 
+    public Operation() {
+        success = true;
+    }
+
     public boolean isSuccess() {
         return success;
     }
