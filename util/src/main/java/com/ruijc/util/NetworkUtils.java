@@ -85,7 +85,7 @@ public class NetworkUtils {
         return realIp;
     }
 
-    private static String netIp() {
+    public static String netIp() {
         String ip;
 
         InputStream stream = null;
