@@ -50,6 +50,10 @@ public class Response<T> extends BaseObject {
     private String msg;//消息
     private T data;//数据
 
+    public static boolean isSuccess(Response rsp) {
+        return null != rsp && rsp.isSuccess();
+    }
+
     public Response() {
         code = OK;
     }
