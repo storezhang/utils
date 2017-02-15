@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="base" />
+        <module name="id" />
         <module name="spring-boot-starter-fastjson" />
         <module name="spring-boot-starter-http" />
         <module name="spring-boot-starter-log" />
@@ -34,6 +35,7 @@
     <bytecodeTargetLevel>
       <module name="apt" target="1.5" />
       <module name="base" target="1.5" />
+      <module name="id" target="1.5" />
       <module name="spring-boot-starter-data-memcache" target="1.5" />
       <module name="spring-boot-starter-fastjson" target="1.8" />
       <module name="spring-boot-starter-http" target="1.5" />

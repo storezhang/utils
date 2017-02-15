@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/id/id.iml" filepath="$PROJECT_DIR$/id/id.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-fastjson/spring-boot-starter-fastjson.iml" filepath="$PROJECT_DIR$/spring-boot-starter-fastjson/spring-boot-starter-fastjson.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" filepath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" filepath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" />

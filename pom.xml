@@ -20,6 +20,7 @@
         <module>spring-boot-starter-http</module>
         <module>spring-boot-starter-log</module>
         <module>spring-boot-starter-shiro</module>
+        <module>id</module>
     </modules>
 
 
