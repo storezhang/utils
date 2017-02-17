@@ -56,9 +56,12 @@ public class IdTests {
         SnowFlake snowFlake = new SnowFlake(3, 10);
 
         long[] ids = new long[num];
+        long start = System.currentTimeMillis();
         for (int i = 0; i < num; ++i) {
             ids[i] = snowFlake.next();
         }
+        long end = System.currentTimeMillis();
+        System.err.println("--->耗时：" + ((double) (end - start) / 1000) + "，生成ID个数：" + num);
 
         Set<Long> idSet = new HashSet<Long>((int) (num / 0.75));
         for (int i = 0; i < num; ++i) {
