@@ -12,7 +12,11 @@ package com.ruijc;
  */
 public class IdObject extends BaseObject {
 
-    private Long id;//序列号
+    protected Long id;//序列号
+
+    public IdObject(long id) {
+        this.id = id;
+    }
 
     public Long getId() {
         return id;
@@ -43,6 +47,7 @@ public class IdObject extends BaseObject {
         } else {
             hash = 37 * hash + (int) (this.id ^ (this.id >>> 32));
         }
+
         return hash;
     }
 

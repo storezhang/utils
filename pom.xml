@@ -21,6 +21,8 @@
         <module>spring-boot-starter-log</module>
         <module>spring-boot-starter-shiro</module>
         <module>id</module>
+        <module>schedule</module>
+        <module>structure</module>
     </modules>
 
 
@@ -33,6 +35,7 @@
         <version.base>3.2.0</version.base>
         <version.util>3.1.0</version.util>
         <version.fastjson>2.2.0</version.fastjson>
+        <version.structure>2.2.0</version.structure>
     </properties>
 
     <repositories>

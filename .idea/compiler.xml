@@ -24,11 +24,14 @@
         <processorPath useClasspath="true" />
         <module name="base" />
         <module name="id" />
+        <module name="schedule" />
         <module name="spring-boot-starter-fastjson" />
         <module name="spring-boot-starter-http" />
         <module name="spring-boot-starter-log" />
         <module name="spring-boot-starter-shiro" />
         <module name="spring-boot-starter-shiro-sample" />
+        <module name="structure" />
+        <module name="task" />
         <module name="util" />
       </profile>
     </annotationProcessing>
@@ -36,6 +39,8 @@
       <module name="apt" target="1.5" />
       <module name="base" target="1.5" />
       <module name="id" target="1.5" />
+      <module name="ocr" target="1.5" />
+      <module name="schedule" target="1.5" />
       <module name="spring-boot-starter-data-memcache" target="1.5" />
       <module name="spring-boot-starter-fastjson" target="1.8" />
       <module name="spring-boot-starter-http" target="1.5" />
@@ -44,6 +49,8 @@
       <module name="spring-boot-starter-sample" target="1.5" />
       <module name="spring-boot-starter-shiro" target="1.5" />
       <module name="spring-boot-starter-shiro-sample" target="1.5" />
+      <module name="structure" target="1.5" />
+      <module name="task" target="1.5" />
       <module name="util" target="1.5" />
       <module name="utils" target="1.5" />
     </bytecodeTargetLevel>

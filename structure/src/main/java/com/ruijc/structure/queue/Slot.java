@@ -1,4 +1,4 @@
-package com.ruijc.id;
+package com.ruijc.structure.queue;
 
 //                            _ooOoo_
 //                           o8888888o
@@ -31,65 +31,39 @@ package com.ruijc.id;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Iterator;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
- * ID生成测试
+ * 环形队列插槽
  *
  * @author Storezhang
- * @create 2017-02-15 18:25
+ * @create 2017-04-12 11:16
  * @email storezhang@gmail.com
  * @qq 160290688
  */
-public class IdTests {
+public class Slot<T> {
 
-    @Test
-    public void testSnowFlake() {
-        testSnowFlake(10000000);
+    private Queue<T> elements;
+
+    public Slot() {
+        elements = new ConcurrentLinkedQueue<T>();
     }
 
-    public void testSnowFlake(int num) {
-        SnowFlake snowFlake = new SnowFlake(3, 10);
-
-        long[] ids = new long[num];
-        long start = System.currentTimeMillis();
-        for (int i = 0; i < num; ++i) {
-            ids[i] = snowFlake.next();
-        }
-        long end = System.currentTimeMillis();
-        System.err.println("--->耗时：" + ((double) (end - start) / 1000) + "，生成ID个数：" + num);
-
-        Set<Long> idSet = new HashSet<Long>((int) (num / 0.75));
-        for (int i = 0; i < num; ++i) {
-            idSet.add(ids[i]);
-        }
-
-        Assert.assertTrue(num == idSet.size());
+    public Queue<T> getElements() {
+        return elements;
     }
 
-    @Test
-    public void testFindSum() {
-        int[] array = new int[] {1, 3, 4, 5, 6, 6, 7, 8, 9, 10, 11, 13};
-        int start = 0;
-        int end = array.length - 1;
-        int result;
-        for (int i = 0; i < array.length; ++i) {
-            if (start >= end) {
-                break;
-            }
+    public void add(T t) {
+        elements.add(t);
+    }
 
-            result = array[start] + array[end];
-            if (12 == result) {
-                System.err.println("--->" + array[start] + ": " + array[end]);
-                ++start;
-            } else if (result < 12) {
-                ++start;
-            } else if (result > 12) {
-                --end;
+    public void reomve(T t) {
+        Iterator<T> it = elements.iterator();
+        while (it.hasNext()) {
+            if (it.next().equals(t)) {
+                it.remove();
             }
         }
     }

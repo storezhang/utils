@@ -1,4 +1,4 @@
-package com.ruijc.id;
+package com.ruijc.structure.queue;
 
 //                            _ooOoo_
 //                           o8888888o
@@ -31,66 +31,64 @@ package com.ruijc.id;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Queue;
 
 /**
- * ID生成测试
+ * 抽象环形队列
  *
  * @author Storezhang
- * @create 2017-02-15 18:25
+ * @create 2017-04-12 10:57
  * @email storezhang@gmail.com
  * @qq 160290688
  */
-public class IdTests {
+public abstract class AbstractRingQueue<T> implements IRingQueue<T> {
 
-    @Test
-    public void testSnowFlake() {
-        testSnowFlake(10000000);
+    protected Slot[] slots;
+    protected int length;
+
+    public AbstractRingQueue() {
+        this(3600);
     }
 
-    public void testSnowFlake(int num) {
-        SnowFlake snowFlake = new SnowFlake(3, 10);
-
-        long[] ids = new long[num];
-        long start = System.currentTimeMillis();
-        for (int i = 0; i < num; ++i) {
-            ids[i] = snowFlake.next();
+    public AbstractRingQueue(int length) {
+        this.length = length;
+        for (int i = 0; i < length; i++) {
+            slots[i] = new Slot();
         }
-        long end = System.currentTimeMillis();
-        System.err.println("--->耗时：" + ((double) (end - start) / 1000) + "，生成ID个数：" + num);
-
-        Set<Long> idSet = new HashSet<Long>((int) (num / 0.75));
-        for (int i = 0; i < num; ++i) {
-            idSet.add(ids[i]);
-        }
-
-        Assert.assertTrue(num == idSet.size());
     }
 
-    @Test
-    public void testFindSum() {
-        int[] array = new int[] {1, 3, 4, 5, 6, 6, 7, 8, 9, 10, 11, 13};
-        int start = 0;
-        int end = array.length - 1;
-        int result;
-        for (int i = 0; i < array.length; ++i) {
-            if (start >= end) {
-                break;
-            }
+    public int getLength() {
+        return length;
+    }
 
-            result = array[start] + array[end];
-            if (12 == result) {
-                System.err.println("--->" + array[start] + ": " + array[end]);
-                ++start;
-            } else if (result < 12) {
-                ++start;
-            } else if (result > 12) {
-                --end;
-            }
-        }
+    public abstract int index();
+
+    public void add(T t) {
+        add(index(), t);
+    }
+
+    public void remove(T t) {
+        remove(index(), t);
+    }
+
+    public Queue<T> next(int index) {
+        return slots[index % length].getElements();
+    }
+
+    public void add(int index, T t) {
+        slots[index % length].add(t);
+    }
+
+    public void remove(int index, T t) {
+        slots[index].reomve(t);
+    }
+
+    public void replace(T t) {
+        remove(index(), t);
+    }
+
+    public void replace(int index, T t) {
+        remove(index % length, t);
+        add(index % length, t);
     }
 }
