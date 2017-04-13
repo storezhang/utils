@@ -35,6 +35,7 @@ import javax.net.ssl.SSLContext;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.ArrayList;
@@ -375,7 +376,7 @@ public class HttpClient {
         if (null != params) {
             Set<String> keySet = params.keySet();
             for (String key : keySet) {
-                builder.addTextBody(key, params.get(key), ContentType.DEFAULT_TEXT);
+                builder.addTextBody(key, params.get(key), ContentType.create("text/plain", Charset.forName("UTF-8")));
             }
         }
         if (!StringUtils.isBlank(fileParam) && null != file) {

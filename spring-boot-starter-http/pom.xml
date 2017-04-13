@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-boot-starter-http</artifactId>
-    <version>2.1.0</version>
+    <version>2.2.4</version>
     <name>spring-boot-starter-http</name>
     <description>Springboot自动化配置Http。</description>
 

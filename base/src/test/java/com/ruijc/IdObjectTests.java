@@ -8,7 +8,7 @@ import org.junit.Test;
  *
  * @author Storezhang
  */
-public class IdObjectTest {
+public class IdObjectTests {
 
     @Test
     public void testToString() {
