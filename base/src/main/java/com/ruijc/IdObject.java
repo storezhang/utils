@@ -14,6 +14,10 @@ public class IdObject extends BaseObject {
 
     protected Long id;//序列号
 
+    public IdObject() {
+        this(0L);
+    }
+
     public IdObject(long id) {
         this.id = id;
     }

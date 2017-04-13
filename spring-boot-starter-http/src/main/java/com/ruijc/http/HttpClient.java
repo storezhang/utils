@@ -375,7 +375,7 @@ public class HttpClient {
         if (null != params) {
             Set<String> keySet = params.keySet();
             for (String key : keySet) {
-                builder.addTextBody(key, params.get(key), ContentType.DEFAULT_BINARY);
+                builder.addTextBody(key, params.get(key), ContentType.DEFAULT_TEXT);
             }
         }
         if (!StringUtils.isBlank(fileParam) && null != file) {

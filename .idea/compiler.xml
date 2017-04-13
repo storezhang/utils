@@ -31,7 +31,6 @@
         <module name="spring-boot-starter-shiro" />
         <module name="spring-boot-starter-shiro-sample" />
         <module name="structure" />
-        <module name="task" />
         <module name="util" />
       </profile>
     </annotationProcessing>

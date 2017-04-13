@@ -7,7 +7,7 @@
     <groupId>com.ruijc</groupId>
     <artifactId>utils</artifactId>
     <packaging>pom</packaging>
-    <version>3.3.8</version>
+    <version>3.3.9</version>
     <name>utils</name>
     <description>我的各种工具包。</description>
     <url>https://www.ruijc.com</url>
@@ -21,7 +21,7 @@
         <module>spring-boot-starter-log</module>
         <module>spring-boot-starter-shiro</module>
         <module>id</module>
-        <module>schedule</module>
+        <module>task</module>
         <module>structure</module>
     </modules>
 
