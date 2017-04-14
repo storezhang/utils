@@ -24,13 +24,13 @@
         <processorPath useClasspath="true" />
         <module name="base" />
         <module name="id" />
-        <module name="schedule" />
         <module name="spring-boot-starter-fastjson" />
         <module name="spring-boot-starter-http" />
         <module name="spring-boot-starter-log" />
         <module name="spring-boot-starter-shiro" />
         <module name="spring-boot-starter-shiro-sample" />
         <module name="structure" />
+        <module name="task" />
         <module name="util" />
       </profile>
     </annotationProcessing>

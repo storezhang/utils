@@ -10,7 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" filepath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/structure/structure.iml" filepath="$PROJECT_DIR$/structure/structure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/task/schedule.iml" filepath="$PROJECT_DIR$/task/schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task/task.iml" filepath="$PROJECT_DIR$/task/task.iml" />
       <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils.iml" filepath="$PROJECT_DIR$/utils.iml" />
     </modules>

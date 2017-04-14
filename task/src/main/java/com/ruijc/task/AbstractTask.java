@@ -43,7 +43,7 @@ import java.util.Calendar;
  * @email storezhang@gmail.com
  * @qq 160290688
  */
-public abstract class AbstractTask extends IdObject implements ITask {
+public abstract class AbstractTask extends IdObject implements IRingTask {
 
     private int cycle;//圈数
     private int index;//槽位
@@ -51,6 +51,13 @@ public abstract class AbstractTask extends IdObject implements ITask {
     public AbstractTask(long id, int after) {
         super(id);
 
+        Calendar calendar = Calendar.getInstance();
+        int second = calendar.get(Calendar.MINUTE) * 60 + calendar.get(Calendar.SECOND);
+        this.index = (second + after) % 3600;
+        this.cycle = after / 3600;
+    }
+
+    public void after(int after) {
         Calendar calendar = Calendar.getInstance();
         int second = calendar.get(Calendar.MINUTE) * 60 + calendar.get(Calendar.SECOND);
         this.index = (second + after) % 3600;

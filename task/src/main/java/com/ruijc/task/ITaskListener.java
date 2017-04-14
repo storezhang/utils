@@ -1,4 +1,4 @@
-package com.ruijc.structure.queue;
+package com.ruijc.task;
 
 //                            _ooOoo_
 //                           o8888888o
@@ -31,65 +31,17 @@ package com.ruijc.structure.queue;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
-import java.util.Queue;
-
 /**
- * 抽象环形队列
+ * 任务监听器
  *
  * @author Storezhang
- * @create 2017-04-12 10:57
+ * @create 2017-04-14 14:10
  * @email storezhang@gmail.com
  * @qq 160290688
  */
-public abstract class AbstractRingQueue<T> implements IRingQueue<T> {
+public interface ITaskListener {
 
-    protected Slot[] slots;
-    protected int length;
+    void onSuccess(ITask task);
 
-    public AbstractRingQueue() {
-        this(3600);
-    }
-
-    public AbstractRingQueue(int length) {
-        this.length = length;
-        slots = new Slot[length];
-        for (int i = 0; i < length; i++) {
-            slots[i] = new Slot();
-        }
-    }
-
-    public int getLength() {
-        return length;
-    }
-
-    public abstract int index();
-
-    public void add(T t) {
-        add(index(), t);
-    }
-
-    public void remove(T t) {
-        remove(index(), t);
-    }
-
-    public Queue<T> next(int index) {
-        return slots[index % length].getElements();
-    }
-
-    public void add(int index, T t) {
-        slots[index % length].add(t);
-    }
-
-    public void remove(int index, T t) {
-        slots[index].reomve(t);
-    }
-
-    public void replace(T t) {
-        remove(index(), t);
-    }
-
-    public void replace(int index, T t) {
-        remove(index % length, t);
-        add(index % length, t);
-    }
+    void onFailed(ITask task);
 }
