@@ -44,12 +44,12 @@ import java.util.concurrent.Executors;
  * @email storezhang@gmail.com
  * @qq 160290688
  */
-public class Scheduler extends RingQueue<IRingTask> {
+public class DelayScheduler extends RingQueue<IRingTask> {
 
     private ExecutorService stepPool;
     private Steper steper;
 
-    public Scheduler() {
+    public DelayScheduler() {
         stepPool = Executors.newScheduledThreadPool(1);
         steper = new Steper(this);
     }

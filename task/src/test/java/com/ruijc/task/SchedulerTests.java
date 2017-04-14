@@ -47,7 +47,7 @@ public class SchedulerTests {
 
     @Test
     public void testScheduler() throws InterruptedException {
-        final Scheduler scheduler = new Scheduler();
+        final DelayScheduler scheduler = new DelayScheduler();
         scheduler.start();
         scheduler.add(new AbstractTask(1, 5) {
             public boolean doTask() {
