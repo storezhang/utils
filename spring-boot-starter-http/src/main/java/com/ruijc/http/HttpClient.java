@@ -241,11 +241,11 @@ public class HttpClient {
         return invoke(client, post);
     }
 
-    public String postData(String url, String data, Map<String, String> headers, String charset) {
-        return postData(url, data, headers, "", charset);
+    public String post(String url, String data, Map<String, String> headers, String charset) {
+        return post(url, data, headers, "", charset);
     }
 
-    public String postData(String url, String data, Map<String, String> headers, String referer, String charset) {
+    public String post(String url, String data, Map<String, String> headers, String referer, String charset) {
         HttpPost post = postData(url, data);
         setReferer(post, referer);
         setHeaders(post, headers);
