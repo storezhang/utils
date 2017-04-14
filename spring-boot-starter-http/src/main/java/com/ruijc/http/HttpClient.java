@@ -114,13 +114,6 @@ public class HttpClient {
         return self;
     }
 
-    public static void main(String[] args) {
-        HttpClient client = HttpClient.instance();
-        client.downloadFile("http://www.zhuanpaopao.com/welcome/verifyCode", "code.jpg");
-        String code = client.post("http://data.tehir.cn/url/Api/VCRInterface.ashx?apikey=646B7F4EB194A042E76E2615924FF84A&flag=zhuanpaopao", null, null, "", "img", new File("code.jpg"));
-        System.err.println("--->" + code);
-    }
-
     public void addProxy(String url, int port) {
         HttpHost proxy = new HttpHost(url, port);
         proxies.add(proxy);
@@ -221,23 +214,27 @@ public class HttpClient {
     }
 
     public String post(String url) {
-        return post(url, null, null, "", "", null);
+        return post(url, null, null, "", "", null, null);
     }
 
     public String post(String url, String referer) {
-        return post(url, null, null, referer, "", null);
+        return post(url, null, null, referer, "", null, null);
     }
 
     public String post(String url, Map<String, String> params) {
-        return post(url, params, null, url, "", null);
+        return post(url, params, null, url, "", null, null);
+    }
+
+    public String post(String url, Map<String, String> params, String referer) {
+        return post(url, params, null, referer, "", null, null);
     }
 
     public String post(String url, Map<String, String> params, Map<String, String> headers) {
-        return post(url, params, headers, "", "", null);
+        return post(url, params, headers, "", "", null, null);
     }
 
-    public String post(String url, Map<String, String> params, Map<String, String> headers, String referer, String fileParam, File file) {
-        HttpPost post = postForm(url, params, fileParam, file);
+    public String post(String url, Map<String, String> params, Map<String, String> headers, String referer, String fileParam, File file, String charset) {
+        HttpPost post = postForm(url, params, fileParam, file, charset);
         setReferer(post, referer);
         setHeaders(post, headers);
 
@@ -370,13 +367,17 @@ public class HttpClient {
         return response;
     }
 
-    private HttpPost postForm(String url, Map<String, String> params, String fileParam, File file) {
+    private HttpPost postForm(String url, Map<String, String> params, String fileParam, File file, String charset) {
+        if (StringUtils.isBlank(charset)) {
+            charset = "UTF-8";
+        }
+
         HttpPost httpPost = new HttpPost(url);
         MultipartEntityBuilder builder = MultipartEntityBuilder.create();
         if (null != params) {
             Set<String> keySet = params.keySet();
             for (String key : keySet) {
-                builder.addTextBody(key, params.get(key), ContentType.create("text/plain", Charset.forName("UTF-8")));
+                builder.addTextBody(key, params.get(key), ContentType.create("text/plain", Charset.forName(charset)));
             }
         }
         if (!StringUtils.isBlank(fileParam) && null != file) {

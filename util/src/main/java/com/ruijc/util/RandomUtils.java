@@ -5,10 +5,7 @@
  */
 package com.ruijc.util;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 随机工具类
@@ -17,11 +14,22 @@ import java.util.Set;
  */
 public class RandomUtils {
 
-    public static <T> Set<T> randomList(List<T> data, int num) {
-        Set<T> ret = new HashSet<T>();
-        for (int i = 0; i < num; ++i) {
-            T item = random(data);
-            ret.add(item);
+    public static <T> List<T> random(List<T> data, int num) {
+        return random(data, num, false);
+    }
+
+    public static <T> List<T> random(List<T> data, int num, boolean isStrict) {
+        List<T> ret = new ArrayList<T>();
+        if (isStrict) {
+            while (ret.size() < num) {
+                T item = random(data);
+                ret.add(item);
+            }
+        } else {
+            for (int i = 0; i < num; ++i) {
+                T item = random(data);
+                ret.add(item);
+            }
         }
         return ret;
     }

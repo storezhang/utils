@@ -34,6 +34,9 @@ package com.ruijc.util;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 集合测试
  *
@@ -48,5 +51,22 @@ public class CollectionUtilsTest {
         Assert.assertTrue(4 == CollectionUtils.get(ints, 7));
         Assert.assertTrue(1 == CollectionUtils.get(ints, 0));
         Assert.assertFalse(4 == CollectionUtils.get(ints, 1));
+    }
+
+    @Test
+    public void testRandomList() {
+        List<Integer> data = new ArrayList<Integer>();
+        data.add(1);
+        data.add(2);
+        data.add(3);
+        data.add(4);
+        data.add(5);
+        data.add(6);
+        data.add(7);
+        data.add(8);
+        data.add(9);
+        data.add(10);
+        Assert.assertTrue(3 >= RandomUtils.random(data, 3).size());
+        Assert.assertTrue(5 == RandomUtils.random(data, 5).size());
     }
 }
