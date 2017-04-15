@@ -31,7 +31,7 @@ public class HttpClientTests {
         client.addProxy("127.0.0.1", 8888);
         Map<String, String> headers = new HashMap<String, String>();
         headers.put("Content-Type", "application/x-www-form-urlencoded; utf-8");
-        String ret = client.post("http://www.shen-qi.com/webdo/indexdo.php", params, headers, "http://www.shen-qi.com/index.php", "", null);
+        String ret = client.post("http://www.shen-qi.com/webdo/indexdo.php", params, headers, "http://www.shen-qi.com/index.php", "", null, null);
         //Assert.assertEquals("addmsgok", ret);
     }
 }

@@ -11,7 +11,7 @@
 
     <artifactId>structure</artifactId>
     <version>${version.structure}</version>
-    <name>util</name>
+    <name>structure</name>
     <description>包括各种数据结构。</description>
 
 </project>
