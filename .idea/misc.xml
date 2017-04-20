@@ -9,16 +9,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/ocr/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-starter-data-memcache/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-starter-sample/pom.xml" />
-      </set>
-    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
