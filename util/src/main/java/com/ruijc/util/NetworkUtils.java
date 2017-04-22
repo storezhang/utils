@@ -118,6 +118,44 @@ public class NetworkUtils {
         return ip;
     }
 
+    public static String mac() {
+        return mac(true);
+    }
+
+    public static String mac(boolean isSplit) {
+        String mac = "";
+        InetAddress ia;
+        try {
+            ia = InetAddress.getLocalHost();
+        } catch (Exception e) {
+            return mac;
+        }
+
+        byte[] macBytes;
+        try {
+            macBytes = NetworkInterface.getByInetAddress(ia).getHardwareAddress();
+        } catch (Exception e) {
+            return mac;
+        }
+
+        StringBuffer sb = new StringBuffer("");
+        for (int i = 0; i < macBytes.length; i++) {
+            if (i != 0 && isSplit) {
+                sb.append("-");
+            }
+            int temp = macBytes[i] & 0xff;
+            String str = Integer.toHexString(temp);
+            if (str.length() == 1) {
+                sb.append("0" + str);
+            } else {
+                sb.append(str);
+            }
+        }
+        mac = sb.toString().toUpperCase();
+
+        return mac;
+    }
+
     public static void main(String[] args) {
         System.err.println("--->" + realIp() + ": " + netIp());
     }

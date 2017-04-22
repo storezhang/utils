@@ -1,4 +1,4 @@
-package com.ruijc.id;
+package com.ruijc.util;
 
 //                            _ooOoo_
 //                           o8888888o
@@ -31,38 +31,21 @@ package com.ruijc.id;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
+import org.junit.Assert;
+import org.junit.Test;
+
 /**
- * 工厂方法
+ * 网络测试
  *
  * @author Storezhang
- * @create 2017-04-20 18:40
- * @email storezhang@gmail.com
- * @qq 160290688
  */
-public class IdFactory {
 
-    public IIdGenerator create(Type type, long datacenterId) {
-        return create(type, datacenterId, 0);
-    }
+public class NetworkUtilsTest {
 
-    public IIdGenerator create(Type type, long datacenterId, long machineId) {
-        IIdGenerator generator;
-
-        switch (type) {
-            case SNOW_FLAKE:
-                generator = new SnowFlakeGenerator(datacenterId, machineId);
-                break;
-            case NANO:
-                generator = new NanoGenerator();
-                break;
-            case MILLIS:
-                generator = new MillisGenerator();
-                break;
-            default:
-                generator = new NanoGenerator();
-                break;
-        }
-
-        return generator;
+    @Test
+    public void testMac() {
+        String mac = NetworkUtils.mac();
+        System.err.println("--->" + mac);
+        Assert.assertFalse(StringUtils.isBlank(mac));
     }
 }
