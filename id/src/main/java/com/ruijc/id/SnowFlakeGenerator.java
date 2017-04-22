@@ -39,7 +39,7 @@ package com.ruijc.id;
  * @email storezhang@gmail.com
  * @qq 160290688
  */
-public class SnowFlake implements IIdGenerator {
+public class SnowFlakeGenerator implements IIdGenerator {
 
      // 起始的时间戳
     private final static long START_STMP = 1480166465631L;
@@ -63,7 +63,7 @@ public class SnowFlake implements IIdGenerator {
     private long sequence;// 序列号
     private long lastStmp;// 上一次时间戳
 
-    public SnowFlake(long datacenterId, long machineId) {
+    public SnowFlakeGenerator(long datacenterId, long machineId) {
         sequence = 0L;
         lastStmp = -1L;
 
