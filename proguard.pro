@@ -26,5 +26,5 @@
 
 # 不被混淆的代码配置
 -keep public class * {
-    public *;
+    public protected *;
 }
