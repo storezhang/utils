@@ -4,45 +4,66 @@
     <bookmark url="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/NumberUtils.java" line="52" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="1、增加；">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_0.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_2_0_SNAPSHOT.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+    <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20090211.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_4_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_4_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_4_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_4_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_8_RELEASE.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/base.iml" afterPath="$PROJECT_DIR$/base/base.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/id/id.iml" afterPath="$PROJECT_DIR$/id/id.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proguard.pro" afterPath="$PROJECT_DIR$/proguard.pro" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/pom.xml" afterPath="$PROJECT_DIR$/base/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/id/pom.xml" afterPath="$PROJECT_DIR$/id/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-fastjson/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-fastjson/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-fastjson/spring-boot-starter-fastjson.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-fastjson/spring-boot-starter-fastjson.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-http/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-http/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-http/spring-boot-starter-http.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-log/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-log/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-log/spring-boot-starter-log.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/mapper/IUserMapper.java" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/mapper/IUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/resources/application.yml" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/resources/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-shiro/spring-boot-starter-shiro.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structure/structure.iml" afterPath="$PROJECT_DIR$/structure/structure.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task/task.iml" afterPath="$PROJECT_DIR$/task/task.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/util.iml" afterPath="$PROJECT_DIR$/util/util.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.iml" afterPath="$PROJECT_DIR$/utils.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_2_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_22.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_24.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_22.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_24.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_2_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structure/pom.xml" afterPath="$PROJECT_DIR$/structure/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task/pom.xml" afterPath="$PROJECT_DIR$/task/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/pom.xml" afterPath="$PROJECT_DIR$/util/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_2_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_3_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_4_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_2_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_4_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_2_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_4_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_2_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_4_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_2_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_4_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_2_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_4_2_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_2_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_1_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_1_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_8_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_8_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_8_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,58 +110,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MybatisTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/MybatisTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FastJsonAutoConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/FastJsonAutoConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="170" column="61" selection-start-line="170" selection-start-column="45" selection-end-line="170" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IUserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/mapper/IUserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ILoggingUserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/mapper/ILoggingUserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2977#2978#0" expanded="false" />
+                <element signature="e#3042#3043#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+        <entry file="file://$PROJECT_DIR$/spring-boot-starter-fastjson/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -149,32 +144,286 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/resources/application.yml">
+      <file leaf-file-name="Unsafe.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Development/Oracle/JavaSE8/jre/lib/rt.jar!/sun/misc/Unsafe.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+            <state relative-caret-position="171">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MybatisAutoConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/MybatisAutoConfiguration.java">
+      <file leaf-file-name="ClassPathXmlApplicationContext.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="113" column="87" selection-start-line="113" selection-start-column="84" selection-end-line="113" selection-end-column="87" />
-              <folding />
+            <state relative-caret-position="2242">
+              <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#8300#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2807#2808#0" expanded="false" />
+                <element signature="e#2827#2828#0" expanded="false" />
+                <element signature="e#8261#8262#0" expanded="false" />
+                <element signature="e#8295#8296#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proguard.pro" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proguard.pro">
+      <file leaf-file-name="AbstractApplicationContext.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="9671">
+              <caret line="612" column="19" selection-start-line="612" selection-start-column="19" selection-end-line="612" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#50709#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#8231#8257#0" expanded="false" />
+                <element signature="e#9421#9445#0" expanded="false" />
+                <element signature="e#9656#9657#0" expanded="false" />
+                <element signature="e#9722#9723#0" expanded="false" />
+                <element signature="e#10427#10428#0" expanded="false" />
+                <element signature="e#10446#10447#0" expanded="false" />
+                <element signature="e#10483#10484#0" expanded="false" />
+                <element signature="e#10504#10505#0" expanded="false" />
+                <element signature="e#10554#10555#0" expanded="false" />
+                <element signature="e#10570#10571#0" expanded="false" />
+                <element signature="e#11078#11079#0" expanded="false" />
+                <element signature="e#11108#11109#0" expanded="false" />
+                <element signature="e#11306#11307#0" expanded="false" />
+                <element signature="e#11331#11332#0" expanded="false" />
+                <element signature="e#12133#12134#0" expanded="false" />
+                <element signature="e#12170#12171#0" expanded="false" />
+                <element signature="e#12572#12573#0" expanded="false" />
+                <element signature="e#12602#12603#0" expanded="false" />
+                <element signature="e#13012#13013#0" expanded="false" />
+                <element signature="e#13044#13045#0" expanded="false" />
+                <element signature="e#13493#13494#0" expanded="false" />
+                <element signature="e#13525#13526#0" expanded="false" />
+                <element signature="e#18331#18332#0" expanded="false" />
+                <element signature="e#18375#18376#0" expanded="false" />
+                <element signature="e#18858#18859#0" expanded="false" />
+                <element signature="e#18897#18898#0" expanded="false" />
+                <element signature="e#19145#19146#0" expanded="false" />
+                <element signature="e#19184#19185#0" expanded="false" />
+                <element signature="e#33127#33291#0" expanded="false" />
+                <element signature="e#33290#33291#0" expanded="false" />
+                <element signature="e#34736#34737#0" expanded="false" />
+                <element signature="e#34765#34766#0" expanded="false" />
+                <element signature="e#35700#35832#0" expanded="false" />
+                <element signature="e#35831#35832#0" expanded="false" />
+                <element signature="e#36345#36346#0" expanded="false" />
+                <element signature="e#36359#36360#0" expanded="false" />
+                <element signature="e#39013#39014#0" expanded="false" />
+                <element signature="e#39056#39057#0" expanded="false" />
+                <element signature="e#39570#39571#0" expanded="false" />
+                <element signature="e#39601#39602#0" expanded="false" />
+                <element signature="e#41510#41511#0" expanded="false" />
+                <element signature="e#41559#41560#0" expanded="false" />
+                <element signature="e#42528#42529#0" expanded="false" />
+                <element signature="e#42575#42576#0" expanded="false" />
+                <element signature="e#42845#42846#0" expanded="false" />
+                <element signature="e#42908#42909#0" expanded="false" />
+                <element signature="e#42959#42960#0" expanded="false" />
+                <element signature="e#43014#43015#0" expanded="false" />
+                <element signature="e#43070#43071#0" expanded="false" />
+                <element signature="e#43125#43126#0" expanded="false" />
+                <element signature="e#45070#45071#0" expanded="false" />
+                <element signature="e#45095#45096#0" expanded="false" />
+                <element signature="e#45156#45157#0" expanded="false" />
+                <element signature="e#45210#45211#0" expanded="false" />
+                <element signature="e#48100#48101#0" expanded="false" />
+                <element signature="e#48186#48187#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractRefreshableApplicationContext.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1634">
+              <caret line="108" column="77" selection-start-line="108" selection-start-column="77" selection-end-line="108" selection-end-column="77" />
+              <folding>
+                <element signature="e#0#9774#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3790#3791#0" expanded="false" />
+                <element signature="e#3810#3811#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultListableBeanFactory.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.4.RELEASE/spring-beans-4.3.4.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1634">
+              <caret line="160" column="49" selection-start-line="160" selection-start-column="49" selection-end-line="160" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#65777#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#6070#6117#0" expanded="false" />
+                <element signature="e#6934#6952#0" expanded="false" />
+                <element signature="e#7102#7126#0" expanded="false" />
+                <element signature="e#7295#7315#0" expanded="false" />
+                <element signature="e#7476#7496#0" expanded="false" />
+                <element signature="e#7630#7638#0" expanded="false" />
+                <element signature="e#7795#7803#0" expanded="false" />
+                <element signature="e#8161#8162#0" expanded="false" />
+                <element signature="e#8175#8176#0" expanded="false" />
+                <element signature="e#8373#8374#0" expanded="false" />
+                <element signature="e#8404#8405#0" expanded="false" />
+                <element signature="e#9143#9144#0" expanded="false" />
+                <element signature="e#9177#9178#0" expanded="false" />
+                <element signature="e#9900#9901#0" expanded="false" />
+                <element signature="e#9948#9949#0" expanded="false" />
+                <element signature="e#10799#10800#0" expanded="false" />
+                <element signature="e#10840#10841#0" expanded="false" />
+                <element signature="e#11330#11331#0" expanded="false" />
+                <element signature="e#11369#11370#0" expanded="false" />
+                <element signature="e#11929#12112#0" expanded="false" />
+                <element signature="e#12111#12112#0" expanded="false" />
+                <element signature="e#12466#12467#0" expanded="false" />
+                <element signature="e#12510#12511#0" expanded="false" />
+                <element signature="e#14333#14334#0" expanded="false" />
+                <element signature="e#14376#14377#0" expanded="false" />
+                <element signature="e#14677#14678#0" expanded="false" />
+                <element signature="e#14730#14731#0" expanded="false" />
+                <element signature="e#14796#14797#0" expanded="false" />
+                <element signature="e#14847#14848#0" expanded="false" />
+                <element signature="e#15779#15787#0" expanded="false" />
+                <element signature="e#19740#19751#0" expanded="false" />
+                <element signature="e#20720#20728#0" expanded="false" />
+                <element signature="e#21449#21465#0" expanded="false" />
+                <element signature="e#26848#26856#0" expanded="false" />
+                <element signature="e#27319#27320#0" expanded="false" />
+                <element signature="e#27357#27358#0" expanded="false" />
+                <element signature="e#28110#28118#0" expanded="false" />
+                <element signature="e#28674#28833#0" expanded="false" />
+                <element signature="e#28832#28833#0" expanded="false" />
+                <element signature="e#29530#29694#0" expanded="false" />
+                <element signature="e#29693#29694#0" expanded="false" />
+                <element signature="e#32375#32383#0" expanded="false" />
+                <element signature="e#32683#32691#0" expanded="false" />
+                <element signature="e#33832#33840#0" expanded="false" />
+                <element signature="e#35229#35230#0" expanded="false" />
+                <element signature="e#35276#35277#0" expanded="false" />
+                <element signature="e#35720#35728#0" expanded="false" />
+                <element signature="e#37592#37600#0" expanded="false" />
+                <element signature="e#38211#38227#0" expanded="false" />
+                <element signature="e#46086#46102#0" expanded="false" />
+                <element signature="e#47211#47227#0" expanded="false" />
+                <element signature="e#59315#59316#0" expanded="false" />
+                <element signature="e#59336#59337#0" expanded="false" />
+                <element signature="e#59671#59687#0" expanded="false" />
+                <element signature="e#60113#60114#0" expanded="false" />
+                <element signature="e#60138#60139#0" expanded="false" />
+                <element signature="e#62349#62350#0" expanded="false" />
+                <element signature="e#62376#62377#0" expanded="false" />
+                <element signature="e#62664#62665#0" expanded="false" />
+                <element signature="e#62689#62690#0" expanded="false" />
+                <element signature="e#62790#62791#0" expanded="false" />
+                <element signature="e#62814#62815#0" expanded="false" />
+                <element signature="e#63318#63319#0" expanded="false" />
+                <element signature="e#63354#63355#0" expanded="false" />
+                <element signature="e#64701#64709#0" expanded="false" />
+                <element signature="e#65745#65746#0" expanded="false" />
+                <element signature="e#65769#65770#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlBeanFactory.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar!/org/springframework/beans/factory/xml/XmlBeanFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#3488#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultListableBeanFactory.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6118">
+              <caret line="420" column="44" selection-start-line="420" selection-start-column="44" selection-end-line="420" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#66733#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#6114#6161#0" expanded="false" />
+                <element signature="e#6978#6996#0" expanded="false" />
+                <element signature="e#7146#7170#0" expanded="false" />
+                <element signature="e#7339#7359#0" expanded="false" />
+                <element signature="e#7520#7540#0" expanded="false" />
+                <element signature="e#7674#7682#0" expanded="false" />
+                <element signature="e#7839#7847#0" expanded="false" />
+                <element signature="e#8205#8206#0" expanded="false" />
+                <element signature="e#8219#8220#0" expanded="false" />
+                <element signature="e#8417#8418#0" expanded="false" />
+                <element signature="e#8448#8449#0" expanded="false" />
+                <element signature="e#9187#9188#0" expanded="false" />
+                <element signature="e#9221#9222#0" expanded="false" />
+                <element signature="e#9944#9945#0" expanded="false" />
+                <element signature="e#9992#9993#0" expanded="false" />
+                <element signature="e#10843#10844#0" expanded="false" />
+                <element signature="e#10884#10885#0" expanded="false" />
+                <element signature="e#11404#11405#0" expanded="false" />
+                <element signature="e#11443#11444#0" expanded="false" />
+                <element signature="e#11966#12174#0" expanded="false" />
+                <element signature="e#12173#12174#0" expanded="false" />
+                <element signature="e#12528#12529#0" expanded="false" />
+                <element signature="e#12572#12573#0" expanded="false" />
+                <element signature="e#14663#14664#0" expanded="false" />
+                <element signature="e#14706#14707#0" expanded="false" />
+                <element signature="e#15015#15016#0" expanded="false" />
+                <element signature="e#15068#15069#0" expanded="false" />
+                <element signature="e#15134#15135#0" expanded="false" />
+                <element signature="e#15185#15186#0" expanded="false" />
+                <element signature="e#16117#16125#0" expanded="false" />
+                <element signature="e#20164#20175#0" expanded="false" />
+                <element signature="e#21144#21152#0" expanded="false" />
+                <element signature="e#21873#21889#0" expanded="false" />
+                <element signature="e#27272#27280#0" expanded="false" />
+                <element signature="e#27743#27744#0" expanded="false" />
+                <element signature="e#27781#27782#0" expanded="false" />
+                <element signature="e#28534#28542#0" expanded="false" />
+                <element signature="e#29098#29257#0" expanded="false" />
+                <element signature="e#29256#29257#0" expanded="false" />
+                <element signature="e#29954#30118#0" expanded="false" />
+                <element signature="e#30117#30118#0" expanded="false" />
+                <element signature="e#32799#32807#0" expanded="false" />
+                <element signature="e#33107#33115#0" expanded="false" />
+                <element signature="e#34256#34264#0" expanded="false" />
+                <element signature="e#35653#35654#0" expanded="false" />
+                <element signature="e#35700#35701#0" expanded="false" />
+                <element signature="e#36144#36152#0" expanded="false" />
+                <element signature="e#38058#38066#0" expanded="false" />
+                <element signature="e#38677#38693#0" expanded="false" />
+                <element signature="e#46925#46941#0" expanded="false" />
+                <element signature="e#48050#48066#0" expanded="false" />
+                <element signature="e#60291#60292#0" expanded="false" />
+                <element signature="e#60312#60313#0" expanded="false" />
+                <element signature="e#60647#60663#0" expanded="false" />
+                <element signature="e#61089#61090#0" expanded="false" />
+                <element signature="e#61114#61115#0" expanded="false" />
+                <element signature="e#63325#63326#0" expanded="false" />
+                <element signature="e#63352#63353#0" expanded="false" />
+                <element signature="e#63640#63641#0" expanded="false" />
+                <element signature="e#63665#63666#0" expanded="false" />
+                <element signature="e#63766#63767#0" expanded="false" />
+                <element signature="e#63790#63791#0" expanded="false" />
+                <element signature="e#64294#64295#0" expanded="false" />
+                <element signature="e#64330#64331#0" expanded="false" />
+                <element signature="e#65677#65685#0" expanded="false" />
+                <element signature="e#66701#66702#0" expanded="false" />
+                <element signature="e#66725#66726#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -249,7 +498,6 @@
         <option value="$PROJECT_DIR$/task/src/main/java/com/ruijc/task/AbstractTask.java" />
         <option value="$PROJECT_DIR$/task/src/test/java/com/ruijc/task/SchedulerTests.java" />
         <option value="$PROJECT_DIR$/id/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/id/src/main/java/com/ruijc/id/SimpleIdgenerator.java" />
         <option value="$PROJECT_DIR$/id/src/main/java/com/ruijc/id/SimpleIdGenerator.java" />
@@ -265,6 +513,7 @@
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/mapper/IUserMapper.java" />
         <option value="$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/java/com/ruijc/mybatis/mapper/ILoggingUserMapper.java" />
         <option value="$PROJECT_DIR$/proguard.pro" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -305,7 +554,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="spring-boot-starter-mybatis" />
+          <option name="myItemId" value="spring-boot-starter-fastjson" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -315,7 +564,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="spring-boot-starter-mybatis" />
+          <option name="myItemId" value="spring-boot-starter-fastjson" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -356,8 +605,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -376,9 +623,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-starter-fastjson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-starter-fastjson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-starter-fastjson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot-starter-fastjson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fastjson" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1115,14 +1448,13 @@
       <workItem from="1492595786554" duration="3873000" />
       <workItem from="1492655844695" duration="9532000" />
       <workItem from="1492999794432" duration="685000" />
-      <workItem from="1493009043134" duration="1978000" />
-    </task>
-    <task id="LOCAL-00074" summary="1、测试RedisMapper；">
-      <created>1481607054426</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1481607054426</updated>
+      <workItem from="1493009043134" duration="6499000" />
+      <workItem from="1495613278983" duration="3715000" />
+      <workItem from="1496811374491" duration="3821000" />
+      <workItem from="1496885561465" duration="18000" />
+      <workItem from="1496886107476" duration="19000" />
+      <workItem from="1496887340256" duration="43000" />
+      <workItem from="1496887993479" duration="153000" />
     </task>
     <task id="LOCAL-00075" summary="1、测试RedisMapper；">
       <created>1481608416052</created>
@@ -1460,7 +1792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492658273064</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="1、修改混淆；">
+      <created>1493016157568</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1493016157568</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1496,7 +1835,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308646000" />
+    <option name="totallyTimeSpent" value="320936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -1509,7 +1848,7 @@
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3974359" sideWeight="0.50441015" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2012128" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20066153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.49558985" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32264957" sideWeight="0.49558985" order="2" side_tool="false" content_ui="tabs" />
@@ -1517,7 +1856,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2216097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2216097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1547,7 +1886,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1、增加构建状态；" />
     <MESSAGE value="1、测试JSONP；" />
     <MESSAGE value="1、测试发布到Maven中央仓库；" />
     <MESSAGE value="1、增加代码覆盖；" />
@@ -1572,7 +1910,8 @@
     <MESSAGE value="1、增加数据结构；&#10;2、增加计划；" />
     <MESSAGE value="1、完全任务计划；" />
     <MESSAGE value="1、增加代码混淆；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、增加代码混淆；" />
+    <MESSAGE value="1、修改混淆；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、修改混淆；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1590,12 +1929,6 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/FastJsonAutoConfiguration.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-boot-starter-fastjson/src/test/java/com/ruijc/fastjson/Config.java</url>
           <line>11</line>
           <properties />
@@ -1611,167 +1944,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Development/Oracle/JavaSE8/src.zip!/java/util/concurrent/ConcurrentLinkedQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/src/main/java/com/ruijc/structure/queue/Slot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-starter-fastjson/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/ruijc/IdObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/test/java/com/ruijc/IdObjectTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="81" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-starter-http/src/main/java/com/ruijc/http/HttpAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-starter-http/src/test/java/com/ruijc/HttpClientTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.3.1/httpmime-4.3.1.jar!/org/apache/http/entity/mime/HttpMultipartMode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.3.1/httpmime-4.3.1.jar!/org/apache/http/entity/mime/MultipartEntityBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-starter-http/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Development/Oracle/JavaSE8/src.zip!/java/nio/charset/Charset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="270" column="29" selection-start-line="270" selection-start-column="22" selection-end-line="270" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4-sources.jar!/org/apache/http/entity/ContentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/ProgressUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/src/test/java/com/ruijc/util/CollectionUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/src/main/java/com/ruijc/util/RandomUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/src/main/java/com/ruijc/structure/queue/RingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/ruijc/task/IRingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structure/src/main/java/com/ruijc/structure/queue/IRingQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/ruijc/task/ITask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="717">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/ruijc/task/TaskExecutor.java" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-starter-http/src/main/java/com/ruijc/http/HttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4598">
-          <caret line="315" column="24" selection-start-line="315" selection-start-column="24" selection-end-line="315" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1800,7 +1976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1808,7 +1983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1824,23 +1998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1748">
           <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1927#1928#0" expanded="false" />
-            <element signature="e#2206#2366#0" expanded="false" />
-            <element signature="e#2365#2366#0" expanded="false" />
-            <element signature="e#2419#2577#0" expanded="false" />
-            <element signature="e#2576#2577#0" expanded="false" />
-            <element signature="e#2626#2627#0" expanded="false" />
-            <element signature="e#2657#2658#0" expanded="false" />
-            <element signature="e#2712#2713#0" expanded="false" />
-            <element signature="e#2752#2753#0" expanded="false" />
-            <element signature="e#3015#4172#0" expanded="false" />
-            <element signature="e#3335#4011#0" expanded="false" />
-            <element signature="e#4010#4011#0" expanded="false" />
-            <element signature="e#4171#4172#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1848,15 +2005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1064">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2121#2122#0" expanded="false" />
-            <element signature="e#2154#2155#0" expanded="false" />
-            <element signature="e#2185#2186#0" expanded="false" />
-            <element signature="e#2216#2217#0" expanded="false" />
-            <element signature="e#2245#2246#0" expanded="false" />
-            <element signature="e#2273#2274#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1864,7 +2012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1872,10 +2019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="e#1433#1434#0" expanded="false" />
-            <element signature="e#1473#1474#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1883,10 +2026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#1437#1438#0" expanded="false" />
-            <element signature="e#1486#1487#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1894,7 +2033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1902,10 +2040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1235">
           <caret line="65" column="63" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="63" />
-          <folding>
-            <element signature="e#3883#3884#0" expanded="false" />
-            <element signature="e#3932#3933#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1913,10 +2047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding>
-            <element signature="e#1434#1435#0" expanded="false" />
-            <element signature="e#1486#1487#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1924,11 +2054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1513#1514#0" expanded="false" />
-            <element signature="e#1552#1553#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1944,9 +2069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <marker date="1482951695301" expanded="true" signature="325:351" ph="SELECT COUNT... user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1954,7 +2076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1962,7 +2083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1970,7 +2090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1978,37 +2097,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/test/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="684">
           <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/src/main/java/com/ruijc/mybatis/MybatisAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="1615">
           <caret line="113" column="87" selection-start-line="113" selection-start-column="84" selection-end-line="113" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="170" column="61" selection-start-line="170" selection-start-column="45" selection-end-line="170" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-starter-mybatis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="475">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding />
         </state>
@@ -2018,14 +2126,408 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proguard.pro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state relative-caret-position="532">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Development/Oracle/JavaSE8/src.zip!/java/util/concurrent/locks/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1629">
+          <caret line="231" column="19" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Development/Oracle/JavaSE8/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Development/Oracle/JavaSE8/src.zip!/java/util/concurrent/ConcurrentLinkedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1009">
+          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Development/Oracle/JavaSE8/src.zip!/java/util/concurrent/locks/LockSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6897">
+          <caret line="400" column="42" selection-start-line="400" selection-start-column="42" selection-end-line="400" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Development/Oracle/JavaSE8/jre/lib/rt.jar!/sun/reflect/CallerSensitive.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Development/Oracle/JavaSE8/jre/lib/rt.jar!/sun/misc/VM.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1197">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Development/Oracle/JavaSE8/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.4.RELEASE/spring-core-4.3.4.RELEASE.jar!/org/springframework/core/env/ConfigurablePropertyResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.4.RELEASE/spring-core-4.3.4.RELEASE-sources.jar!/org/springframework/core/env/ConfigurablePropertyResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="101" column="9" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="138" column="16" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#8300#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2807#2808#0" expanded="false" />
+            <element signature="e#2827#2828#0" expanded="false" />
+            <element signature="e#8261#8262#0" expanded="false" />
+            <element signature="e#8295#8296#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.jar!/org/springframework/context/support/GenericApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE-sources.jar!/org/springframework/context/support/GenericApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="258" column="25" selection-start-line="258" selection-start-column="25" selection-end-line="258" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE-sources.jar!/org/springframework/context/support/GenericApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="260" column="25" selection-start-line="260" selection-start-column="25" selection-end-line="260" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9671">
+          <caret line="612" column="19" selection-start-line="612" selection-start-column="19" selection-end-line="612" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#50709#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#8231#8257#0" expanded="false" />
+            <element signature="e#9421#9445#0" expanded="false" />
+            <element signature="e#9656#9657#0" expanded="false" />
+            <element signature="e#9722#9723#0" expanded="false" />
+            <element signature="e#10427#10428#0" expanded="false" />
+            <element signature="e#10446#10447#0" expanded="false" />
+            <element signature="e#10483#10484#0" expanded="false" />
+            <element signature="e#10504#10505#0" expanded="false" />
+            <element signature="e#10554#10555#0" expanded="false" />
+            <element signature="e#10570#10571#0" expanded="false" />
+            <element signature="e#11078#11079#0" expanded="false" />
+            <element signature="e#11108#11109#0" expanded="false" />
+            <element signature="e#11306#11307#0" expanded="false" />
+            <element signature="e#11331#11332#0" expanded="false" />
+            <element signature="e#12133#12134#0" expanded="false" />
+            <element signature="e#12170#12171#0" expanded="false" />
+            <element signature="e#12572#12573#0" expanded="false" />
+            <element signature="e#12602#12603#0" expanded="false" />
+            <element signature="e#13012#13013#0" expanded="false" />
+            <element signature="e#13044#13045#0" expanded="false" />
+            <element signature="e#13493#13494#0" expanded="false" />
+            <element signature="e#13525#13526#0" expanded="false" />
+            <element signature="e#18331#18332#0" expanded="false" />
+            <element signature="e#18375#18376#0" expanded="false" />
+            <element signature="e#18858#18859#0" expanded="false" />
+            <element signature="e#18897#18898#0" expanded="false" />
+            <element signature="e#19145#19146#0" expanded="false" />
+            <element signature="e#19184#19185#0" expanded="false" />
+            <element signature="e#33127#33291#0" expanded="false" />
+            <element signature="e#33290#33291#0" expanded="false" />
+            <element signature="e#34736#34737#0" expanded="false" />
+            <element signature="e#34765#34766#0" expanded="false" />
+            <element signature="e#35700#35832#0" expanded="false" />
+            <element signature="e#35831#35832#0" expanded="false" />
+            <element signature="e#36345#36346#0" expanded="false" />
+            <element signature="e#36359#36360#0" expanded="false" />
+            <element signature="e#39013#39014#0" expanded="false" />
+            <element signature="e#39056#39057#0" expanded="false" />
+            <element signature="e#39570#39571#0" expanded="false" />
+            <element signature="e#39601#39602#0" expanded="false" />
+            <element signature="e#41510#41511#0" expanded="false" />
+            <element signature="e#41559#41560#0" expanded="false" />
+            <element signature="e#42528#42529#0" expanded="false" />
+            <element signature="e#42575#42576#0" expanded="false" />
+            <element signature="e#42845#42846#0" expanded="false" />
+            <element signature="e#42908#42909#0" expanded="false" />
+            <element signature="e#42959#42960#0" expanded="false" />
+            <element signature="e#43014#43015#0" expanded="false" />
+            <element signature="e#43070#43071#0" expanded="false" />
+            <element signature="e#43125#43126#0" expanded="false" />
+            <element signature="e#45070#45071#0" expanded="false" />
+            <element signature="e#45095#45096#0" expanded="false" />
+            <element signature="e#45156#45157#0" expanded="false" />
+            <element signature="e#45210#45211#0" expanded="false" />
+            <element signature="e#48100#48101#0" expanded="false" />
+            <element signature="e#48186#48187#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.4.RELEASE/spring-context-4.3.4.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1634">
+          <caret line="108" column="77" selection-start-line="108" selection-start-column="77" selection-end-line="108" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#9774#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3790#3791#0" expanded="false" />
+            <element signature="e#3810#3811#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.4.RELEASE/spring-beans-4.3.4.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="90" column="62" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.4.RELEASE/spring-beans-4.3.4.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1634">
+          <caret line="160" column="49" selection-start-line="160" selection-start-column="49" selection-end-line="160" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#65777#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6070#6117#0" expanded="false" />
+            <element signature="e#6934#6952#0" expanded="false" />
+            <element signature="e#7102#7126#0" expanded="false" />
+            <element signature="e#7295#7315#0" expanded="false" />
+            <element signature="e#7476#7496#0" expanded="false" />
+            <element signature="e#7630#7638#0" expanded="false" />
+            <element signature="e#7795#7803#0" expanded="false" />
+            <element signature="e#8161#8162#0" expanded="false" />
+            <element signature="e#8175#8176#0" expanded="false" />
+            <element signature="e#8373#8374#0" expanded="false" />
+            <element signature="e#8404#8405#0" expanded="false" />
+            <element signature="e#9143#9144#0" expanded="false" />
+            <element signature="e#9177#9178#0" expanded="false" />
+            <element signature="e#9900#9901#0" expanded="false" />
+            <element signature="e#9948#9949#0" expanded="false" />
+            <element signature="e#10799#10800#0" expanded="false" />
+            <element signature="e#10840#10841#0" expanded="false" />
+            <element signature="e#11330#11331#0" expanded="false" />
+            <element signature="e#11369#11370#0" expanded="false" />
+            <element signature="e#11929#12112#0" expanded="false" />
+            <element signature="e#12111#12112#0" expanded="false" />
+            <element signature="e#12466#12467#0" expanded="false" />
+            <element signature="e#12510#12511#0" expanded="false" />
+            <element signature="e#14333#14334#0" expanded="false" />
+            <element signature="e#14376#14377#0" expanded="false" />
+            <element signature="e#14677#14678#0" expanded="false" />
+            <element signature="e#14730#14731#0" expanded="false" />
+            <element signature="e#14796#14797#0" expanded="false" />
+            <element signature="e#14847#14848#0" expanded="false" />
+            <element signature="e#15779#15787#0" expanded="false" />
+            <element signature="e#19740#19751#0" expanded="false" />
+            <element signature="e#20720#20728#0" expanded="false" />
+            <element signature="e#21449#21465#0" expanded="false" />
+            <element signature="e#26848#26856#0" expanded="false" />
+            <element signature="e#27319#27320#0" expanded="false" />
+            <element signature="e#27357#27358#0" expanded="false" />
+            <element signature="e#28110#28118#0" expanded="false" />
+            <element signature="e#28674#28833#0" expanded="false" />
+            <element signature="e#28832#28833#0" expanded="false" />
+            <element signature="e#29530#29694#0" expanded="false" />
+            <element signature="e#29693#29694#0" expanded="false" />
+            <element signature="e#32375#32383#0" expanded="false" />
+            <element signature="e#32683#32691#0" expanded="false" />
+            <element signature="e#33832#33840#0" expanded="false" />
+            <element signature="e#35229#35230#0" expanded="false" />
+            <element signature="e#35276#35277#0" expanded="false" />
+            <element signature="e#35720#35728#0" expanded="false" />
+            <element signature="e#37592#37600#0" expanded="false" />
+            <element signature="e#38211#38227#0" expanded="false" />
+            <element signature="e#46086#46102#0" expanded="false" />
+            <element signature="e#47211#47227#0" expanded="false" />
+            <element signature="e#59315#59316#0" expanded="false" />
+            <element signature="e#59336#59337#0" expanded="false" />
+            <element signature="e#59671#59687#0" expanded="false" />
+            <element signature="e#60113#60114#0" expanded="false" />
+            <element signature="e#60138#60139#0" expanded="false" />
+            <element signature="e#62349#62350#0" expanded="false" />
+            <element signature="e#62376#62377#0" expanded="false" />
+            <element signature="e#62664#62665#0" expanded="false" />
+            <element signature="e#62689#62690#0" expanded="false" />
+            <element signature="e#62790#62791#0" expanded="false" />
+            <element signature="e#62814#62815#0" expanded="false" />
+            <element signature="e#63318#63319#0" expanded="false" />
+            <element signature="e#63354#63355#0" expanded="false" />
+            <element signature="e#64701#64709#0" expanded="false" />
+            <element signature="e#65745#65746#0" expanded="false" />
+            <element signature="e#65769#65770#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.jar!/org/springframework/beans/factory/xml/XmlBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar!/org/springframework/beans/factory/xml/XmlBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#3488#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6118">
+          <caret line="420" column="44" selection-start-line="420" selection-start-column="44" selection-end-line="420" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#66733#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6114#6161#0" expanded="false" />
+            <element signature="e#6978#6996#0" expanded="false" />
+            <element signature="e#7146#7170#0" expanded="false" />
+            <element signature="e#7339#7359#0" expanded="false" />
+            <element signature="e#7520#7540#0" expanded="false" />
+            <element signature="e#7674#7682#0" expanded="false" />
+            <element signature="e#7839#7847#0" expanded="false" />
+            <element signature="e#8205#8206#0" expanded="false" />
+            <element signature="e#8219#8220#0" expanded="false" />
+            <element signature="e#8417#8418#0" expanded="false" />
+            <element signature="e#8448#8449#0" expanded="false" />
+            <element signature="e#9187#9188#0" expanded="false" />
+            <element signature="e#9221#9222#0" expanded="false" />
+            <element signature="e#9944#9945#0" expanded="false" />
+            <element signature="e#9992#9993#0" expanded="false" />
+            <element signature="e#10843#10844#0" expanded="false" />
+            <element signature="e#10884#10885#0" expanded="false" />
+            <element signature="e#11404#11405#0" expanded="false" />
+            <element signature="e#11443#11444#0" expanded="false" />
+            <element signature="e#11966#12174#0" expanded="false" />
+            <element signature="e#12173#12174#0" expanded="false" />
+            <element signature="e#12528#12529#0" expanded="false" />
+            <element signature="e#12572#12573#0" expanded="false" />
+            <element signature="e#14663#14664#0" expanded="false" />
+            <element signature="e#14706#14707#0" expanded="false" />
+            <element signature="e#15015#15016#0" expanded="false" />
+            <element signature="e#15068#15069#0" expanded="false" />
+            <element signature="e#15134#15135#0" expanded="false" />
+            <element signature="e#15185#15186#0" expanded="false" />
+            <element signature="e#16117#16125#0" expanded="false" />
+            <element signature="e#20164#20175#0" expanded="false" />
+            <element signature="e#21144#21152#0" expanded="false" />
+            <element signature="e#21873#21889#0" expanded="false" />
+            <element signature="e#27272#27280#0" expanded="false" />
+            <element signature="e#27743#27744#0" expanded="false" />
+            <element signature="e#27781#27782#0" expanded="false" />
+            <element signature="e#28534#28542#0" expanded="false" />
+            <element signature="e#29098#29257#0" expanded="false" />
+            <element signature="e#29256#29257#0" expanded="false" />
+            <element signature="e#29954#30118#0" expanded="false" />
+            <element signature="e#30117#30118#0" expanded="false" />
+            <element signature="e#32799#32807#0" expanded="false" />
+            <element signature="e#33107#33115#0" expanded="false" />
+            <element signature="e#34256#34264#0" expanded="false" />
+            <element signature="e#35653#35654#0" expanded="false" />
+            <element signature="e#35700#35701#0" expanded="false" />
+            <element signature="e#36144#36152#0" expanded="false" />
+            <element signature="e#38058#38066#0" expanded="false" />
+            <element signature="e#38677#38693#0" expanded="false" />
+            <element signature="e#46925#46941#0" expanded="false" />
+            <element signature="e#48050#48066#0" expanded="false" />
+            <element signature="e#60291#60292#0" expanded="false" />
+            <element signature="e#60312#60313#0" expanded="false" />
+            <element signature="e#60647#60663#0" expanded="false" />
+            <element signature="e#61089#61090#0" expanded="false" />
+            <element signature="e#61114#61115#0" expanded="false" />
+            <element signature="e#63325#63326#0" expanded="false" />
+            <element signature="e#63352#63353#0" expanded="false" />
+            <element signature="e#63640#63641#0" expanded="false" />
+            <element signature="e#63665#63666#0" expanded="false" />
+            <element signature="e#63766#63767#0" expanded="false" />
+            <element signature="e#63790#63791#0" expanded="false" />
+            <element signature="e#64294#64295#0" expanded="false" />
+            <element signature="e#64330#64331#0" expanded="false" />
+            <element signature="e#65677#65685#0" expanded="false" />
+            <element signature="e#66701#66702#0" expanded="false" />
+            <element signature="e#66725#66726#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-fastjson/src/main/java/com/ruijc/fastjson/FastJsonAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2977#2978#0" expanded="false" />
+            <element signature="e#3042#3043#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-starter-fastjson/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -2121,6 +2623,7 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="D:\Workspaces\Jetbrains\utils" />
+    <option value="versions:set -DnewVersion=4.0.0" />
     <option value="versions:set -DnewVersion=3.3.9" />
     <option value="versions:set -DnewVersion=3.3.8" />
     <option value="versions:set -DnewVersion=3.3.7" />
