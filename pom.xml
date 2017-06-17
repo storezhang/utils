@@ -151,9 +151,9 @@
 
             <!-- 代码混淆 -->
             <plugin>
-                <groupId>com.pyx4me</groupId>
+                <groupId>com.github.wvengen</groupId>
                 <artifactId>proguard-maven-plugin</artifactId>
-                <version>2.0.4</version>
+                <version>2.0.14</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -166,21 +166,22 @@
                     <proguardVersion>5.0</proguardVersion>
                     <obfuscate>true</obfuscate>
                     <injar>${project.build.finalName}.jar</injar>
+                    <injarNotExistsSkip>true</injarNotExistsSkip>
                     <outjar>${project.build.finalName}.jar</outjar>
                     <outputDirectory>${project.build.directory}</outputDirectory>
                     <proguardInclude>${project.basedir}/../proguard.pro</proguardInclude>
                     <libs>
                         <lib>${java.home}/lib/rt.jar</lib>
                         <lib>${java.home}/lib/jsse.jar</lib>
+                        <lib>${java.home}/lib/jce.jar</lib>
                     </libs>
                 </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>net.sf.proguard</groupId>
-                        <artifactId>proguard</artifactId>
-                        <version>5.3</version>
-                        <scope>system</scope>
-                        <systemPath>${project.basedir}/../lib/proguard.jar</systemPath>
+                        <artifactId>proguard-base</artifactId>
+                        <version>5.3.3</version>
+                        <scope>runtime</scope>
                     </dependency>
                 </dependencies>
             </plugin>
