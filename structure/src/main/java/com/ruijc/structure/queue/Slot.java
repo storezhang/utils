@@ -39,9 +39,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * 环形队列插槽
  *
  * @author Storezhang
- * @create 2017-04-12 11:16
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-12 11:16
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class Slot<T> {
 

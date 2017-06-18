@@ -35,9 +35,9 @@ package com.ruijc.id;
  * 工厂方法
  *
  * @author Storezhang
- * @create 2017-04-20 18:40
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-20 18:40
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class IdFactory {
 

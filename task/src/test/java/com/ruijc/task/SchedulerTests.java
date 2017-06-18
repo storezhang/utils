@@ -39,9 +39,9 @@ import java.util.concurrent.TimeUnit;
  * 测试
  *
  * @author Storezhang
- * @create 2017-04-14 14:14
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-14 14:14
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class SchedulerTests {
 

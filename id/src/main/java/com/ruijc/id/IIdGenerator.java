@@ -35,9 +35,9 @@ package com.ruijc.id;
  * ID生成器接口
  *
  * @author Storezhang
- * @create 2017-02-15 18:18
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-02-15 18:18
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public interface IIdGenerator {
 

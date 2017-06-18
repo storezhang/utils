@@ -40,9 +40,9 @@ import java.util.concurrent.Executors;
  * 任务计划工具
  *
  * @author Storezhang
- * @create 2017-04-14 13:31
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-14 13:31
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class DelayScheduler extends RingQueue<IRingTask> {
 

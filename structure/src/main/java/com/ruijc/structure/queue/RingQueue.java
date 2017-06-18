@@ -37,9 +37,9 @@ import java.util.Calendar;
  * 环形队列
  *
  * @author Storezhang
- * @create 2017-04-12 11:31
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-12 11:31
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class RingQueue<T> extends AbstractRingQueue<T> {
 

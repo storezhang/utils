@@ -41,9 +41,9 @@ import java.util.Set;
  * ID生成测试
  *
  * @author Storezhang
- * @create 2017-02-15 18:25
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-02-15 18:25
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class IdTests {
 

@@ -35,9 +35,9 @@ package com.ruijc.task;
  * 任务监听器
  *
  * @author Storezhang
- * @create 2017-04-14 14:10
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-14 14:10
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public interface ITaskListener {
 

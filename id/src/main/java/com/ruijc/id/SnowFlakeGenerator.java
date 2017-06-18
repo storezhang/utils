@@ -35,9 +35,9 @@ package com.ruijc.id;
  * Twitter雪花分布式ID生成器
  *
  * @author Storezhang
- * @create 2017-02-15 18:19
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-02-15 18:19
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class SnowFlakeGenerator implements IIdGenerator {
 

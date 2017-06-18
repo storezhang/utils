@@ -35,9 +35,9 @@ package com.ruijc.task;
  * 任务接口
  *
  * @author Storezhang
- * @create 2017-04-12 12:54
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-12 12:54
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public interface ITask {
 

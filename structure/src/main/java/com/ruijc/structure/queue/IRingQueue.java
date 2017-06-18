@@ -37,9 +37,9 @@ import java.util.Queue;
  * 环形队列接口
  *
  * @author Storezhang
- * @create 2017-04-12 10:53
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2017-04-12 10:53
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public interface IRingQueue<T> {
 

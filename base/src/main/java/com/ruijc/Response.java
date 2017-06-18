@@ -35,9 +35,9 @@ package com.ruijc;
  * 操作统一返回
  *
  * @author Storezhang
- * @create 2016-12-29 02:39
- * @email storezhang@gmail.com
- * @qq 160290688
+ * Created 2016-12-29 02:39
+ * Email storezhang@gmail.com
+ * QQ 160290688
  */
 public class Response<T> extends BaseObject {
 
