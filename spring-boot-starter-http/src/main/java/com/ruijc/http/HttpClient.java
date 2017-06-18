@@ -38,10 +38,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Http客户端
@@ -234,15 +231,30 @@ public class HttpClient {
     }
 
     public String post(String url, Map<String, String> params, Map<String, String> headers, String referer, String fileParam, File file, String charset) {
-        HttpPost post = postForm(url, params, fileParam, file, charset);
+        Map<String, File> files = new HashMap<String, File>();
+        files.put(fileParam, file);
+
+        return post(url, params, headers, referer, files, charset);
+    }
+
+    public String post(String url, Map<String, String> params, Map<String, String> headers, String referer, Map<String, File> files, String charset) {
+        HttpPost post = postForm(url, params, files, charset);
         setReferer(post, referer);
         setHeaders(post, headers);
 
         return invoke(client, post);
     }
 
-    public String post(String url, String data, Map<String, String> headers, String charset) {
-        return post(url, data, headers, "", charset);
+    public String post(String url, Map<String, String> params, Map<String, String> headers, String referer, String fileParam, File file) {
+        return post(url, params, headers, referer, fileParam, file, null);
+    }
+
+    public String post(String url, Map<String, String> params, String fileParam, File file) {
+        return post(url, params, null, "", fileParam, file, null);
+    }
+
+    public String post(String url, String data, Map<String, String> headers) {
+        return post(url, data, headers, "", null);
     }
 
     public String post(String url, String data, Map<String, String> headers, String referer, String charset) {
@@ -367,7 +379,7 @@ public class HttpClient {
         return response;
     }
 
-    private HttpPost postForm(String url, Map<String, String> params, String fileParam, File file, String charset) {
+    private HttpPost postForm(String url, Map<String, String> params, Map<String, File> files, String charset) {
         if (StringUtils.isBlank(charset)) {
             charset = "UTF-8";
         }
@@ -380,9 +392,11 @@ public class HttpClient {
                 builder.addTextBody(key, params.get(key), ContentType.create("text/plain", Charset.forName(charset)));
             }
         }
-        if (!StringUtils.isBlank(fileParam) && null != file) {
-            builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
-            builder.addBinaryBody(fileParam, file, ContentType.DEFAULT_BINARY, fileParam);
+        if (CollectionUtils.isBlank(files)) {
+            for (String filename : files.keySet()) {
+                builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
+                builder.addBinaryBody(filename, files.get(filename), ContentType.DEFAULT_BINARY, filename);
+            }
         }
         httpPost.setEntity(builder.build());
 
