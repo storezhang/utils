@@ -202,6 +202,7 @@ public class StringUtils {
      */
     public static String substring(String from, int len, char append) {
         String key = "";
+
         if (null == from) {
             return key;
         }
@@ -229,12 +230,16 @@ public class StringUtils {
      * @return 子字符串
      */
     public static String substring(String from, int len, String append) {
+        String ret = from;
+
         int strLen = from.length();
         if (strLen <= len) {
-            return from.substring(0, strLen);
+            ret = from.substring(0, strLen);
         } else {
-            return from.substring(0, len) + append;
+            ret = from.substring(0, len) + append;
         }
+
+        return ret;
     }
 
     /**
