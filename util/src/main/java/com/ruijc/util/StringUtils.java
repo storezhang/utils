@@ -200,7 +200,7 @@ public class StringUtils {
      * @param append 添加字符串
      * @return 子字符串
      */
-    public static String substring(String from, int len, char append) {
+    public static String start(String from, int len, char append) {
         String key = "";
 
         if (null == from) {
@@ -211,7 +211,7 @@ public class StringUtils {
             StringBuilder sb = new StringBuilder();
             sb.append(from);
             for (int i = 0; i < len - from.length(); ++i) {
-                sb.append("0");
+                sb.append(append);
             }
             key = sb.toString();
         } else {
@@ -229,8 +229,8 @@ public class StringUtils {
      * @param append 添加字符串
      * @return 子字符串
      */
-    public static String substring(String from, int len, String append) {
-        String ret = from;
+    public static String start(String from, int len, String append) {
+        String ret;
 
         int strLen = from.length();
         if (strLen <= len) {
@@ -249,8 +249,8 @@ public class StringUtils {
      * @param len  需要的长度
      * @return 子字符串
      */
-    public static String substring(String from, int len) {
-        return StringUtils.substring(from, len, "...");
+    public static String start(String from, int len) {
+        return start(from, len, "...");
     }
 
     /**
@@ -261,11 +261,13 @@ public class StringUtils {
      */
     public static String replaceBlank(String str) {
         String dest = "";
+
         if (str != null) {
             Pattern p = Pattern.compile("\\s*|\t|\r|\n");
             Matcher m = p.matcher(str);
             dest = m.replaceAll("");
         }
+
         return dest;
     }
 

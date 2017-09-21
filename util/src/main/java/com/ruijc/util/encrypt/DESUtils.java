@@ -29,7 +29,7 @@ public class DESUtils {
     }
 
     public static String encrypt(String encryptString, String encryptKey) throws Exception {
-        encryptKey = StringUtils.substring(encryptKey, 8, '0');
+        encryptKey = StringUtils.start(encryptKey, 8, '0');
 
         IvParameterSpec zeroIv = new IvParameterSpec(iv);
         SecretKeySpec key = new SecretKeySpec(encryptKey.getBytes(), "DES");
@@ -41,7 +41,7 @@ public class DESUtils {
     }
 
     public static String decrypt(String decryptString, String decryptKey) throws Exception {
-        decryptKey = StringUtils.substring(decryptKey, 8, '0');
+        decryptKey = StringUtils.start(decryptKey, 8, '0');
 
         byte[] byteMi = Base64.getDecoder().decode(decryptString);
         IvParameterSpec zeroIv = new IvParameterSpec(iv);

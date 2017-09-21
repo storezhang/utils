@@ -19,7 +19,7 @@ public class AESUtils {
     public static String encrypt(String content, String key) {
         String ret;
 
-        key = StringUtils.substring(key, 16, '0');
+        key = StringUtils.start(key, 16, '0');
 
         try {
             SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes(), "AES");
@@ -38,7 +38,7 @@ public class AESUtils {
     public static String decrypt(String content, String key) {
         String ret;
 
-        key = StringUtils.substring(key, 16, '0');
+        key = StringUtils.start(key, 16, '0');
 
         try {
             byte[] contentBytes = Base64.getDecoder().decode(content);
