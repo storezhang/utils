@@ -47,7 +47,7 @@ public class ObjectUtils {
     public static <T> T fieldValue(Object obj, String fieldName) {
         T t = null;
 
-        if (null == obj) {
+        if (null == obj || StringUtils.isBlank(fieldName)) {
             return t;
         }
 
