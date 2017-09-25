@@ -5,22 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2cb0bb-899e-4618-937f-434733724c11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_sevenzipjbinding_sevenzipjbinding_all_mac_9_20_2_00beta.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/resources/log4j.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/zip.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/common/ByteBuffer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/common/OutBuffer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/common/RandomAccessOutputStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/CRC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/CoderInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/Folder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/LZMACoderInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/SevenZip.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/UpdateItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/archive/ArchiveDatabase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/archive/FileItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/archive/Header.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/archive/OutArchive.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/archive/SevenZipFolderInStream.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/archive/StartHeader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/common/InStreamWithCRC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/lz/BinTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/lz/InWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/lz/OutWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/lzma/Base.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/lzma/Decoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/lzma/Encoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/rangecoder/BitTreeDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/rangecoder/BitTreeEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/rangecoder/Decoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/compression/rangecoder/Encoder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" afterPath="$PROJECT_DIR$/spring-boot-starter-mybatis/spring-boot-starter-mybatis.iml" />
     </list>
     <ignored path="utils.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,8 +135,8 @@
       <file leaf-file-name="SevenZip.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/SevenZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state relative-caret-position="375">
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#650#662#0" expanded="true" />
@@ -1238,14 +1250,7 @@
       <workItem from="1506320160590" duration="536000" />
       <workItem from="1506325511420" duration="1098000" />
       <workItem from="1506330494585" duration="3609000" />
-      <workItem from="1506334657417" duration="1658000" />
-    </task>
-    <task id="LOCAL-00079" summary="1、去掉不需要的代码；&#10;2、全面测试Fastjson；">
-      <created>1481774317008</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1481774317008</updated>
+      <workItem from="1506334657417" duration="1884000" />
     </task>
     <task id="LOCAL-00080" summary="1、去掉不需要的代码；&#10;2、全面测试Fastjson；">
       <created>1481774492331</created>
@@ -1583,7 +1588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506044010761</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="1、增加zip；">
+      <created>1506336451548</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1506336451549</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1619,7 +1631,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="354171000" />
+    <option name="totallyTimeSpent" value="354397000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1655,7 +1667,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.49558985" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20814978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20814978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32800853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1684,7 +1696,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1、测试RedisMapper；" />
     <MESSAGE value="1、增加Fastjson的Converter配置；" />
     <MESSAGE value="1、去掉不需要的代码；&#10;2、全面测试Fastjson；" />
     <MESSAGE value="1、修改持续集成配置；" />
@@ -1709,7 +1720,8 @@
     <MESSAGE value="1、优化代码；" />
     <MESSAGE value="1、增加对象工具类；" />
     <MESSAGE value="1、修复对象工具类；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、修复对象工具类；" />
+    <MESSAGE value="1、增加zip；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、增加zip；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1966,6 +1978,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2123,8 +2136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zip/src/main/java/com/ruijc/sevenzip/SevenZip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="375">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#650#662#0" expanded="true" />
