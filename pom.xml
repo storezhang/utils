@@ -23,13 +23,14 @@
         <module>id</module>
         <module>task</module>
         <module>structure</module>
+        <module>zip</module>
     </modules>
 
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.6</java.version>
+        <java.version>1.8</java.version>
 
         <version.spring.boot>1.5.2.RELEASE</version.spring.boot>
         <version.base>3.2.0</version.base>
