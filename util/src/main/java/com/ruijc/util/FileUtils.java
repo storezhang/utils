@@ -8,6 +8,8 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 文件工具类
@@ -128,6 +130,48 @@ public class FileUtils {
             return newFile;
         } else {
             return null;
+        }
+    }
+
+    public static List<File> explorer(String path) {
+        return explorer(new File(path));
+    }
+
+    public static List<File> explorer(File file) {
+        List<File> files = new LinkedList<File>();
+
+        if(null != file){
+            if(file.isDirectory()){
+                File[] fileArray = file.listFiles();
+                if(fileArray!=null){
+                    for (int i = 0; i < fileArray.length; i++) {
+                        explorer(fileArray[i]);
+                    }
+                }
+            } else {
+                files.add(file);
+            }
+        }
+
+        return files;
+    }
+
+    public static void explorer(String path, IFileWalk explorer) {
+        explorer(new File(path), explorer);
+    }
+
+    public static void explorer(File file, IFileWalk explorer) {
+        if(null != file){
+            if(file.isDirectory()){
+                File[] fileArray = file.listFiles();
+                if(fileArray!=null){
+                    for (int i = 0; i < fileArray.length; i++) {
+                        explorer(fileArray[i], explorer);
+                    }
+                }
+            } else {
+                explorer.onWalk(file);
+            }
         }
     }
 
