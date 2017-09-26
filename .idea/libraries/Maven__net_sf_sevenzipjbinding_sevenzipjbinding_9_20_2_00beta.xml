@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sf.sevenzipjbinding:sevenzipjbinding:9.20-2.00beta">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/sevenzipjbinding-9.20-2.00beta.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/sevenzipjbinding-9.20-2.00beta-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/sevenzipjbinding/sevenzipjbinding/9.20-2.00beta/sevenzipjbinding-9.20-2.00beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
