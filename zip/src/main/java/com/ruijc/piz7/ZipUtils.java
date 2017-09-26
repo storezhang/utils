@@ -32,6 +32,7 @@ package com.ruijc.piz7;
 //                  不见满街漂亮妹，哪个归得程序员？
 
 import com.ruijc.piz7.zip.ZipCreateCallback;
+import com.ruijc.util.CollectionUtils;
 import com.ruijc.util.FileUtils;
 import com.ruijc.util.IFileWalk;
 import net.sf.sevenzipjbinding.IOutCreateArchiveZip;
@@ -70,14 +71,15 @@ public class ZipUtils {
         for (final String path : paths) {
             File file = new File(path);
             if (file.isDirectory()) {
-                FileUtils.explorer(path, new IFileWalk() {
+                final File parentFile = new File(path);
+                FileUtils.walk(path, new IFileWalk() {
                     @Override
                     public void onWalk(File file) {
-                        files.add(new DefaultZipFile(path, file));
+                        files.add(new DefaultZipFile(parentFile, file));
                     }
                 });
             } else {
-                files.add(new DefaultZipFile(file.getParent(), file));
+                files.add(new DefaultZipFile(file.getParentFile(), file));
             }
         }
 
@@ -100,6 +102,9 @@ public class ZipUtils {
     }
 
     public static void main(String[] args) throws Exception {
-        zip("/home/storezhang/Downloads/test.zip", "/home/storezhang/Downloads/zip", "/home/storezhang/Downloads/zip2/");
+        String destZipFile = args[0];
+        String[] files = new String[args.length - 1];
+        System.arraycopy(args, 1, files, 0, args.length - 1);
+        zip(destZipFile, files);
     }
 }

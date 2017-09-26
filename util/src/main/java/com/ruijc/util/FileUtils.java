@@ -133,11 +133,11 @@ public class FileUtils {
         }
     }
 
-    public static List<File> explorer(String path) {
-        return explorer(new File(path));
+    public static List<File> walk(String path) {
+        return walk(new File(path));
     }
 
-    public static List<File> explorer(File file) {
+    public static List<File> walk(File file) {
         List<File> files = new LinkedList<File>();
 
         if(null != file){
@@ -145,7 +145,7 @@ public class FileUtils {
                 File[] fileArray = file.listFiles();
                 if(fileArray!=null){
                     for (int i = 0; i < fileArray.length; i++) {
-                        explorer(fileArray[i]);
+                        walk(fileArray[i]);
                     }
                 }
             } else {
@@ -156,17 +156,17 @@ public class FileUtils {
         return files;
     }
 
-    public static void explorer(String path, IFileWalk explorer) {
-        explorer(new File(path), explorer);
+    public static void walk(String path, IFileWalk explorer) {
+        walk(new File(path), explorer);
     }
 
-    public static void explorer(File file, IFileWalk explorer) {
+    public static void walk(File file, IFileWalk explorer) {
         if(null != file){
             if(file.isDirectory()){
                 File[] fileArray = file.listFiles();
                 if(fileArray!=null){
                     for (int i = 0; i < fileArray.length; i++) {
-                        explorer(fileArray[i], explorer);
+                        walk(fileArray[i], explorer);
                     }
                 }
             } else {
