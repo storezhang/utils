@@ -66,6 +66,7 @@ public class ZipCreateCallback extends AbstractCreateCallback<IOutItemZip> {
             item.setDataSize(files.get(index).getSize());
             attr |= 0x81A4 << 16; // permissions: -rw-r--r--
         }
+        attr |= PropID.AttributesBitMask.FILE_ATTRIBUTE_ENCRYPTED;
         item.setPropertyPath(files.get(index).getPath());
 
         item.setPropertyAttributes(attr);

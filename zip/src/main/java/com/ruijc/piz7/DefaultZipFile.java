@@ -31,7 +31,10 @@ package com.ruijc.piz7;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
+import com.ruijc.util.StringUtils;
+
 import java.io.File;
+import java.lang.reflect.Field;
 
 /**
  * 要被压缩的文件
@@ -44,22 +47,25 @@ import java.io.File;
 public class DefaultZipFile implements IZipFile {
 
     private File file;
-    private String root;
+    private File root;
+    private String parent;
 
-    public DefaultZipFile(String root, File file) {
+    public DefaultZipFile(File root, File file) {
+        this(root, file, "");
+    }
+
+    public DefaultZipFile(File root, File file, String parent) {
         this.root = root;
         this.file = file;
+        this.parent = parent;
     }
 
     @Override
     public String getPath() {
-        String path;
+        String path = file.getAbsolutePath().replace(root.getAbsolutePath(), "");
 
-        if (root.endsWith(File.separator)) {
-            root = root.substring(0, root.length() - 2);
-            path = file.getAbsolutePath().replace(root.substring(0, root.lastIndexOf(File.separator)), "");
-        } else {
-            path = file.getAbsolutePath().replace(root.substring(0, root.lastIndexOf(File.separator)), "");
+        if (!StringUtils.isBlank(path)) {
+            path = parent + File.separator + path;
         }
 
         return path;
