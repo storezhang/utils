@@ -15,7 +15,7 @@
     <description>Springboot自动化配置Shiro框架并加入一些新功能。</description>
 
     <properties>
-        <version.shiro>1.10.0</version.shiro>
+        <version.shiro>1.12.0</version.shiro>
     </properties>
 
     <dependencies>
